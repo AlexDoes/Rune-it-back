@@ -6,22 +6,20 @@ import reportWebVitals from './reportWebVitals';
 import Root from './components/root';
 import {configureStore} from '@reduxjs/toolkit'
 
-// const root = ReactDOM.createRoot(document.getElementById('root'));
-// root.render(
-//   <React.StrictMode>
-//     <Root/>
-//   </React.StrictMode>
-// );
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    <Root/>
+  </React.StrictMode>
+);
 // ReactDOM.render(<Root store={store} />, root);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 
-document.addEventListener('DOMContentLoaded', () => {
-  const root = document.getElementById('root');
-  let store;
-  store = configureStore;
-  ReactDOM.render(<Root store={store} />, root);
-});
+// document.addEventListener('DOMContentLoaded', () => {
+//   const root = document.getElementById('root');
+//   ReactDOM.render(<Root store={configureStore} />, root);
+// });
 reportWebVitals();
