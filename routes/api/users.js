@@ -95,13 +95,13 @@ router.get('/:id', (request,response) => {
     .catch(errors => response.json(errors))
 })
 
-router.patch("/:id", passport.authenticate('jwt', {session: false}), (request, response) => {
+router.patch('/:id', passport.authenticate('jwt', {session: false}), (request, response) => {
     User.findOneAndUpdate( {_id : request.params.id }, {$set: { handle : request.body.handle, bio : request.body.bio }})
     .then(user => response.json(user))
     .catch(errors => response.json(errors))
 })
 
-router.delete("/:id", passport.authenticate('jwt', {session: false}), (request, response) => {
+router.delete('/:id', passport.authenticate('jwt', {session: false}), (request, response) => {
     User.deleteOne({"_id": request.params.id})
     .then(user => response.status(400).json({message: "successfully deleted"}))
     .catch(errors => response.json(errors))
