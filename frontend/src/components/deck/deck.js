@@ -27,7 +27,7 @@ function Deck() {
     const checkSets = deck.card_sets ? deck.card_sets : []
     // const prices = checkPrices.map(price => <li>price</li>)
     const prices = Object.entries(checkPrices).map((k,v) => <li key={v}>{k[0].split("_")[0]}: ${k[1]}</li>)
-    const sets = Object.entries(checkSets).map((k,v) => Object.entries(k[1])).map((a,i) => <div> 
+    const sets = Object.entries(checkSets).map((k,v) => Object.entries(k[1])).map((a,i) => <div key={i}> 
         <b>Name</b>: {a[0][1]} 
         <b>Code:</b> {a[1][1]} 
         <b>Price:</b> {a[1][1]} 
@@ -44,7 +44,9 @@ function Deck() {
             <img src={checkDeck}/>
             <br></br>
             Description: {deck.desc}
+            <br></br>
             Prices: {prices}
+            <br></br>
             Sets: {sets}
         </div>
     )
