@@ -1,0 +1,1716 @@
+{
+  "A Kingdom Divided": {
+    "experience": [
+      "an antique lamp giving 10,000 experience to any skill level 40 or above."
+    ],
+    "questPoints": 2,
+    "items": [
+      "the book of the dead",
+      "ability to set your respawn point to kourend castle. talk to asteros arceuus, now found on the 1st floor[uk]2nd floor[us] of kourend castle, to change your respawn point at any time.",
+      "24 new spells made available in the arceuus spellbook (all combat spells with the exception of ghostly grasp and inferior demonbane, and all utility spells with the exception of resurrect crops and reanimation spells)."
+    ]
+  },
+  "A Night at the Theatre": {
+    "experience": [
+      "four antique lamps each giving 20,000 experience to any combat skill level 50 or above, excluding prayer. if players completed the quest before 28 july 2021 and have already used the original two antique lamps that were rewarded, they will only receive two additional antique lamp upon re-completing the quest."
+    ],
+    "questPoints": 2,
+    "items": [
+      "if players completed the quest before 28 july 2021 and have already used the original two antique lamps that were rewarded, they will only receive two additional antique lamp upon re-completing the quest."
+    ]
+  },
+  "A Porcine of Interest": {
+    "experience": ["1,000 slayer experience"],
+    "questPoints": 1,
+    "items": [
+      "5,000 coins",
+      "30 slayer reward points",
+      "access to the sourhog cave and sourhog slayer tasks from spria or turael",
+      "existing slayer helmets will have reinforced goggles added to them"
+    ]
+  },
+  "A Soul's Bane": {
+    "experience": ["500 defence experience", "500 hitpoints experience"],
+    "questPoints": 1,
+    "items": ["500 coins", "access to tolna's rift for combat training"]
+  },
+  "A Tail of Two Cats": {
+    "experience": [
+      "a present containing: two antique lamps worth 2,500 experience each in skills of your choice over 30 a mouse toy (can be used to play with your cat, and functions as a fun weapon at the emir's arena)",
+      "two antique lamps worth 2,500 experience each in skills of your choice over 30"
+    ],
+    "questPoints": 2,
+    "items": [
+      "a doctor's hat or nurse hat (you can switch by destroying your hat and requesting a new one from the apothecary)",
+      "a mouse toy (can be used to play with your cat, and functions as a fun weapon at the emir's arena)",
+      "completing this quest awards the player with 5 kudos which can be claimed by talking to historian minas in the varrock museum."
+    ]
+  },
+  "A Taste of Hope": {
+    "experience": [
+      "tome of experience, granting 2,500 experience to any three skills of the player's choosing (level 35 or over). can be the same skill."
+    ],
+    "questPoints": 1,
+    "items": [
+      "ivandis flail - a weapon that can damage the vyrewatch",
+      "drakan's medallion - an amulet that gives the player unlimited teleports to the theatre of blood"
+    ]
+  },
+  "Animal Magnetism": {
+    "experience": [
+      "1,000 crafting experience",
+      "1,000 fletching experience",
+      "1,000 slayer experience",
+      "2,500 woodcutting experience"
+    ],
+    "questPoints": 1,
+    "items": [
+      "ava's attractor if your ranged level is less than 50, or ava's accumulator if your ranged level is 50 or higher",
+      "the ability to trade with ava and purchase her devices"
+    ]
+  },
+  "Another Slice of H.A.M.": {
+    "experience": ["3,000 mining experience", "3,000 prayer experience"],
+    "questPoints": 1,
+    "items": [
+      "the ancient mace",
+      "the ability to buy goblin village teleport spheres",
+      "free access to the dorgesh-kaan–keldagrim train system"
+    ]
+  },
+  "Below Ice Mountain": {
+    "experience": [],
+    "questPoints": 1,
+    "items": [
+      "2,000 coins",
+      "access to the ruins of camdozaal",
+      "flex emote",
+      "the ability to make a steak sandwich"
+    ]
+  },
+  "Beneath Cursed Sands": {
+    "experience": ["50,000 agility experience"],
+    "questPoints": 2,
+    "items": [
+      "access to the tombs of amascut",
+      "a keris partisan. (if your inventory was full, you may claim one for free from selim in front of al kharid palace.)",
+      "the circlet of water, an untradeable helm that acts like a waterskin when worn. (if your inventory was full, you may claim one for free from the high priest in sophanem.)",
+      "access to a fairy ring on a small island south-west of the necropolis, code akp. (unlocked when entering the necropolis at the beginning of the quest.)",
+      "jaltevas teleport option on the pharaoh's sceptre. (unlocked by selecting commune on an obelisk in the necropolis, by the mine.)"
+    ]
+  },
+  "Between a Rock...": {
+    "experience": [
+      "5,000 defence experience",
+      "5,000 mining experience",
+      "5,000 smithing experience"
+    ],
+    "questPoints": 2,
+    "items": [
+      "a rune pickaxe",
+      "the ability to teleport to dondakan's rock using a ring of wealth",
+      "you get to keep your gold helmet and can continue using it to fire yourself into the rock to access the arzinian mine where there are lots of gold rocks and gold veins, and a nearby dwarf, at the river, banks the player's gold ore for a charge (he keeps 20% of the ores, rounded up, or 10% of the ores if the player has the ring of charos (a))."
+    ]
+  },
+  "Big Chompy Bird Hunting": {
+    "experience": [
+      "262 fletching experience",
+      "1,470 cooking experience",
+      "735 ranged experience"
+    ],
+    "questPoints": 2,
+    "items": [
+      "an ogre bow",
+      "the ability to fletch ogre arrows",
+      "the ability to cook chompy birds and earn a bowman hat"
+    ]
+  },
+  "Biohazard": {
+    "experience": [
+      "1,250 thieving experience",
+      "use of the combat training camp north of the city. players can attack a total of six training dummies in the camp for 50 attack experience each."
+    ],
+    "questPoints": 3,
+    "items": [
+      "the ability to travel freely through the west ardougne gate.",
+      "the ability to use the west ardougne teleport in the arceuus spellbook and teletab."
+    ]
+  },
+  "Black Knights' Fortress": {
+    "experience": [],
+    "questPoints": 3,
+    "items": ["2,500 coins"]
+  },
+  "Bone Voyage": {
+    "experience": [],
+    "questPoints": 1,
+    "items": [
+      "access to fossil island - to disembark the boat upon arrival at fossil island, speak to the junior navigator.",
+      "fossil island note book"
+    ]
+  },
+  "Cabin Fever": {
+    "experience": [
+      "7,000 crafting experience",
+      "7,000 smithing experience",
+      "7,000 agility experience"
+    ],
+    "questPoints": 2,
+    "items": [
+      "10,000 coins (only if you speak to bill teach after the quest)",
+      "access to mos le'harmless",
+      "access to kill cave horrors",
+      "the book o' piracy",
+      "charter ship prices are halved",
+      "ability to play the trouble brewing minigame"
+    ]
+  },
+  "Client of Kourend": {
+    "experience": [
+      "two antique lamps which provide 500 experience each in a skill of the player's choosing",
+      "kourend favour certificate. reading it grants 20% favour towards a city of your choosing a good choice for the favour reward (if not at 30% already) is port piscarilius since the first 30% is both semi-expensive, and time consuming putting it into lovakengj is also not a bad choice as getting 20% needed for the forsaken tower takes around 50 minutes when mining volcanic sulphur.",
+      "a good choice for the favour reward (if not at 30% already) is port piscarilius since the first 30% is both semi-expensive, and time consuming"
+    ],
+    "questPoints": 1,
+    "items": [
+      "putting it into lovakengj is also not a bad choice as getting 20% needed for the forsaken tower takes around 50 minutes when mining volcanic sulphur.",
+      "kharedst's memoirs"
+    ]
+  },
+  "Clock Tower": {
+    "experience": [],
+    "questPoints": 1,
+    "items": ["500 coins"]
+  },
+  "Cold War": {
+    "experience": [
+      "2,000 crafting experience",
+      "5,000 agility experience",
+      "1,500 construction experience"
+    ],
+    "questPoints": 1,
+    "items": [
+      "the ability to make the penguin suit. to enter the suit again, you must talk to larry again at the zoo, pier, iceberg, or lumbridge sheep pen.",
+      "the ability to use the penguin agility course",
+      "players can also steal more cowbells and make more bongos. the cowbells or the bongos can only be played in a penguin suit."
+    ]
+  },
+  "Contact!": {
+    "experience": [
+      "7,000 thieving experience",
+      "combat lamp giving two wishes granting 7,000 experience to attack, strength, defence, hitpoints, ranged, or magic"
+    ],
+    "questPoints": 1,
+    "items": [
+      "the keris dagger",
+      "access to sophanem's bank",
+      "the music track back to life"
+    ]
+  },
+  "Cook's Assistant": {
+    "experience": ["300 cooking experience"],
+    "questPoints": 1,
+    "items": [
+      "permission to use the cook-o-matic 100, which reduces the chance of burning some foods."
+    ]
+  },
+  "Creature of Fenkenstrain": {
+    "experience": ["1,000 thieving experience"],
+    "questPoints": 2,
+    "items": [
+      "the ring of charos, which allows access to the werewolf agility course, and, when activated during garden of tranquillity, reduced cost to many transport links."
+    ]
+  },
+  "Darkness of Hallowvale": {
+    "experience": [
+      "7,000 agility experience",
+      "6,000 thieving experience",
+      "2,000 construction experience",
+      "tome of experience, granting 2,000 experience to any three skills of the player's choosing (level 30 or over). can be the same skill."
+    ],
+    "questPoints": 2,
+    "items": []
+  },
+  "Death Plateau": {
+    "experience": ["3,000 attack experience"],
+    "questPoints": 1,
+    "items": [
+      "steel claws",
+      "the ability to make claws",
+      "ability to purchase and wear climbing boots from tenzing"
+    ]
+  },
+  "Death to the Dorgeshuun": {
+    "experience": ["2,000 thieving experience", "2,000 ranged experience"],
+    "questPoints": 1,
+    "items": []
+  },
+  "Demon Slayer": {
+    "experience": [],
+    "questPoints": 3,
+    "items": [
+      "silverlight (if lost, players may retrieve it from sir prysin for a fee of 500 coins. it can also be sold to the wise old man for 80 coins.)",
+      "completing this quest awards the player with 5 kudos which can be claimed by talking to historian minas in the varrock museum"
+    ]
+  },
+  "Desert Treasure I": {
+    "experience": ["20,006.9 magic experience[2]"],
+    "questPoints": 3,
+    "items": [
+      "the ability to use ancient magicks: at any time, you can pray at the altar and change between the standard and ancient magicks spellbooks. after traversing the pyramid for the first time, you may enter via the back-door of the pyramid to gain a short cut to the altar. be warned that changing spellbooks will drain your prayer to 0.",
+      "ring of visibility: if you ever lose it, you can obtain another one from rasolo.",
+      "access to the curse of the empty lord miniquest (only requires the ring of visibility)",
+      "access to ancient staff: you can also buy one from eblis for 80,000 coins. if you lose the staff, you will have to kill mummies inside the pyramid, or buy it from other players. it can also be obtained as a rare drop from the chaos fanatic, as a rare drop from the thermonuclear smoke devil or as an uncommon drop from calvar'ion.",
+      "access to the smoke dungeon, which can be used for various slayer tasks.",
+      "ability to talk to eblis to obtain an ancient signet"
+    ]
+  },
+  "Devious Minds": {
+    "experience": [
+      "5,000 fletching experience",
+      "5,000 runecraft experience",
+      "6,500 smithing experience"
+    ],
+    "questPoints": 1,
+    "items": []
+  },
+  "Doric's Quest": {
+    "experience": ["1,300 mining experience"],
+    "questPoints": 1,
+    "items": [
+      "180 coins",
+      "the ability to use doric's anvils",
+      "bronze pickaxe given at the start of the quest"
+    ]
+  },
+  "Dragon Slayer I": {
+    "experience": ["18,650 strength experience", "18,650 defence experience"],
+    "questPoints": 2,
+    "items": [
+      "the ability to equip a green d'hide body, rune platebody, and dragon platebody",
+      "access to crandor",
+      "access to the corsair cove resource area",
+      "the ability to be assigned dragons as a slayer task (obtainable without completion)"
+    ]
+  },
+  "Dragon Slayer II": {
+    "experience": [
+      "80,000 smithing experience",
+      "60,000 mining experience",
+      "50,000 agility experience",
+      "50,000 thieving experience",
+      "access to the myths' guild access to the pettable dog ability to make super antifire potions by speaking to primula 4x 25,000 experience in magic, ranged, strength, attack, defence or hitpoints by speaking to ellen access to fountain of uhld where dragonstone jewellery (excluding the ring of wealth) can be recharged access to the pool of dreams where players can refight galvek or rewatch cutscenes from the quest access to the wrath altar access to the shop to buy the mythical cape",
+      "4x 25,000 experience in magic, ranged, strength, attack, defence or hitpoints by speaking to ellen"
+    ],
+    "questPoints": 5,
+    "items": [
+      "ability to speak to cats without the catspeak amulet",
+      "access to the pettable dog",
+      "ability to make super antifire potions by speaking to primula",
+      "access to fountain of uhld where dragonstone jewellery (excluding the ring of wealth) can be recharged",
+      "access to the pool of dreams where players can refight galvek or rewatch cutscenes from the quest",
+      "access to the wrath altar",
+      "access to the shop to buy the mythical cape",
+      "access to adamant and rune dragons in the lithkren vault",
+      "access to a stronger version of vorkath on ungael",
+      "ability to reforge the dragon platebody and kiteshield",
+      "ability to have a rune dragon as a treasure room guardian (requiring 99 construction and 25,000,000 coins)",
+      "ability to create an ava's assembler by bringing vorkath's head, 75 mithril arrows, and 4,999 coins (or ava's accumulator) to ava in draynor manor",
+      "ability to craft ferocious gloves from hydra leather in the lithkren vault (requires a hammer)",
+      "ability to construct mythical cape (mounted) in your poh",
+      "ability to go back through the ancient doors on lithkren and use your digsite pendant on the strange machine north of the dragons. this will allow you to teleport there.",
+      "locator orb"
+    ]
+  },
+  "Dream Mentor": {
+    "experience": [
+      "15,000 hitpoints experience",
+      "10,000 magic experience",
+      "a dreamy lamp, which awards 15,000 experience in a combat skill of a player's choosing, apart from attack and prayer."
+    ],
+    "questPoints": 2,
+    "items": [
+      "7 new spells added to your lunar spells book (monster examine, humidify, hunter kit, stat spy, dream, plank make, spellbook swap)",
+      "'birds-eye' jack will now allow you to use the bank without a seal of passage equipped or in your inventory."
+    ]
+  },
+  "Druidic Ritual": {
+    "experience": ["250 herblore experience"],
+    "questPoints": 4,
+    "items": ["the ability to use the herblore skill"]
+  },
+  "Dwarf Cannon": {
+    "experience": ["750 crafting experience"],
+    "questPoints": 1,
+    "items": [
+      "the ability to buy and use a dwarf multicannon",
+      "the ability to make cannonballs"
+    ]
+  },
+  "Eadgar's Ruse": {
+    "experience": ["11,000 herblore experience"],
+    "questPoints": 1,
+    "items": [
+      "the ability to grow and steal goutweed, which can be traded with sanfew for herbs.",
+      "1 burnt meat",
+      "the ability to use the trollheim teleport spell.",
+      "the ability to use a scroll of redirection to redirect a teleport to house tablet to trollheim."
+    ]
+  },
+  "Eagles' Peak": {
+    "experience": ["2500 hunter experience"],
+    "questPoints": 2,
+    "items": [
+      "ability to use box traps",
+      "access to the eagle transport system",
+      "captured ferrets can be used to flush rabbits from their holes, allowing them to be caught in rabbit snares",
+      "a box trap"
+    ]
+  },
+  "Elemental Workshop I": {
+    "experience": ["5,000 crafting experience", "5,000 smithing experience"],
+    "questPoints": 1,
+    "items": [
+      "access to the elemental workshop",
+      "an elemental shield, as well as the ability to make and wield them"
+    ]
+  },
+  "Elemental Workshop II": {
+    "experience": ["7,500 smithing experience", "7,500 crafting experience"],
+    "questPoints": 1,
+    "items": [
+      "the ability to make and use elemental mind equipment to make a mind shield: have the slashed book from the elemental workshop i quest in your inventory, then smith a primed mind bar into a mind shield",
+      "to make a mind shield: have the slashed book from the elemental workshop i quest in your inventory, then smith a primed mind bar into a mind shield"
+    ]
+  },
+  "Enakhra's Lament": {
+    "experience": [
+      "7,000 crafting experience",
+      "7,000 mining experience",
+      "7,000 firemaking experience",
+      "7,000 magic experience"
+    ],
+    "questPoints": 2,
+    "items": [
+      "camulet, which allows you to talk to camels and teleport to the temple four times. it can be recharged by using camel dung on it. you can pay lazim 1 million gold pieces to give it unlimited charges.",
+      "camel mask (use a piece of soft clay on the pedestal with the globes on it to make.)"
+    ]
+  },
+  "Enlightened Journey": {
+    "experience": [
+      "2,000 crafting experience",
+      "3,000 farming experience",
+      "1,500 woodcutting experience",
+      "4,000 firemaking experience"
+    ],
+    "questPoints": 1,
+    "items": [
+      "the bomber jacket and cap gnome goggles from the gnome restaurant minigame can be combined with the bomber cap by talking with auguste",
+      "gnome goggles from the gnome restaurant minigame can be combined with the bomber cap by talking with auguste",
+      "access to the balloon transport system",
+      "ability to make origami balloons"
+    ]
+  },
+  "Ernest the Chicken": {
+    "experience": [],
+    "questPoints": 4,
+    "items": ["300 coins", "access to the killerwatt plane (members only)"]
+  },
+  "Fairytale I - Growing Pains": {
+    "experience": [
+      "3,500 farming experience",
+      "2,000 attack experience",
+      "1,000 magic experience"
+    ],
+    "questPoints": 2,
+    "items": ["magic secateurs (increases crop harvests by 10% when farming)"]
+  },
+  "Fairytale II - Cure a Queen": {
+    "experience": [
+      "3,500 herblore experience",
+      "2,500 thieving experience",
+      "an antique lamp granting 2,500 experience in any skill over level 30"
+    ],
+    "questPoints": 2,
+    "items": [
+      "access to the fairy rings network",
+      "access to fairy fixit's fairy enchantment shop"
+    ]
+  },
+  "Family Crest": {
+    "experience": [
+      "goldsmith gauntlets (avan): increases the smithing experience from smelting gold by 150%, for a total of 250% - from 22.5 to 56.2."
+    ],
+    "questPoints": 1,
+    "items": [
+      "steel gauntlets the steel gauntlets offer useful perks. each brother will imbue them with a special ability. they will initially do this for free. be careful choosing, though, since you can only have one effect, and it will cost you 25,000 coins to change them. dimintheis will provide you with a \"magically\" found pair should you lose them. note: although they are called \"steel\", players with 1 defence can wear them.",
+      "the steel gauntlets offer useful perks. each brother will imbue them with a special ability. they will initially do this for free. be careful choosing, though, since you can only have one effect, and it will cost you 25,000 coins to change them. dimintheis will provide you with a \"magically\" found pair should you lose them. note: although they are called \"steel\", players with 1 defence can wear them.",
+      "cooking gauntlets (caleb): reduces the chance of burning certain fish significantly: (lobsters, swordfish, monkfish, sharks and anglerfish.)",
+      "chaos gauntlets (johnathon): increases the damage done by bolt (chaos rune) spells by 3. stacks multiplicatively with the tome of fire and slayer helmet (i), the former having a moderate upkeep cost, for a maximum hit of 25, which is by far the highest damage per second for a beginner. after the family pest miniquest, you can have all three gauntlets for 500,000 coins.",
+      "after the family pest miniquest, you can have all three gauntlets for 500,000 coins."
+    ]
+  },
+  "Fight Arena": {
+    "experience": ["12,175 attack experience", "2,175 thieving experience"],
+    "questPoints": 2,
+    "items": ["1,000 coins", "the khazard armour set"]
+  },
+  "Fishing Contest": {
+    "experience": ["2,437 fishing experience"],
+    "questPoints": 1,
+    "items": [
+      "access to the underground white wolf mountain passage",
+      "ability to catch minnows in the fishing guild with 82 fishing and a full angler's outfit"
+    ]
+  },
+  "Forgettable Tale...": {
+    "experience": ["5,000 cooking experience", "5,000 farming experience"],
+    "questPoints": 2,
+    "items": ["2 dwarven stout (m)"]
+  },
+  "Garden of Tranquillity": {
+    "experience": ["5,000 farming experience"],
+    "questPoints": 2,
+    "items": [
+      "an activated ring of charos - players can wear the activated ring to charm various npcs to pay less for certain services, or get choices that are otherwise unavailable.",
+      "an apple tree seed",
+      "an acorn",
+      "5 guam seeds",
+      "4-dose compost potion, which can be used to turn compost into supercompost.",
+      "after the quest, the player can visit the garden and pick 4 fruits from the white tree. they regrow after some time, similar to other fruit bearing trees. each fruit restores about 8% of energy."
+    ]
+  },
+  "Gertrude's Cat": {
+    "experience": ["1,525 cooking experience"],
+    "questPoints": 1,
+    "items": [
+      "your own kitten",
+      "chocolate cake",
+      "stew",
+      "gertrude will now sell kittens for you to raise for 100 coins each."
+    ]
+  },
+  "Getting Ahead": {
+    "experience": [
+      "4,000 crafting experience",
+      "3,200 construction experience"
+    ],
+    "questPoints": 1,
+    "items": [
+      "3,000 coins — if not claimed at quest completion due to no available inventory space, talk to gordon again after the quest for the reward.",
+      "access to a tannery in the kebos lowlands (speak to mary to access tanning services)"
+    ]
+  },
+  "Ghosts Ahoy": {
+    "experience": ["2,400 prayer experience"],
+    "questPoints": 2,
+    "items": [
+      "free passage into port phasmatys",
+      "the ectophial, which allows direct teleport to the ectofuntus, is refilled from the ectofuntus."
+    ]
+  },
+  "Goblin Diplomacy": {
+    "experience": ["200 crafting experience"],
+    "questPoints": 5,
+    "items": ["a gold bar"]
+  },
+  "Grim Tales": {
+    "experience": [
+      "10,000 farming experience",
+      "15,000 herblore experience",
+      "5,000 hitpoints experience",
+      "60,000 woodcutting experience",
+      "25,000 agility experience",
+      "25,000 thieving experience"
+    ],
+    "questPoints": 1,
+    "items": [
+      "dwarven helmet (equip this helmet in the dwarven mines to complete a hard falador task)"
+    ]
+  },
+  "Haunted Mine": {
+    "experience": ["22,000 strength experience"],
+    "questPoints": 2,
+    "items": [
+      "the ability to make the salve amulet, which when equipped gives combat bonuses against undead monsters.",
+      "access to a shortcut to the crystal outcrops",
+      "access to tarn's lair"
+    ]
+  },
+  "Hazeel Cult": {
+    "experience": ["1500 thieving experience"],
+    "questPoints": 1,
+    "items": [
+      "2000 coins (plus 5 from the fake ending if you sided with the carnillean family)",
+      "hazeel's mark (if you sided with hazeel)",
+      "carnillean armour (if you sided with ceril and obtained an extra during the quest)",
+      "5 kudos, which can be claimed by talking to historian minas in the varrock museum"
+    ]
+  },
+  "Heroes' Quest": {
+    "experience": [
+      "3,075 attack experience",
+      "3,075 defence experience",
+      "3,075 strength experience",
+      "3,075 hitpoints experience",
+      "2,075 ranged experience",
+      "2,725 fishing experience",
+      "2,825 cooking experience",
+      "1,575 woodcutting experience",
+      "1,575 firemaking experience",
+      "2,275 smithing experience",
+      "2,575 mining experience",
+      "1,325 herblore experience"
+    ],
+    "questPoints": 1,
+    "items": [
+      "access to the heroes' guild",
+      "the ability to purchase and wield dragon battleaxes and maces",
+      "ability to recharge amulets of glory at the fountain of rune (this grants 6 charges instead of the usual 4)",
+      "ability to use charge dragonstone jewellery scrolls.",
+      "access to the fountain of heroes, where players can recharge their amulets of glory"
+    ]
+  },
+  "Holy Grail": {
+    "experience": ["11,000 prayer experience", "15,300 defence experience"],
+    "questPoints": 2,
+    "items": [
+      "access to the fisher realm",
+      "ability to put king arthur picture on the wall in the construction skill"
+    ]
+  },
+  "Horror from the Deep": {
+    "experience": [
+      "4,662.5 magic experience",
+      "4,662.5 strength experience",
+      "4,662.5 ranged experience"
+    ],
+    "questPoints": 2,
+    "items": [
+      "a damaged book of your choice which, when complete, will become: a holy book (saradomin), an unholy book (zamorak), or a book of balance (guthix). further damaged books can be purchased from jossik for 5,000 coins each, even if you have not filled your other book(s).",
+      "further damaged books can be purchased from jossik for 5,000 coins each, even if you have not filled your other book(s).",
+      "access to the lighthouse general store and the dagannoth caves underneath. (there are level 74 and 92 dagannoth. both use a ranged attack that has low accuracy, but the level 92 ones will try to use their much more effective melee attack whenever they can.)"
+    ]
+  },
+  "Icthlarin's Little Helper": {
+    "experience": [
+      "4,500 thieving experience",
+      "4,000 agility experience",
+      "4,000 woodcutting experience"
+    ],
+    "questPoints": 2,
+    "items": [
+      "catspeak amulet",
+      "access to the city of sophanem",
+      "unlock the carpet rides from pollnivneach to sophanem and menaphos"
+    ]
+  },
+  "Imp Catcher": {
+    "experience": ["875 magic experience"],
+    "questPoints": 1,
+    "items": [
+      "the amulet of accuracy",
+      "after the quest players can obtain more amulets by speaking to wizard mizgog with a complete set of beads."
+    ]
+  },
+  "In Aid of the Myreque": {
+    "experience": [
+      "2,000 attack experience",
+      "2,000 strength experience",
+      "2,000 crafting experience",
+      "2,000 defence experience"
+    ],
+    "questPoints": 2,
+    "items": [
+      "access to burgh de rott",
+      "access to the temple trekking minigame",
+      "a gadderhammer from defeating gadderanks",
+      "the ability to make the rod of ivandis",
+      "completing this quest awards the player with 5 kudos which can be claimed by talking to historian minas in the varrock museum."
+    ]
+  },
+  "In Search of the Myreque": {
+    "experience": [
+      "600 attack experience",
+      "600 defence experience",
+      "600 strength experience",
+      "600 hitpoints experience",
+      "600 crafting experience"
+    ],
+    "questPoints": 2,
+    "items": [
+      "access to the hollows",
+      "four big bones and two uncut rubies that drop from the skeleton hellhound"
+    ]
+  },
+  "Jungle Potion": {
+    "experience": ["775 herblore experience"],
+    "questPoints": 1,
+    "items": []
+  },
+  "King's Ransom": {
+    "experience": [
+      "33,000 experience",
+      "5,000 experience",
+      "antique lamp granting 5,000 experience to any skill level 50 or above"
+    ],
+    "questPoints": 1,
+    "items": [
+      "access to the knight waves training grounds",
+      "the ability to use the chivalry and piety prayers, with level 60 and 70 prayer, respectively, after completion of knight waves training grounds"
+    ]
+  },
+  "Land of the Goblins": {
+    "experience": [
+      "8,000 agility experience",
+      "8,000 fishing experience",
+      "8,000 thieving experience",
+      "8,000 herblore experience"
+    ],
+    "questPoints": 2,
+    "items": [
+      "access to the goblin temple (with an altar to recharge prayer points).",
+      "access to yu'biusk, using fairy ring code blq.",
+      "ability to purchase plain of mud spheres that transports you to the goblin cave.",
+      "ability to make goblin potions."
+    ]
+  },
+  "Legends' Quest": {
+    "experience": [
+      "30,000 experience each in four skills of your choice (limited to attack, defence, strength, hitpoints, prayer, magic, woodcutting, crafting, smithing, herblore, agility, thieving. it is possible to choose the same skill all four times)"
+    ],
+    "questPoints": 4,
+    "items": [
+      "access to the legends' guild (including shop to buy the cape of legends)",
+      "the ability to wield the dragon sq shield",
+      "the ability to charge your skills necklace or combat bracelet at the legends' guild or the fountain of rune",
+      "access to the kharazi jungle and a vine shortcut into it, requiring 79 agility",
+      "radimus erkle will provide replacement dark daggers, which can be investigated via right-click to switch appearance between a dark or glowing dagger"
+    ]
+  },
+  "Lost City": {
+    "experience": [],
+    "questPoints": 3,
+    "items": [
+      "access to zanaris",
+      "ability to buy and wield dragon longswords and dragon daggers (with level 60 attack)",
+      "ability to make cosmic runes with the runecraft skill"
+    ]
+  },
+  "Lunar Diplomacy": {
+    "experience": ["5,000 magic experience", "5,000 runecraft experience"],
+    "questPoints": 2,
+    "items": [
+      "a seal of passage",
+      "access to lunar isle and lunar equipment",
+      "access to the lunar spellbook",
+      "access to the astral altar",
+      "50 astral runes"
+    ]
+  },
+  "Making Friends with My Arm": {
+    "experience": [
+      "10,000 construction experience",
+      "40,000 firemaking experience",
+      "50,000 mining experience",
+      "50,000 agility experience"
+    ],
+    "questPoints": 2,
+    "items": [
+      "access to the salt mines",
+      "ability to build fire pits",
+      "a new disease-free herb patch in weiss (requires building the fire of nourishment before use)",
+      "ability to direct a teleport room portal to troll stronghold with a combination of salt"
+    ]
+  },
+  "Making History": {
+    "experience": [
+      "1,000 crafting experience",
+      "1,000 prayer experience",
+      "ability to claim 5 kudos and an antique lamp for 1,000 experience (in any skill over level 20) by talking to historian minas in the varrock museum."
+    ],
+    "questPoints": 3,
+    "items": [
+      "750 coins",
+      "enchanted key, allowing you to go on your own treasure digs until it disappears",
+      "access to the museum in the outpost",
+      "ability to complete master clue hot/cold treasure trails."
+    ]
+  },
+  "Merlin's Crystal": {
+    "experience": [],
+    "questPoints": 6,
+    "items": [
+      "excalibur (required for holy grail quest.)",
+      "completing this quest awards the player with 5 kudos which can be claimed by talking to historian minas in the varrock museum."
+    ]
+  },
+  "Misthalin Mystery": {
+    "experience": ["600 crafting experience"],
+    "questPoints": 1,
+    "items": ["uncut ruby", "uncut emerald", "uncut sapphire"]
+  },
+  "Monk's Friend": {
+    "experience": ["2,000 woodcutting experience"],
+    "questPoints": 1,
+    "items": [
+      "8 law runes",
+      "brother omad will throw parties for you by speaking to him."
+    ]
+  },
+  "Monkey Madness I": {
+    "experience": [
+      "speaking to daero after the quest gives the choice of either, 35,000 experience in attack and defence and 20,000 experience in strength and hitpoints or 35,000 experience in strength and hitpoints and 20,000 experience in attack and defence. the skills you tell daero you want to focus on will receive 35,000 xp each, and the others 20,000 each. returning to ape atoll after completing the quest no longer requires undergoing daero's training."
+    ],
+    "questPoints": 3,
+    "items": [
+      "10,000 coins",
+      "3 diamonds",
+      "the ability to buy and wield the dragon scimitar.",
+      "the ability to turn into a monkey in ape atoll & ardougne zoo, using the monkey greegree.",
+      "full access to ape atoll, with exception of the bank and javelin store, which are unlocked after monkey madness ii."
+    ]
+  },
+  "Monkey Madness II": {
+    "experience": [
+      "80,000 slayer experience",
+      "60,000 agility experience",
+      "50,000 thieving experience",
+      "50,000 hunter experience",
+      "2x 50,000 experience rewards from duke in your choice of magic, ranged, attack, defence, strength or hitpoints. found on the hill east of main gate of ape atoll. (walk up west hill, and climb the ladder to reach the east hill)."
+    ],
+    "questPoints": 4,
+    "items": [
+      "a royal seed pod, which provides unlimited teleports to the grand tree (up to level 30 wilderness).",
+      "access to the crash site cavern containing demonic gorillas.",
+      "access to a new maniacal monkey hunting area where glough's laboratory used to be in kruk's dungeon.",
+      "access to ape atoll bank and oobapohk's javelin store.",
+      "access to new glider spot directly to ape atoll.",
+      "the ability to communicate with monkeys without the monkeyspeak amulet.",
+      "all npcs on the surface of ape atoll will be non-aggressive without requiring the use of monkey greegrees.",
+      "ability to wield the heavy ballista.",
+      "various dragons will now drop dragon javelin heads.",
+      "the ability to reclaim lost greegrees from zooknock in his gnome stronghold house (no supplies required).",
+      "a monkey can be found in one of the crates at the crash site. it is purely cosmetic and can be equipped in the cape slot.",
+      "bobawu will now track your laps of the ape atoll agility course, with you being able to transform your monkey into other variants upon completing a number of laps",
+      "the ability to re-fight glough by gazing into the burning brazier in zooknock's house."
+    ]
+  },
+  "Mountain Daughter": {
+    "experience": ["2,000 prayer experience", "1,000 attack experience"],
+    "questPoints": 2,
+    "items": [
+      "the bearhead",
+      "the ability to pass into the mountain camp over the rockslide"
+    ]
+  },
+  "Mourning's End Part I": {
+    "experience": ["40,000 thieving experience", "25,000 hitpoints experience"],
+    "questPoints": 2,
+    "items": [
+      "access to the mourner hq basement and the village of lletya",
+      "elf teleport crystal",
+      "the fixed device",
+      "full mourner clothing"
+    ]
+  },
+  "Mourning's End Part II": {
+    "experience": ["60,000 agility experience"],
+    "questPoints": 2,
+    "items": [
+      "a crystal trinket, which allows you to enter the temple of light again after the quest",
+      "access to the death altar",
+      "access to dark beasts"
+    ]
+  },
+  "Murder Mystery": {
+    "experience": ["1,406 crafting experience"],
+    "questPoints": 3,
+    "items": ["2,000 coins"]
+  },
+  "My Arm's Big Adventure": {
+    "experience": [
+      "10,000 herblore experience",
+      "5,000 farming experience 45×7 additional farming experience while my arm harvests his crop.",
+      "45×7 additional farming experience while my arm harvests his crop."
+    ],
+    "questPoints": 1,
+    "items": [
+      "access to a disease-free herb patch on top of the troll stronghold. this patch does not allow growing of regular goutweed.",
+      "29 burnt meat"
+    ]
+  },
+  "Nature Spirit": {
+    "experience": [
+      "3,000 crafting experience",
+      "2,000 defence experience",
+      "2,000 hitpoints experience"
+    ],
+    "questPoints": 2,
+    "items": [
+      "access to mort myre swamp and the nature spirit altar, where you can replenish and temporarily boost your prayer points by 2",
+      "ability to fight ghasts",
+      "3 meat pies and 3 apple pies unless they were rotted by the ghasts",
+      "ability to build the fire of dehumidification after completion of making friends with my arm"
+    ]
+  },
+  "Observatory Quest": {
+    "experience": [
+      "2,250 crafting experience",
+      "your item reward depends on what astrological sign you see when you look through the telescope. it is different for each person. each one rewards an uncut sapphire as well as the following: aquarius: 25 water runes aries: 875 attack experience cancer: an amulet of defence capricorn: 875 strength experience gemini: a black 2h sword leo: 875 hitpoints experience libra: 3 law runes pisces: 3 tuna sagittarius: a maple longbow scorpio: weapon poison taurus: a 1-dose super strength potion virgo: 875 defence experience",
+      "aries: 875 attack experience",
+      "capricorn: 875 strength experience",
+      "leo: 875 hitpoints experience",
+      "virgo: 875 defence experience"
+    ],
+    "questPoints": 2,
+    "items": [
+      "aquarius: 25 water runes",
+      "cancer: an amulet of defence",
+      "gemini: a black 2h sword",
+      "libra: 3 law runes",
+      "pisces: 3 tuna",
+      "sagittarius: a maple longbow",
+      "scorpio: weapon poison",
+      "taurus: a 1-dose super strength potion",
+      "the spirit of scorpius will now give you a mould to make unholy symbols, and he will bless them for you too. he can be found in the graveyard north of the observatory.",
+      "talk to the observatory assistant after the quest and he will reward you with a jug of wine as well as tell you his and the professor's real name.",
+      "access to the grappling shortcut rock outside the observatory.",
+      "completing this quest awards the player with 5 kudos which can be claimed by talking to historian minas in the varrock museum."
+    ]
+  },
+  "Olaf's Quest": {
+    "experience": ["12,000 defence experience"],
+    "questPoints": 1,
+    "items": [
+      "20,000 coins",
+      "4 cut rubies",
+      "access to a cave where you can fight brine rats.",
+      "a piece of parchment telling you of other shipwrecks with more treasure. (this extra treasure is currently not available in the game)"
+    ]
+  },
+  "One Small Favour": {
+    "experience": [
+      "two experience lamps giving 10,000 experience to any skill of your choice. skill must be at least level 30."
+    ],
+    "questPoints": 2,
+    "items": [
+      "a steel key ring",
+      "the ability to make guthix rest tea",
+      "the ability to craft pot lids",
+      "access to the gnome glider route to the feldip hills"
+    ]
+  },
+  "Pirate's Treasure": {
+    "experience": [],
+    "questPoints": 2,
+    "items": [
+      "ability to use the pay-fare option to and from karamja.",
+      "access to one-eyed hector's treasure chest (contains a gold ring, an emerald, and 450 coins)."
+    ]
+  },
+  "Plague City": {
+    "experience": ["2,425 mining experience"],
+    "questPoints": 1,
+    "items": [
+      "ardougne teleport scroll, reading it unlocks the ardougne teleport with 51 magic and use of the ardougne teletab."
+    ]
+  },
+  "Priest in Peril": {
+    "experience": ["1,406 prayer experience"],
+    "questPoints": 1,
+    "items": [
+      "wolfbane dagger, prevents the citizens of canifis from transforming into werewolves when attacked",
+      "route to canifis and morytania",
+      "completing this quest awards the player with 5 kudos which can be claimed by talking to historian minas in the varrock museum."
+    ]
+  },
+  "Prince Ali Rescue": {
+    "experience": [],
+    "questPoints": 3,
+    "items": [
+      "700 coins",
+      "free passage through the lumbridge - al kharid toll gate from now on",
+      "(members) access to the sorceress's garden thieving minigame."
+    ]
+  },
+  "Rag and Bone Man I": {
+    "experience": ["500 cooking experience", "500 prayer experience"],
+    "questPoints": 1,
+    "items": []
+  },
+  "Rag and Bone Man II": {
+    "experience": ["5,000 prayer experience"],
+    "questPoints": 1,
+    "items": ["bonesack", "ram skull helm"]
+  },
+  "Ratcatchers": {
+    "experience": ["4,500 thieving experience"],
+    "questPoints": 2,
+    "items": [
+      "a rat pole",
+      "the ability to train overgrown cats into wily and lazy cats.",
+      "the ability to name your wily or lazy cat (up to six letters long).",
+      "access to the rat pits.",
+      "the ability to use the grouping teleport to the rat pits in port sarim, ardougne, varrock, and keldagrim."
+    ]
+  },
+  "Recipe for Disaster": {
+    "experience": [
+      "an experience lamp, which grants 20,000 experience to any skill above 50 (can be banked for later use)"
+    ],
+    "questPoints": 10,
+    "items": [
+      "access to the following areas: mogre camp evil chicken's lair",
+      "mogre camp",
+      "evil chicken's lair",
+      "ability to dive for crabs",
+      "ability to cook crab meat",
+      "ability to catch hell-rats",
+      "ability to own a hellcat",
+      "ability to add coloured spices to stews of any sort",
+      "ability to use the boat trip to travel between karamja and feldip hills",
+      "ape atoll teleport spell",
+      "full access to culinaromancer's chest access to kitchen weaponry access to the banking chest (under lumbridge castle) access to a food store in the culinaromancer's chest access to buy barrows gloves",
+      "access to kitchen weaponry",
+      "access to the banking chest (under lumbridge castle)",
+      "access to a food store in the culinaromancer's chest",
+      "access to buy barrows gloves"
+    ]
+  },
+  "Recipe for Disaster/Another Cook's Quest": {
+    "experience": [],
+    "questPoints": 1,
+    "items": [
+      "the invitation to the feast of a lifetime!",
+      "access to the culinaromancer's chest (after watching the cut scene in the feast room)."
+    ]
+  },
+  "Recipe for Disaster/Defeating the Culinaromancer": {
+    "experience": [
+      "an experience lamp, which grants 20,000 experience to any skill above 50 (can be banked for later use)"
+    ],
+    "questPoints": 1,
+    "items": [
+      "full access to the culinaromancer's chest, containing barrows gloves"
+    ]
+  },
+  "Recipe for Disaster/Freeing Evil Dave": {
+    "experience": ["7,000 cooking experience"],
+    "questPoints": 1,
+    "items": [
+      "the ability to catch hellrats to get a hellcat",
+      "the ability to have your cat fight hell-rat behemoths",
+      "the ability to add coloured spices to stew by catching hellrats (spicy stews can boost and lower certain stats)",
+      "further access to the culinaromancer's chest"
+    ]
+  },
+  "Recipe for Disaster/Freeing King Awowogei": {
+    "experience": ["10,000 cooking experience", "10,000 agility experience"],
+    "questPoints": 1,
+    "items": [
+      "ape atoll teleport spell",
+      "further access to the culinaromancer's chest"
+    ]
+  },
+  "Recipe for Disaster/Freeing Pirate Pete": {
+    "experience": [
+      "1,000 cooking experience",
+      "1,000 crafting experience",
+      "1,000 fishing experience",
+      "1,000 smithing experience"
+    ],
+    "questPoints": 1,
+    "items": [
+      "the ability to go diving and fight crabs (you need your diving apparatus)",
+      "the ability to cook crab meat (heals 10 hitpoints in 5 bites)",
+      "the ability to kill crabs to get their shells and claws, which can be made into a helmet and gloves with a chisel",
+      "further access to the culinaromancer's chest"
+    ]
+  },
+  "Recipe for Disaster/Freeing Sir Amik Varze": {
+    "experience": ["4,000 cooking experience", "4,000 hitpoints experience"],
+    "questPoints": 1,
+    "items": [
+      "access to the evil chicken's lair, where you can fight black dragons (the fowl beast himself has moved on to other things.)",
+      "further access to the culinaromancer's chest."
+    ]
+  },
+  "Recipe for Disaster/Freeing Skrach Uglogwee": {
+    "experience": [
+      "1,500 woodcutting experience",
+      "1,500 cooking experience",
+      "1,500 crafting experience",
+      "1,500 ranged experience"
+    ],
+    "questPoints": 1,
+    "items": [
+      "the ability to use the boat trip to travel between karamja and the feldip hills (you must pay a fee of chompies or exotic herbs)",
+      "further access to the culinaromancer's chest"
+    ]
+  },
+  "Recipe for Disaster/Freeing the Goblin generals": {
+    "experience": [
+      "1,000 cooking experience",
+      "1,000 farming experience",
+      "1,000 crafting experience"
+    ],
+    "questPoints": 1,
+    "items": ["further access to the culinaromancer's chest."]
+  },
+  "Recipe for Disaster/Freeing the Lumbridge Guide": {
+    "experience": ["2,500 cooking experience", "2,500 magic experience"],
+    "questPoints": 1,
+    "items": ["further access to the culinaromancer's chest"]
+  },
+  "Recipe for Disaster/Freeing the Mountain Dwarf": {
+    "experience": ["1,000 slayer experience", "1,000 cooking experience"],
+    "questPoints": 1,
+    "items": [
+      "further access to the culinaromancer's chest",
+      "ability to obtain additional dwarven rock cakes from rohak for either 100 coins or the raw ingredients"
+    ]
+  },
+  "Recruitment Drive": {
+    "experience": [
+      "1,000.5 prayer experience",
+      "1,000.5 herblore experience",
+      "1,000.5 agility experience"
+    ],
+    "questPoints": 1,
+    "items": [
+      "3,000 coins",
+      "access to initiate armour. you will be given a sallet for free, and you can buy subsequent sallets from sir tiffy cashien for 6,000 coins, the cuisse for 8,000 coins, the hauberk for 10,000 coins, or the full set for 20,000 coins. it is aesthetically similar to white armour, with a gold trim.",
+      "the gaze of saradomin - when you die, you will have the option of returning to falador instead of lumbridge. talk to sir tiffy cashien to change your spawn point at any time."
+    ]
+  },
+  "Regicide": {
+    "experience": ["13,750 agility experience"],
+    "questPoints": 3,
+    "items": [
+      "15,000 coins",
+      "access to the elven kingdom of tirannwn and the overpass of arandar",
+      "the ability to wield the dragon halberd (with level 60 attack and 30 strength)",
+      "the ability to charter a ship to port tyras",
+      "the ability to use iorwerth camp teleport scrolls",
+      "the ability to use zul-andra teleport scrolls and battle zulrah"
+    ]
+  },
+  "Romeo & Juliet": {
+    "experience": [],
+    "questPoints": 5,
+    "items": []
+  },
+  "Roving Elves": {
+    "experience": ["10,000 strength experience"],
+    "questPoints": 1,
+    "items": ["crystal shield or bow with 500 charges"]
+  },
+  "Royal Trouble": {
+    "experience": [
+      "5,000 agility experience",
+      "5,000 slayer experience",
+      "5,000 hitpoints experience"
+    ],
+    "questPoints": 1,
+    "items": ["20,000 coins", "enhanced rewards from managing miscellania"]
+  },
+  "Rum Deal": {
+    "experience": [
+      "7,000 fishing experience",
+      "7,000 prayer experience",
+      "7,000 farming experience"
+    ],
+    "questPoints": 2,
+    "items": [
+      "the holy wrench (while in your inventory, this grants more prayer points when drinking a prayer potion)"
+    ]
+  },
+  "Rune Mysteries": {
+    "experience": [],
+    "questPoints": 1,
+    "items": [
+      "the ability to mine rune essence",
+      "an air talisman",
+      "the ability to use lamps and books of knowledge from random events on runecraft",
+      "completing this quest awards the player with 5 kudos which can be claimed by talking to historian minas in the varrock museum."
+    ]
+  },
+  "Scorpion Catcher": {
+    "experience": ["6,625 strength experience"],
+    "questPoints": 1,
+    "items": [
+      "the ability to have thormac turn a battlestaff into a mystic staff for 40,000 coins"
+    ]
+  },
+  "Sea Slug": {
+    "experience": ["7,175 fishing experience"],
+    "questPoints": 1,
+    "items": ["access to the fishing platform", "oyster pearls"]
+  },
+  "Secrets of the North": {
+    "experience": [
+      "60,000 agility experience",
+      "50,000 thieving experience",
+      "40,000 hunter experience"
+    ],
+    "questPoints": 2,
+    "items": [
+      "ability to mine ancient essence crystals in the ghorrock dungeon",
+      "access to a stronger version of the strange creature, the phantom muspah"
+    ]
+  },
+  "Shades of Mort'ton": {
+    "experience": [
+      "2,000 herblore experience",
+      "2,000 crafting experience",
+      "bonus: if you take the diary of herbi flax to the apothecary in varrock, you'll get an extra 335 herblore experience (can only be done once)."
+    ],
+    "questPoints": 3,
+    "items": [
+      "ability to play the shades of mort'ton minigame",
+      "ability to use the shades of mort'ton minigame teleport"
+    ]
+  },
+  "Shadow of the Storm": {
+    "experience": ["10,000 experience in any combat skill other than prayer."],
+    "questPoints": 1,
+    "items": [
+      "silverlight turns into the darklight sword - it has a special attack and is even more powerful against demons. it costs slightly more to replace.",
+      "six cut gems: two sapphires, two rubies and two emeralds, if you use a hammer and chisel on the demon's throne and had not yet removed them during the golem."
+    ]
+  },
+  "Sheep Herder": {
+    "experience": [],
+    "questPoints": 4,
+    "items": ["3,100 coins"]
+  },
+  "Sheep Shearer": {
+    "experience": ["150 crafting experience"],
+    "questPoints": 1,
+    "items": ["60 coins"]
+  },
+  "Shield of Arrav": {
+    "experience": [
+      "additional rewards when talking with historian minas in the varrock museum 5 kudos antique lamp awarding 1,000xp in a skill of at least level 20",
+      "antique lamp awarding 1,000xp in a skill of at least level 20"
+    ],
+    "questPoints": 1,
+    "items": ["600 coins", "5 kudos"]
+  },
+  "Shilo Village": {
+    "experience": ["3,875 crafting experience"],
+    "questPoints": 2,
+    "items": [
+      "access to shilo village",
+      "ability to quick travel to shilo village using the cart near the brimhaven docks",
+      "after completing the quest, you can sell every item you obtained during the quest to yanni salika in shilo village for 2,000 — 100 each for the stone-plaque, tattered scroll, crumpled scroll, bervirius notes and the bone key, 500 for the locating crystal, and 1000 for the beads of the dead.",
+      "ability to mine the gem rocks in shilo village mine."
+    ]
+  },
+  "Sins of the Father": {
+    "experience": [
+      "a tome of experience, granting 15,000 experience to any skill. (level 60 or higher). this reward can be utilised six times and may be used for the same skill."
+    ],
+    "questPoints": 2,
+    "items": [
+      "access to darkmeyer access to the daeyalt essence mine access to the hallowed sepulchre ability to shop at stores in darkmeyer while wearing vyre noble clothing ability to use the wall shortcut on the eastern side of darkmeyer with 63 agility, after purchasing two long ropes from the darkmeyer general store and using them on it.",
+      "access to the daeyalt essence mine",
+      "access to the hallowed sepulchre",
+      "ability to shop at stores in darkmeyer while wearing vyre noble clothing",
+      "ability to use the wall shortcut on the eastern side of darkmeyer with 63 agility, after purchasing two long ropes from the darkmeyer general store and using them on it.",
+      "the blisterwood flail",
+      "darkmeyer teleport via drakan's medallion",
+      "boat travel between burgh de rott, slepe and the icyene graveyard",
+      "access to the true blood altar (with a blood talisman) access to the guardian of blood in the guardians of the rift minigame",
+      "access to the guardian of blood in the guardians of the rift minigame"
+    ]
+  },
+  "Sleeping Giants": {
+    "experience": ["6,000 smithing experience"],
+    "questPoints": 1,
+    "items": ["access to the giants' foundry"]
+  },
+  "Song of the Elves": {
+    "experience": [
+      "40,000 agility experience",
+      "40,000 construction experience",
+      "40,000 farming experience",
+      "40,000 herblore experience",
+      "40,000 hunter experience",
+      "40,000 mining experience",
+      "40,000 smithing experience",
+      "40,000 woodcutting experience"
+    ],
+    "questPoints": 4,
+    "items": [
+      "access to prifddinas ability to fight zalcano access to the gauntlet access to trahaearn mine access to iorwerth dungeon ability to change respawn point to prifddinas ability to move player-owned house to prifddinas ability to teleport to prifddinas with a teleport crystal ability to make divine potions ability to make crystal tools, armour and weaponry",
+      "ability to fight zalcano",
+      "access to the gauntlet",
+      "access to trahaearn mine",
+      "access to iorwerth dungeon",
+      "ability to change respawn point to prifddinas",
+      "ability to move player-owned house to prifddinas",
+      "ability to teleport to prifddinas with a teleport crystal",
+      "ability to make divine potions",
+      "ability to make crystal tools, armour and weaponry"
+    ]
+  },
+  "Spirits of the Elid": {
+    "experience": [
+      "8,000 prayer experience",
+      "1,000 thieving experience",
+      "1,000 magic experience"
+    ],
+    "questPoints": 2,
+    "items": [
+      "access to nardah's fountain for water and the shrine: praying at the statuette will fill your hitpoints, temporarily boost it, cure poison and venom, restore your prayer points, restore your run energy and your special attack.",
+      "robe of elidinis"
+    ]
+  },
+  "Swan Song": {
+    "experience": [
+      "15,000 magic experience",
+      "10,000 prayer experience",
+      "50,000 fishing experience"
+    ],
+    "questPoints": 2,
+    "items": [
+      "25,000 coins",
+      "access to the piscatoris fishing colony the ability to fish monkfish the ability to use skeleton mages for training",
+      "the ability to fish monkfish",
+      "the ability to use skeleton mages for training",
+      "access to the following items from malignius mortifer upon request: a brown apron bone seeds (requires an airtight pot)",
+      "a brown apron",
+      "bone seeds (requires an airtight pot)"
+    ]
+  },
+  "Tai Bwo Wannai Trio": {
+    "experience": [
+      "5,000 cooking experience (claimed upon speaking to tinsay)",
+      "5,000 fishing experience (claimed upon speaking to tiadeche)",
+      "2,500 attack experience, 2,500 strength experience, and a karambwan-poisoned rune spear (claimed upon speaking to tamayu)"
+    ],
+    "questPoints": 2,
+    "items": [
+      "2,000 coins (awarded by timfraku immediately upon quest completion)",
+      "access to tamayu's spear stall (sells cleaning cloths)",
+      "access to tiadeche's karambwan stall (sells raw karambwans and karambwan vessels)",
+      "the ability to pray at the newly repaired tribal statue (works like an altar) by talking to tinsay and tiadeche in the village after the quest",
+      "the ability to catch and cook karambwans by talking to tinsay in the village after the quest",
+      "the ability to fight the shaikahan (level 83 - you need a kp spear to hit it)",
+      "the ability to use tai bwo wannai teleport scrolls",
+      "the ability to take part in the smithing section of otto's barbarian training."
+    ]
+  },
+  "Tale of the Righteous": {
+    "experience": [],
+    "questPoints": 1,
+    "items": [
+      "8,000 coins",
+      "shayzien favour certificate. reading it grants 10% shayzien favour.",
+      "a page for kharedst's memoirs, 'history and hearsay.' it teleports players to the graveyard of heroes south-west of the shayzien bank.",
+      "ability to fight the corrupt lizardman in the nightmare zone.",
+      "3 xerician fabric (dropped by corrupt lizardman)"
+    ]
+  },
+  "Tears of Guthix": {
+    "experience": ["1,000 crafting experience"],
+    "questPoints": 1,
+    "items": ["ability to play the tears of guthix (minigame) once a week"]
+  },
+  "Temple of Ikov": {
+    "experience": ["10,500 ranged experience", "8,000 fletching experience"],
+    "questPoints": 1,
+    "items": [
+      "armadyl pendant (if you sided with lucien, you must kill guardians of armadyl to obtain it)",
+      "pendant of lucien, which grants access to a door in the temple of ikov",
+      "optional; boots of lightness",
+      "optional; shiny key, for a shortcut between the temple of ikov and mcgrubor's wood",
+      "completing this quest awards the player with 5 kudos which can be claimed by talking to historian minas in the varrock museum"
+    ]
+  },
+  "Temple of the Eye": {
+    "experience": [
+      "5,000 runecraft experience an additional 4,210 runecraft xp is gained during the quest, for a total of 9,210 xp",
+      "an additional 4,210 runecraft xp is gained during the quest, for a total of 9,210 xp"
+    ],
+    "questPoints": 1,
+    "items": [
+      "access to the guardians of the rift minigame",
+      "a medium pouch (if not already acquired)"
+    ]
+  },
+  "The Ascent of Arceuus": {
+    "experience": ["1,500 hunter experience", "500 runecraft experience"],
+    "questPoints": 1,
+    "items": [
+      "2,000 coins",
+      "arceuus favour certificate. reading it grants 10% arceuus favour.",
+      "a page for kharedst's memoirs, 'a dark disposition.' it teleports players to the centre of arceuus."
+    ]
+  },
+  "The Corsair Curse": {
+    "experience": [],
+    "questPoints": 2,
+    "items": ["access to yusuf's bank in the corsair cove."]
+  },
+  "The Depths of Despair": {
+    "experience": ["1,500 agility experience"],
+    "questPoints": 1,
+    "items": [
+      "4,000 coins",
+      "hosidius favour certificate. reading it grants 10% hosidius favour.",
+      "a page for kharedst's memoirs, 'lunch by the lancalliums'. it teleports players to just east of the hosidius kitchen."
+    ]
+  },
+  "The Dig Site": {
+    "experience": ["15,300 mining exp", "2,000 herblore exp"],
+    "questPoints": 2,
+    "items": [
+      "2 gold bars",
+      "show the museum curator the level 3 certificate to choose between something to drink (fruit blast) or something to eat (chocolate cake). get the cake for desert treasure i or the fruit blast for recipe for disaster. make sure that you go through the dialogue for each one that you give it or he will not give you a chance to pick which reward you want and you will receive nothing.",
+      "the ability to do varrock museum specimen cleaning to obtain a digsite pendant.",
+      "the ancient talisman can be viewed in the digsite exhibit at the museum on the ground floor[uk]1st floor[us].",
+      "previously granted the ability to choose the book of darkness after completion of horror from the deep."
+    ]
+  },
+  "The Eyes of Glouphrie": {
+    "experience": [
+      "12,000 magic experience",
+      "2,500 woodcutting experience",
+      "6,000 runecraft experience",
+      "250 construction experience"
+    ],
+    "questPoints": 2,
+    "items": [
+      "a crystal saw seed — either take it to ilfeen in tirannwn or use it on the singing bowl by brimstail to get an enchanted crystal saw. it allows items (that require a saw) to be made three levels above your construction. it has a limited number of charges (28), but the recharge is free - use the bowl again.",
+      "using the crystal seed with the singing bowl and getting a crystal saw is a medium task in the western provinces area achievement diary."
+    ]
+  },
+  "The Feud": {
+    "experience": ["15,000 thieving experience"],
+    "questPoints": 1,
+    "items": [
+      "500 coins",
+      "an oak blackjack",
+      "the desert disguise",
+      "a willow blackjack (as a drop from the tough guy)",
+      "an adamant scimitar (as a drop from the bandit champion)",
+      "access to the rogue trader minigame – completing this will allow ali morrisane to sell blackjacks, various runes, and different clothing from around the kharidian desert",
+      "can now steal from villagers, bandits and menaphite thugs"
+    ]
+  },
+  "The Forsaken Tower": {
+    "experience": ["500 mining experience", "500 smithing experience"],
+    "questPoints": 1,
+    "items": [
+      "6,000 coins",
+      "lovakengj favour certificate. reading it grants 10% lovakengj favour.",
+      "a page for kharedst's memoirs, 'jewellery of jubilation.' it teleports players north-east of the bank in lovakengj."
+    ]
+  },
+  "The Fremennik Exiles": {
+    "experience": [
+      "50,000 slayer experience",
+      "50,000 crafting experience",
+      "30,000 runecraft experience"
+    ],
+    "questPoints": 2,
+    "items": [
+      "v's shield",
+      "access to the island of stone",
+      "ability to kill a basilisk knight as a slayer task",
+      "a fremennik honorific, dräpare, added to the player's fremennik name",
+      "ability to create and equip the neitiznot faceguard"
+    ]
+  },
+  "The Fremennik Isles": {
+    "experience": [
+      "5,000 construction experience",
+      "5,000 crafting experience",
+      "10,000 woodcutting experience",
+      "two lots of 10,000 combat experience (choose between strength, attack, defence or hitpoints)."
+    ],
+    "questPoints": 1,
+    "items": [
+      "a fremennik royal helm known as the helm of neitiznot, which is the equivalent of a berserker helm with a +3 prayer bonus, slightly better magic and crush defence, and no negative bonuses. if a player loses the helm, they can talk to mawnis burowgar to buy another one for 50,000 coins.",
+      "access to arctic pine trees.",
+      "access to an island with a runite rock north-east of neitiznot, which also has seven (7) coal rocks nearby.",
+      "access to the jatizso mine, which contains up to adamantite rocks.",
+      "around 20,000 coins in assorted rewards during quest.",
+      "the banks in neitiznot and jatizso are close to water, range, furnace, fishing spots, mining ores; a spinning wheel is also nearby.",
+      "if the jester outfit is lost, a player can retrieve another one from the chest behind king gjuki sorvott iv's throne.",
+      "learn the ability to create yak-hide armour and neitiznot shields.",
+      "the contraband yak produce shop is available on jatizso if a player refunds the 5,000 coin tax to vanligga gastfrihet, who is north of the king."
+    ]
+  },
+  "The Fremennik Trials": {
+    "experience": [
+      "2,812.4 agility experience",
+      "2,812.4 attack experience",
+      "2,812.4 crafting experience",
+      "2,812.4 defence experience",
+      "2,812.4 fishing experience",
+      "2,812.4 fletching experience",
+      "2,812.4 hitpoints experience",
+      "2,812.4 strength experience",
+      "2,812.4 thieving experience",
+      "2,812.4 woodcutting experience"
+    ],
+    "questPoints": 3,
+    "items": [
+      "access to the islands of miscellania, etceteria, neitiznot, and jatizso along with access to the facilities in rellekka.",
+      "ability to wear the fremennik warrior, berserker, archer, and farseer helms",
+      "ability to have fossegrimen create the enchanted lyre(i)",
+      "jarvald will charge no fee for travelling to waterbirth island"
+    ]
+  },
+  "The Garden of Death": {
+    "experience": ["10,000 farming experience"],
+    "questPoints": 1,
+    "items": []
+  },
+  "The Giant Dwarf": {
+    "experience": [
+      "2,500 mining experience",
+      "2,500 smithing experience",
+      "2,500 crafting experience",
+      "1,500 magic experience",
+      "1,500 thieving experience",
+      "1,500 firemaking experience"
+    ],
+    "questPoints": 2,
+    "items": []
+  },
+  "The Golem": {
+    "experience": ["1,000 thieving experience", "1,000 crafting experience"],
+    "questPoints": 1,
+    "items": [
+      "2 cut rubies, emeralds, and sapphires (collect these by using a chisel and hammer on the throne)",
+      "unlock the carpet ride from shantay pass to uzer"
+    ]
+  },
+  "The Grand Tree": {
+    "experience": [
+      "18,400 attack experience",
+      "7,900 agility experience",
+      "2,150 magic experience"
+    ],
+    "questPoints": 5,
+    "items": [
+      "access to the mine under the grand tree.",
+      "access to the gnome glider transportation system.",
+      "ability to use the agility shortcut from the grand tree to the barbarian outpost (with 37 agility).",
+      "ability to use the spirit tree in the stronghold after the completion of tree gnome village.",
+      "completing this quest awards the player with 5 kudos which can be claimed by talking to historian minas in the varrock museum."
+    ]
+  },
+  "The Great Brain Robbery": {
+    "experience": [
+      "6,000 prayer experience",
+      "3,000 crafting experience",
+      "2,000 construction experience",
+      "blessed lamp ( 5,000 experience in a chosen skill above level 30 and can be placed in your bank)"
+    ],
+    "questPoints": 2,
+    "items": [
+      "barrelchest anchor (to repair your barrelchest anchor, return to mos le'harmless and make sure you have a book o' piracy in your inventory; then, go to the docks south of the bank and talk to \"smith.\" he can fix your anchor for 230,000 coins.)",
+      "prayer book",
+      "ability to cast harmony island teleport with at least 60% arceuus favour"
+    ]
+  },
+  "The Hand in the Sand": {
+    "experience": ["1,000 thieving experience", "9,000 crafting experience"],
+    "questPoints": 1,
+    "items": [
+      "ability to buy pink dye from betty",
+      "a secret reward from bert - he simply loves sand, and wasn't in the job for the money. he will ship 84 buckets of sand to your bank if you talk to him after the quest. this can be done once per day (utc). asking bert to take sand to your bank is also an ardougne medium task.",
+      "access to the wizards' guild rune store"
+    ]
+  },
+  "The Knight's Sword": {
+    "experience": ["12,725 smithing experience"],
+    "questPoints": 1,
+    "items": [
+      "a blurite sword (if you got thurgo to make you an extra one)",
+      "the ability to smelt blurite ore into blurite bars (members only)"
+    ]
+  },
+  "The Lost Tribe": {
+    "experience": ["3,000 mining experience"],
+    "questPoints": 1,
+    "items": [
+      "the ability to use the goblin bow and goblin salute emotes",
+      "access to the dorgesh-kaan mine",
+      "a ring of life",
+      "access to nardok's bone weapon's store where players can purchase the dorgeshuun crossbow, bone bolts and other bone weapons."
+    ]
+  },
+  "The Queen of Thieves": {
+    "experience": ["2,000 thieving experience"],
+    "questPoints": 1,
+    "items": [
+      "2,000 coins",
+      "piscarilius favour certificate. reading it grants 10% piscarilius favour.",
+      "a page for kharedst's memoirs, 'the fisher's flute.' it teleports players to the centre of port piscarilius."
+    ]
+  },
+  "The Restless Ghost": {
+    "experience": ["1,125 prayer experience"],
+    "questPoints": 1,
+    "items": [
+      "ghostspeak amulet (keep for several quests and content in the future)"
+    ]
+  },
+  "The Slug Menace": {
+    "experience": [
+      "3,500 crafting experience",
+      "3,500 runecraft experience",
+      "3,500 thieving experience"
+    ],
+    "questPoints": 1,
+    "items": [
+      "promotion to proselyte among the temple knights. this means you can buy and wear proselyte armour with a greater prayer bonus than initiate. you can buy each piece individually, or buy the armour pack which, when opened, gives you the plate, helm, and legs/tassets all at once. the pack costs 25,000 coins buying the upgraded armour in separate pieces costs more: the helm costs 8,000 coins, the platelegs and plateskirt cost 10,000 coins, and the platebody costs 12,000 coins for a total of 30,000 coins required for the hard falador diary",
+      "buying the upgraded armour in separate pieces costs more: the helm costs 8,000 coins, the platelegs and plateskirt cost 10,000 coins, and the platebody costs 12,000 coins for a total of 30,000 coins",
+      "required for the hard falador diary"
+    ]
+  },
+  "The Tourist Trap": {
+    "experience": [
+      "4,650 experience in your choice of two skills (you may pick same skill twice): agility, fletching, smithing, or thieving."
+    ],
+    "questPoints": 2,
+    "items": [
+      "the ability to smith darts.",
+      "the wrought iron key - allows access to a special door inside the desert mining camp, which has several higher tier ores inside, including mithril ore and adamantite ore.",
+      "full slave robes",
+      "6 bronze darts"
+    ]
+  },
+  "Throne of Miscellania": {
+    "experience": [],
+    "questPoints": 1,
+    "items": [
+      "management of miscellania",
+      "10,000 coins (inside the miscellania coffers)",
+      "the ability to teleport to miscellania using a ring of wealth"
+    ]
+  },
+  "Tower of Life": {
+    "experience": [
+      "1,000 construction experience",
+      "500 crafting experience",
+      "500 thieving experience"
+    ],
+    "questPoints": 2,
+    "items": ["access to creature creation", "builder's costume"]
+  },
+  "Tree Gnome Village": {
+    "experience": ["11,450 attack experience"],
+    "questPoints": 2,
+    "items": ["use of spirit trees for transportation", "the gnome amulet"]
+  },
+  "Tribal Totem": {
+    "experience": ["1,775 thieving experience"],
+    "questPoints": 1,
+    "items": ["5 swordfish"]
+  },
+  "Troll Romance": {
+    "experience": ["8,000 agility experience", "4,000 strength experience"],
+    "questPoints": 2,
+    "items": [
+      "1 uncut diamond, 2 uncut rubies and 4 uncut emeralds",
+      "a sled (required to complete a hard and an elite clue scroll step)",
+      "sledding route from trollweiss mountain"
+    ]
+  },
+  "Troll Stronghold": {
+    "experience": [],
+    "questPoints": 1,
+    "items": [
+      "law talisman (if you lose it, you can get another from dunstan for 1,000 coins)",
+      "ability to make law runes",
+      "access to trollheim and the troll stronghold",
+      "ability to access the god wars dungeon"
+    ]
+  },
+  "Underground Pass": {
+    "experience": ["3,000 agility experience", "3,000 attack experience"],
+    "questPoints": 5,
+    "items": [
+      "iban's staff and use of the iban blast spell.",
+      "klank's gauntlets"
+    ]
+  },
+  "Vampyre Slayer": {
+    "experience": ["4,825 attack experience"],
+    "questPoints": 3,
+    "items": []
+  },
+  "Wanted!": {
+    "experience": ["5,000 slayer experience"],
+    "questPoints": 1,
+    "items": ["access to the armoury of the white knights (white equipment)"]
+  },
+  "Watchtower": {
+    "experience": ["15,250 magic experience"],
+    "questPoints": 4,
+    "items": [
+      "5,000 coins",
+      "a scroll, the reading of which gives you the ability to use watchtower teleport",
+      "access to the ogre city (and ogre enclave where you can fight blue dragons. you will not need an extra nightshade to enter after the quest is complete.)"
+    ]
+  },
+  "Waterfall Quest": {
+    "experience": ["13,750 strength experience", "13,750 attack experience"],
+    "questPoints": 1,
+    "items": ["2 diamonds", "2 gold bars", "40 mithril seeds"]
+  },
+  "What Lies Below": {
+    "experience": ["8,000 runecraft experience", "2,000 defence experience"],
+    "questPoints": 1,
+    "items": [
+      "the beacon ring",
+      "access to a shortcut to the chaos altar",
+      "completing this quest awards the player with 5 kudos which can be claimed by talking to historian minas in the varrock museum, while holding the dagon'hai history book.",
+      "5 battlestaves in stock of zaff's superior staffs! store (after defeating king roald - the quest doesn't need to be completed)"
+    ]
+  },
+  "Witch's House": {
+    "experience": ["6,325 hitpoints experience"],
+    "questPoints": 4,
+    "items": []
+  },
+  "Witch's Potion": {
+    "experience": ["325 magic experience"],
+    "questPoints": 1,
+    "items": []
+  },
+  "X Marks the Spot": {
+    "experience": [
+      "antique lamp providing 300 experience in a skill of the player's choosing (can be reclaimed if lost or destroyed)"
+    ],
+    "questPoints": 1,
+    "items": [
+      "200 coins",
+      "a beginner clue scroll (only if the player does not have one already in their possession; can be claimed later if players had one in their possession already)"
+    ]
+  },
+  "Zogre Flesh Eaters": {
+    "experience": [
+      "2,000 fletching experience",
+      "2,000 ranged experience",
+      "2,000 herblore experience"
+    ],
+    "questPoints": 1,
+    "items": [
+      "3 ourg bones",
+      "2 zogre bones",
+      "ability to make relicym's balm",
+      "ability to fletch comp ogre bows and brutal arrows",
+      "ability to wear inoculation bracelets",
+      "give a 2-, 3-, or 4-dose relicym's balm to uglug to gain access to ~ uglug's stuffsies ~"
+    ]
+  }
+}

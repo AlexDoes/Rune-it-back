@@ -66,8 +66,7 @@ export default function Webscraper() {
         Scrape the Old School Runescape Wiki for information on quests, items,
         and more!
       </p>
-      {rewards.length > 0 &&
-        rewards.map((reward) => <p key={Math.random() * 1000}>{reward}</p>)}
+      {/* {rewards.length > 0 && rewards.map((reward) => <p key={Math.random() * 1000}>{reward}</p>)} */}
       {/* <Form>
         <FormGroup>
           <Label for="exampleEmail">URL</Label>

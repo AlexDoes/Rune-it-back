@@ -6,6 +6,7 @@ import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/home";
 import Webscraper from "./pages/webscraper";
+import AQD from "./pages/allquestdata";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -25,6 +26,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/webscraper" element={<Webscraper />} />
+          <Route path="/aqd" element={<AQD />} />
         </Routes>
       </BrowserRouter>
     </>
