@@ -27,6 +27,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/webscraper" element={<Webscraper />} />
           <Route path="/aqd" element={<AQD />} />
+          <Route path="*" element={<Home />} />
         </Routes>
       </BrowserRouter>
     </>

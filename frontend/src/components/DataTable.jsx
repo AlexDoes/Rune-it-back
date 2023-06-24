@@ -1,7 +1,9 @@
 import React from "react";
 import { Table } from "react-bootstrap";
+import { useState } from "react";
 
-const QuestTable = ({ quests }) => {
+const QuestTable = ({ quests, onSort }) => {
+  const [sortOrder, setSortOrder] = useState("asc");
   function standardizeSentence(sentence) {
     // Convert the sentence to lowercase and trim any leading or trailing whitespace
     const trimmedSentence = sentence.trim().toLowerCase();
@@ -12,22 +14,38 @@ const QuestTable = ({ quests }) => {
 
     return standardizedSentence;
   }
+
+  const sortTable = () => {
+    console.log(quests);
+    const sortedData = Object.keys(quests).sort((a, b) => {
+      if (sortOrder === "asc") {
+        return a[0].localeCompare(b[0]);
+      } else {
+        return b[0].localeCompare(a[0]);
+      }
+    });
+    onSort(sortedData);
+    setSortOrder(sortOrder === "asc" ? "desc" : "asc");
+  };
+
   return (
     <Table striped bordered hover>
       <thead>
-        <tr>
-          <th>Quest Name</th>
-          <th>Experience</th>
-          <th>Quest Points</th>
-          <th>Items</th>
+        <tr className=" cursor-pointer border-b-2 border-black border-l border-r border-t">
+          <th onClick={sortTable} className=" border-x border-black">
+            Quest Name
+          </th>
+          <th className="border-x border-black">Experience</th>
+          <th className="border-x border-black">Quest Points</th>
+          <th className="border-x border-black">Items</th>
         </tr>
       </thead>
       <tbody>
         {Object.keys(quests).map((questName) => {
           const quest = quests[questName];
           return (
-            <tr key={questName}>
-              <td>
+            <tr key={questName} className="border-b-2 border-black">
+              <td className="border-r-2 border-black">
                 <a
                   href={`https://oldschool.runescape.wiki/w/${questName}`}
                   target="_blank"
@@ -35,16 +53,16 @@ const QuestTable = ({ quests }) => {
                   {questName}
                 </a>
               </td>
-              <td>
+              <td className="border-r-2 border-black">
                 {quest.experience.map((exp, index) => (
                   <div key={index}>{standardizeSentence(exp)}</div>
                 ))}
               </td>
-              <td>{quest.questPoints}</td>
-              <td className="text-left">
+              <td className="border-r-2 border-black">{quest.questPoints}</td>
+              <td className="pl-2 text-left">
                 {quest.items.map((item, index) => (
                   <div className="text-left" key={index}>
-                    - {standardizeSentence(item)}
+                    {standardizeSentence(item)}
                   </div>
                 ))}
               </td>

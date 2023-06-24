@@ -1,0 +1,18 @@
+:root {
+  --text: #030c07;
+  --background: #dbf6e6;
+  --primary-button: #248a83;
+  --secondary-button: #cee3f2;
+  --accent: #245e8a;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Nunito", sans-serif;
+  background-color: var(--background);
+  color: var(--text);
+  accent-color: var(--accent);
+}
