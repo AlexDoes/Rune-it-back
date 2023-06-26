@@ -32,7 +32,10 @@ const QuestTable = ({ quests, onSort }) => {
     <Table striped bordered hover>
       <thead>
         <tr className=" cursor-pointer border-b-2 border-black border-l border-r border-t">
-          <th onClick={sortTable} className=" border-x border-black">
+          <th
+            //   onClick={sortTable}
+            className=" border-x border-black"
+          >
             Quest Name
           </th>
           <th className="border-x border-black">Experience</th>
