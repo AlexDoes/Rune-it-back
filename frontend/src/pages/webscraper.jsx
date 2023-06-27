@@ -3,7 +3,7 @@ import { Button, Form, FormGroup, Label, Input, FormText } from "reactstrap";
 import * as cheerio from "cheerio";
 import axios from "axios";
 import * as fs from "fs";
-import { questArray, questMap } from "../quests";
+import { questArray, questMap } from "../../scripts/quests";
 import { Table } from "reactstrap";
 import { Container, Row, Col } from "reactstrap";
 import {

@@ -63,30 +63,31 @@ export default function Quester(UserData) {
   const [questsCompleted, setQuestsCompleted] = useState(
     questerData["Quests Completed"]
   );
-  const [totalQuests, setTotalQuests] = useState(
-    questerData["Number of Quests Completed"]
-  );
   const [username, setUsername] = useState(questerData.Username);
   const [questList, setQuestList] = useState([]);
   const [questsToAdd, setQuestsToAdd] = useState([]);
+  const [questOptions, setQuestOptions] = useState([]);
 
   useEffect(() => {
     const getQuests = async () => {
       const response = await fetch("/data/AQD.json");
       const data = await response.json();
       setQuestList(data);
+      setQuestOptions(Object.keys(data));
     };
     getQuests();
   }, []);
 
-  const handleCheckboxChange = (e) => {
-    const quest = e.target.value;
-    if (e.target.checked) {
-      setQuestsToAdd([...questsToAdd, quest]);
+  const handleQuestToggle = (quest) => {
+    if (questsToAdd.includes(quest)) {
+      setQuestsToAdd(questsToAdd.filter((item) => item !== quest));
     } else {
-      setQuestsToAdd(questsToAdd.filter((q) => q !== quest));
+      setQuestsToAdd([...questsToAdd, quest]);
     }
-    console.log(questsToAdd);
+  };
+
+  const handleQuestClick = (e) => {
+    console.log(e.target.checked);
   };
 
   const questListDisplay = () => {
@@ -95,13 +96,18 @@ export default function Quester(UserData) {
     }
     return Object.keys(questList).map((quest) => {
       return (
-        <div className="w-full border-2 border-black flex flex-row gap-2 text-lg">
+        <div
+          key={quest}
+          onClick={() => handleQuestToggle(quest)}
+          className="w-full  border-black flex flex-row gap-2 text-lg"
+        >
           <input
-            className="border-black border-2"
+            className="border-black "
             type="checkbox"
-            key={quest}
+            key={quest + "input"}
             value={quest}
-            onChange={handleCheckboxChange}
+            checked={questsToAdd.includes(quest)}
+            onChange={() => {}}
           />
           <label className="">{quest}</label>
         </div>
@@ -130,20 +136,33 @@ export default function Quester(UserData) {
   };
 
   return (
-    <div className=" min-h-[80vh] border-4 h-full flex flex-row w-full">
+    <div className=" min-h-[80vh] h-[85vh] border-4 flex flex-row w-full">
       <div
         id="leftSide"
-        className="border-2 h-[90vh] max-h-[100vh] w-[60%] min-h-[80vh] border-green-500"
+        className=" h-[80vh] max-h-[100vh] w-[60%] min-h-[80vh] border-green-500"
       >
         <h2 className="text-2xl text-center border-b-2 border-black">
           Quest List
         </h2>
-        <div className="flex flex-row h-full">
-          <form onSubmit={handleSubmit} className="flex flex-col w-full h-full">
-            <div className="w-full border-2 border-black h-[90%] overflow-auto flex flex-col">
-              {questListDisplay()}
+        <div className="flex flex-col h-full gap-2">
+          <form
+            onSubmit={handleSubmit}
+            className="flex flex-col w-full h-full border-2 border-black"
+          >
+            <div className="flex flex-row h-full border-red-900 ">
+              <div className="w-full  border-black h-full overflow-auto">
+                {questListDisplay()}
+              </div>
+              <div className="w-1/3 h-full">
+                <h2 className="text-2xl text-center border-b-2 border-black">
+                  Quests to add
+                </h2>
+                {questsToAdd.map((quest) => {
+                  return <p key={quest + "Adding"}>{quest}</p>;
+                })}
+              </div>
             </div>
-            <div className="w-[90%] border-2 items-end justify-evenly flex flex-row">
+            <div className="w-[90%] h-[5%] items-end justify-evenly flex flex-row bottom-0">
               <button className="" type="">
                 Select All
               </button>
@@ -155,19 +174,11 @@ export default function Quester(UserData) {
               </button>
             </div>
           </form>
-          <div className="w-1/3">
-            <h2 className="text-2xl text-center border-b-2 border-black">
-              Quests to add
-            </h2>
-            {questsToAdd.map((quest) => {
-              return <p>{quest}</p>;
-            })}
-          </div>
         </div>
       </div>
       <div
         id="rightSide"
-        className="border-2 h-full w-[40%] min-h-[80vh] border-cyan-600 indent-3"
+        className=" h-[80vh] w-[40%] min-h-[80vh] border-cyan-600 indent-3"
       >
         <div className="flex flex-col w-full h-full">
           <h2 className="text-2xl pb-2 w-full justify-center items-center text-center">
