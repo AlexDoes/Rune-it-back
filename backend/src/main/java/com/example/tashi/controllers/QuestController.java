@@ -24,5 +24,5 @@ public class QuestController {
         
         return new ResponseEntity<List<Quest>>(questService.getAllQuest(), HttpStatus.OK);
     }
-    
+
 }

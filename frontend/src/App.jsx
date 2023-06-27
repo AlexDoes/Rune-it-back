@@ -7,6 +7,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/home";
 import Webscraper from "./pages/webscraper";
 import AQD from "./pages/allquestdata";
+import Quester from "./pages/quester";
+import NavBar from "./components/NavBar";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -22,12 +24,14 @@ function App() {
 
   return (
     <>
+      <NavBar />
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/webscraper" element={<Webscraper />} />
           <Route path="/aqd" element={<AQD />} />
           <Route path="*" element={<Home />} />
+          <Route path="/quester" element={<Quester />} />
         </Routes>
       </BrowserRouter>
     </>
