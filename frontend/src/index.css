@@ -1,4 +1,5 @@
 :root {
+  /* --text: #030c07; */
   --text: #030c07;
   --background: #dbf6e6;
   --primary-button: #248a83;
@@ -11,7 +12,9 @@
 @tailwind utilities;
 
 body {
-  font-family: "Nunito", sans-serif;
+  /* font-family: fantasy; */
+  /* font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif; */
+  font-family: "Lato";
   background-color: var(--background);
   color: var(--text);
   accent-color: var(--accent);

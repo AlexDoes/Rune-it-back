@@ -55,6 +55,39 @@ const SAMPLE_QUESTER_DATA = {
   ],
 };
 
+const SAMPLE_QUESTER_DATA2 = {
+  Username: "Tashisama",
+  "Number of Quests Completed": 0,
+  skillXP: {
+    Agility: 0,
+    Attack: 0,
+    Construction: 0,
+    Cooking: 0,
+    Crafting: 0,
+    Defence: 0,
+    Farming: 0,
+    Fletching: 0,
+    Firemaking: 0,
+    Fishing: 0,
+    Herblore: 0,
+    Hitpoints: 0,
+    Hunter: 0,
+    Magic: 0,
+    Mining: 0,
+    Prayer: 0,
+    Ranged: 0,
+    Runecraft: 0,
+    Slayer: 0,
+    Smithing: 0,
+    Strength: 0,
+    Thieving: 0,
+    Woodcutting: 0,
+  },
+  totalQuestPoints: 0,
+  totalXP: 0,
+  "Quests Completed": [],
+};
+
 const SKILLS = [
   "Agility",
   "Attack",
@@ -83,7 +116,7 @@ const SKILLS = [
 
 export default function Quester(UserData) {
   const [questerData, setQuesterData] = useState(
-    UserData.size ? UserData : SAMPLE_QUESTER_DATA
+    UserData.size ? UserData : SAMPLE_QUESTER_DATA2
   );
   const [skillXP, setSkillXP] = useState(questerData.skillXP);
   const [totalXP, setTotalXP] = useState(questerData.totalXP);
@@ -98,6 +131,12 @@ export default function Quester(UserData) {
   const [questsToAdd, setQuestsToAdd] = useState([]);
   const [questOptions, setQuestOptions] = useState([]);
   const [xpToAdd, setXPToAdd] = useState(
+    SKILLS.reduce((acc, skill) => {
+      acc[skill] = 0;
+      return acc;
+    }, {})
+  );
+  const [xpAdded, setXPAdded] = useState(
     SKILLS.reduce((acc, skill) => {
       acc[skill] = 0;
       return acc;
@@ -131,18 +170,21 @@ export default function Quester(UserData) {
       });
     } else {
       setQuestsToAdd([...questsToAdd, quest]);
-      Object.entries(questList[quest].experience).forEach((skillXP) => {
-        const skillName = titleCase(skillXP[0]);
-        const skillXp = Number(skillXP[1].replace(",", ""));
-        console.log(skillName, skillXp);
-        if (SKILLS.includes(titleCase(skillXP[0]))) {
-          if (xpToAdd[skillName] === undefined) {
-            xpToAdd[skillName] = 0;
-          }
-          xpToAdd[skillName] += skillXp;
-        }
-      });
+      addXpToGain(quest);
     }
+  };
+
+  const addXpToGain = (quest) => {
+    Object.entries(questList[quest].experience).forEach((skillXP) => {
+      const skillName = titleCase(skillXP[0]);
+      const skillXp = Number(skillXP[1].replace(",", ""));
+      if (SKILLS.includes(titleCase(skillXP[0]))) {
+        if (xpToAdd[skillName] === undefined) {
+          xpToAdd[skillName] = 0;
+        }
+        xpToAdd[skillName] += skillXp;
+      }
+    });
   };
 
   const titleCase = (str) => {
@@ -157,7 +199,19 @@ export default function Quester(UserData) {
 
   const questListDisplay = () => {
     if (questList.length === 0) {
-      return <h1>Loading...</h1>;
+      return (
+        <div className="w-full text-2xl">
+          <p>Loading quest data...</p>
+        </div>
+      );
+    }
+    if (questsCompleted.length === 156 || questsCompleted.length === 166) {
+      return (
+        <div className="w-full text-xl text-center h-full items-center justify-center flex flex-col text-yellow-200 bg-gray-400">
+          <p>All quests completed!</p>
+          <p>Congratulations on your quest cape!</p>
+        </div>
+      );
     }
     return Object.keys(questList)
       .filter((quest) => !questsCompleted.includes(quest))
@@ -166,7 +220,10 @@ export default function Quester(UserData) {
           <div
             key={quest}
             onClick={() => handleQuestToggle(quest)}
-            className="w-full border-black flex flex-row gap-1 text-sm items-center justify-center"
+            className={`w-full border-black flex flex-row gap-1 text-sm items-center justify-center hover:backdrop-brightness-90
+            cursor-pointer ${
+              questsToAdd.includes(quest) ? "backdrop-brightness-95" : ""
+            }`}
           >
             <input
               className="border-black ml-2 w-3 h-3"
@@ -199,6 +256,7 @@ export default function Quester(UserData) {
     setSkillXP(newSkillXP);
     setTotalQuestPoints(newTotalQuestPoints);
     setQuestsCompleted(newQuestsCompleted);
+    setXPAdded(xpToAdd);
     setXPToAdd(baseState);
     setQuestsToAdd([]);
   };
@@ -220,12 +278,16 @@ export default function Quester(UserData) {
   const questXpDisplay = () => {
     return Object.keys(skillXP).map((skill) => {
       return (
-        <div
-          className="flex flex-row w-[90%] border-black border-x-2 mx-auto"
-          key={skill}
-        >
-          <p className="w-1/2">{skill}</p>
-          <p className="w-1/2">{skillXP[skill]}</p>
+        <div className="flex flex-row w-[90%] mx-auto" key={skill}>
+          <p className="w-1/3">{skill}</p>
+          <p className="w-1/3 text-end">
+            {Math.trunc(skillXP[skill]).toLocaleString()}
+          </p>
+          {xpAdded[skill] > 0 && (
+            <p className="text-green-200">
+              +({Math.trunc(xpAdded[skill]).toLocaleString()})
+            </p>
+          )}
         </div>
       );
     });
@@ -242,15 +304,15 @@ export default function Quester(UserData) {
 
   const leftSideMiddle = () => {
     return (
-      <div className="w-1/3 h-[96%]">
+      <div className="w-1/2 h-[97%]">
         <h2 className="text-2xl text-center border-b-2 border-black">
-          Quests to add
+          Quests to Add
         </h2>
-        <div className="h-full flex flex-col flex-grow justify-between w-full ">
-          <div className="h-2/5 min-h-1/4 overflow-auto bg-gray-300 px-2">
+        <div className="h-full flex flex-col flex-grow w-full ">
+          <div className="h-2/5 min-h-1/4 overflow-auto bg-gray-400 text-yellow-200 px-2">
             {questsToAddDisplay()}
           </div>
-          <div className="h-3/5 border-black outline overflow-auto text-lg flex flex-col w-full">
+          <div className="h-3/5 border-black overflow-auto text-lg flex border flex-col w-full">
             <div className="flex-row flex border-black justify-center border-b-2 mb-2 w-full">
               <p className="w-1/2">Quest Points:</p>
               <p
@@ -263,7 +325,7 @@ export default function Quester(UserData) {
                 }, 0)}
               </p>
             </div>
-            <div className="grid grid-cols-2 text-sm h-full divide-x divide-black">
+            <div className="grid grid-cols-2 grid-rows-12 grid-flow-row-dense text-sm h-full divide-black">
               {Object.entries(xpToAdd).map(([skill, xp]) => {
                 return (
                   <div
@@ -272,7 +334,7 @@ export default function Quester(UserData) {
                   >
                     <p className="w-1/2">{skill}:</p>
                     <p className={`${xp > 0 ? `text-blue-400` : `text-black`}`}>
-                      {xp}
+                      {Math.trunc(xp).toLocaleString()}
                     </p>
                   </div>
                 );
@@ -297,14 +359,22 @@ export default function Quester(UserData) {
 
   const formButtons = () => {
     return (
-      <div className="w-2/3 h-[20px] items-end justify-evenly flex flex-row bottom-0 absolute border-t border-black border">
-        <button className="" type="" onClick={handleSelect}>
+      <div className="w-full h-[25px] items-end gap-4 flex flex-row -bottom-[25px] absolute border-black border-b-2 ">
+        <button
+          className="border border-black px-2 py-1"
+          type=""
+          onClick={handleSelect}
+        >
           Select All
         </button>
-        <button className="" type="" onClick={handleDeselect}>
+        <button
+          className="border border-black px-2 py-1"
+          type=""
+          onClick={handleDeselect}
+        >
           Deselect All
         </button>
-        <button className="" type="submit">
+        <button className="border border-black px-2 py-1" type="submit">
           Submit
         </button>
       </div>
@@ -318,27 +388,35 @@ export default function Quester(UserData) {
   };
   const handleSelect = (e) => {
     e.preventDefault();
-    // setQuestsToAdd(questsAvailable);
-    // setXPToAdd(xpAvailable);
+    const questsAvailable = Object.keys(questList).filter((quest) => {
+      return !questsCompleted.includes(quest);
+    });
+    setQuestsToAdd(questsAvailable);
+    const xpToAdd = {};
+    questsAvailable.forEach((quest) => {
+      addXpToGain(quest);
+    });
   };
 
   return (
-    <div className=" min-h-[80vh] text-sm h-[90vh] max-h-[100vh] border-4 border-red-900 flex flex-row w-full flex-grow">
+    <div className=" min-h-[80vh] text-sm h-[90vh] max-h-[100vh] border-red-900 flex flex-row w-full flex-grow">
       <div
         id="leftSide"
-        className=" h-full max-h-[100vh] w-[70%] min-h-[80vh] border-green-500 relative border-2 flex-row flex pb-8"
+        className=" h-full max-h-[100vh] w-[70%] min-h-[80vh] border-green-500 relative flex-row flex pb-8"
       >
-        <div className="h-full">
-          <div className="h-full border-r border-black">
-            <h2 className="text-2xl text-center border-b-2 border-black">
+        <div className="h-full w-1/3">
+          <div className="h-full border-r border-black w-full min-w-full">
+            <h2 className="text-2xl text-center border-b-2 border-black w-full">
               Quests Availabe
             </h2>
             <form
               onSubmit={handleSubmit}
-              className="flex flex-col w-full h-[96%]"
+              className="flex flex-col w-full h-[97%]"
             >
-              <div className="flex flex-row h-full overflow-hidden border-red-900">
-                <div className="h-full overflow-auto">{questListDisplay()}</div>
+              <div className="flex flex-row h-full overflow-hidden border-red-900 w-full">
+                <div className="h-full overflow-auto w-full min-w-full">
+                  {questListDisplay()}
+                </div>
               </div>
               {formButtons()}
             </form>
@@ -349,19 +427,21 @@ export default function Quester(UserData) {
       </div>
       <div
         id="rightSide"
-        className=" h-full w-[30%] min-h-[80vh] border-cyan-600 indent-3"
+        className=" h-full w-[30%] min-h-[80vh] border-black indent-3 border-l"
       >
         <div className="flex flex-col w-full h-full">
-          <h2 className="text-2xl pb-2 w-full justify-center items-center text-center">
+          <h2 className="text-2xl w-full justify-center items-center text-center border-b-2 border-black">
             {" "}
             QUESTER STATS
           </h2>
           <p>Username: {username}</p>
           <p>Number of Quests Completed: {questsCompleted.length} </p>
-          <p>Total XP Rewarded: {totalXP}</p>
+          <p>Total XP Rewarded: {Math.trunc(totalXP).toLocaleString()}</p>
           <p>Quest Points Rewarded: {totalQuestPoints} </p>
           <p>XP Distribution:</p>
-          <div className="h-4/5 overflow-auto">{questXpDisplay()}</div>
+          <div className="h-4/5 overflow-auto border rounded-xl border-black w-3/4 mx-auto bg-gray-400 text-yellow-200">
+            {questXpDisplay()}
+          </div>
           {/* <p>Quests Remaining:</p> */}
           {/* <p>Items Rewarded:</p> */}
         </div>

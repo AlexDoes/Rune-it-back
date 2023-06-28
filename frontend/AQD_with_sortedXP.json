@@ -37,10 +37,7 @@
       "hitpoints": "500"
     },
     "questPoints": 1,
-    "items": [
-      "500 coins",
-      "access to tolna's rift for combat training"
-    ]
+    "items": ["500 coins", "access to tolna's rift for combat training"]
   },
   "A Tail of Two Cats": {
     "experience": {
@@ -151,9 +148,7 @@
   "Black Knights' Fortress": {
     "experience": {},
     "questPoints": 3,
-    "items": [
-      "2,500 coins"
-    ]
+    "items": ["2,500 coins"]
   },
   "Bone Voyage": {
     "experience": {},
@@ -194,9 +189,7 @@
   "Clock Tower": {
     "experience": {},
     "questPoints": 1,
-    "items": [
-      "500 coins"
-    ]
+    "items": ["500 coins"]
   },
   "Cold War": {
     "experience": {
@@ -371,9 +364,7 @@
       "herblore": "250"
     },
     "questPoints": 4,
-    "items": [
-      "the ability to use the herblore skill"
-    ]
+    "items": ["the ability to use the herblore skill"]
   },
   "Dwarf Cannon": {
     "experience": {
@@ -462,10 +453,7 @@
   "Ernest the Chicken": {
     "experience": {},
     "questPoints": 4,
-    "items": [
-      "300 coins",
-      "access to the killerwatt plane (members only)"
-    ]
+    "items": ["300 coins", "access to the killerwatt plane (members only)"]
   },
   "Fairytale I - Growing Pains": {
     "experience": {
@@ -474,9 +462,7 @@
       "magic": "1,000"
     },
     "questPoints": 2,
-    "items": [
-      "magic secateurs (increases crop harvests by 10% when farming)"
-    ]
+    "items": ["magic secateurs (increases crop harvests by 10% when farming)"]
   },
   "Fairytale II - Cure a Queen": {
     "experience": {
@@ -509,10 +495,7 @@
       "thieving": "2,175"
     },
     "questPoints": 2,
-    "items": [
-      "1,000 coins",
-      "the khazard armour set"
-    ]
+    "items": ["1,000 coins", "the khazard armour set"]
   },
   "Fishing Contest": {
     "experience": {
@@ -530,9 +513,7 @@
       "farming": "5,000"
     },
     "questPoints": 2,
-    "items": [
-      "2 dwarven stout (m)"
-    ]
+    "items": ["2 dwarven stout (m)"]
   },
   "Garden of Tranquillity": {
     "experience": {
@@ -586,9 +567,7 @@
       "crafting": "200"
     },
     "questPoints": 5,
-    "items": [
-      "a gold bar"
-    ]
+    "items": ["a gold bar"]
   },
   "Grim Tales": {
     "experience": {
@@ -839,11 +818,7 @@
       "crafting": "600"
     },
     "questPoints": 1,
-    "items": [
-      "uncut ruby",
-      "uncut emerald",
-      "uncut sapphire"
-    ]
+    "items": ["uncut ruby", "uncut emerald", "uncut sapphire"]
   },
   "Monk's Friend": {
     "experience": {
@@ -933,9 +908,7 @@
       "crafting": "1,406"
     },
     "questPoints": 3,
-    "items": [
-      "2,000 coins"
-    ]
+    "items": ["2,000 coins"]
   },
   "My Arm's Big Adventure": {
     "experience": {
@@ -1059,10 +1032,7 @@
       "prayer": "5,000"
     },
     "questPoints": 1,
-    "items": [
-      "bonesack",
-      "ram skull helm"
-    ]
+    "items": ["bonesack", "ram skull helm"]
   },
   "Ratcatchers": {
     "experience": {
@@ -1100,117 +1070,7 @@
       "access to buy barrows gloves"
     ]
   },
-  "Recipe for Disaster/Another Cook's Quest": {
-    "experience": {},
-    "questPoints": 1,
-    "items": [
-      "the invitation to the feast of a lifetime!",
-      "access to the culinaromancer's chest (after watching the cut scene in the feast room)."
-    ]
-  },
-  "Recipe for Disaster/Defeating the Culinaromancer": {
-    "experience": {
-      "flex": "an experience lamp, which grants 20,000 experience to any skill above 50 (can be banked for later use)"
-    },
-    "questPoints": 1,
-    "items": [
-      "full access to the culinaromancer's chest, containing barrows gloves"
-    ]
-  },
-  "Recipe for Disaster/Freeing Evil Dave": {
-    "experience": {
-      "cooking": "7,000"
-    },
-    "questPoints": 1,
-    "items": [
-      "the ability to catch hellrats to get a hellcat",
-      "the ability to have your cat fight hell-rat behemoths",
-      "the ability to add coloured spices to stew by catching hellrats (spicy stews can boost and lower certain stats)",
-      "further access to the culinaromancer's chest"
-    ]
-  },
-  "Recipe for Disaster/Freeing King Awowogei": {
-    "experience": {
-      "cooking": "10,000",
-      "agility": "10,000"
-    },
-    "questPoints": 1,
-    "items": [
-      "ape atoll teleport spell",
-      "further access to the culinaromancer's chest"
-    ]
-  },
-  "Recipe for Disaster/Freeing Pirate Pete": {
-    "experience": {
-      "cooking": "1,000",
-      "crafting": "1,000",
-      "fishing": "1,000",
-      "smithing": "1,000"
-    },
-    "questPoints": 1,
-    "items": [
-      "the ability to go diving and fight crabs (you need your diving apparatus)",
-      "the ability to cook crab meat (heals 10 hitpoints in 5 bites)",
-      "the ability to kill crabs to get their shells and claws, which can be made into a helmet and gloves with a chisel",
-      "further access to the culinaromancer's chest"
-    ]
-  },
-  "Recipe for Disaster/Freeing Sir Amik Varze": {
-    "experience": {
-      "cooking": "4,000",
-      "hitpoints": "4,000"
-    },
-    "questPoints": 1,
-    "items": [
-      "access to the evil chicken's lair, where you can fight black dragons (the fowl beast himself has moved on to other things.)",
-      "further access to the culinaromancer's chest."
-    ]
-  },
-  "Recipe for Disaster/Freeing Skrach Uglogwee": {
-    "experience": {
-      "woodcutting": "1,500",
-      "cooking": "1,500",
-      "crafting": "1,500",
-      "ranged": "1,500"
-    },
-    "questPoints": 1,
-    "items": [
-      "the ability to use the boat trip to travel between karamja and the feldip hills (you must pay a fee of chompies or exotic herbs)",
-      "further access to the culinaromancer's chest"
-    ]
-  },
-  "Recipe for Disaster/Freeing the Goblin generals": {
-    "experience": {
-      "cooking": "1,000",
-      "farming": "1,000",
-      "crafting": "1,000"
-    },
-    "questPoints": 1,
-    "items": [
-      "further access to the culinaromancer's chest."
-    ]
-  },
-  "Recipe for Disaster/Freeing the Lumbridge Guide": {
-    "experience": {
-      "cooking": "2,500",
-      "magic": "2,500"
-    },
-    "questPoints": 1,
-    "items": [
-      "further access to the culinaromancer's chest"
-    ]
-  },
-  "Recipe for Disaster/Freeing the Mountain Dwarf": {
-    "experience": {
-      "slayer": "1,000",
-      "cooking": "1,000"
-    },
-    "questPoints": 1,
-    "items": [
-      "further access to the culinaromancer's chest",
-      "ability to obtain additional dwarven rock cakes from rohak for either 100 coins or the raw ingredients"
-    ]
-  },
+
   "Recruitment Drive": {
     "experience": {
       "prayer": "1,000.5",
@@ -1248,9 +1108,7 @@
       "strength": "10,000"
     },
     "questPoints": 1,
-    "items": [
-      "crystal shield or bow with 500 charges"
-    ]
+    "items": ["crystal shield or bow with 500 charges"]
   },
   "Royal Trouble": {
     "experience": {
@@ -1259,10 +1117,7 @@
       "hitpoints": "5,000"
     },
     "questPoints": 1,
-    "items": [
-      "20,000 coins",
-      "enhanced rewards from managing miscellania"
-    ]
+    "items": ["20,000 coins", "enhanced rewards from managing miscellania"]
   },
   "Rum Deal": {
     "experience": {
@@ -1299,10 +1154,7 @@
       "fishing": "7,175"
     },
     "questPoints": 1,
-    "items": [
-      "access to the fishing platform",
-      "oyster pearls"
-    ]
+    "items": ["access to the fishing platform", "oyster pearls"]
   },
   "Secrets of the North": {
     "experience": {
@@ -1341,18 +1193,14 @@
   "Sheep Herder": {
     "experience": {},
     "questPoints": 4,
-    "items": [
-      "3,100 coins"
-    ]
+    "items": ["3,100 coins"]
   },
   "Sheep Shearer": {
     "experience": {
       "crafting": "150"
     },
     "questPoints": 1,
-    "items": [
-      "60 coins"
-    ]
+    "items": ["60 coins"]
   },
   "Shield of Arrav": {
     "experience": {},
@@ -1399,9 +1247,7 @@
       "smithing": "6,000"
     },
     "questPoints": 1,
-    "items": [
-      "access to the giants' foundry"
-    ]
+    "items": ["access to the giants' foundry"]
   },
   "Song of the Elves": {
     "experience": {
@@ -1491,9 +1337,7 @@
       "crafting": "1,000"
     },
     "questPoints": 1,
-    "items": [
-      "ability to play the tears of guthix (minigame) once a week"
-    ]
+    "items": ["ability to play the tears of guthix (minigame) once a week"]
   },
   "Temple of Ikov": {
     "experience": {
@@ -1535,9 +1379,7 @@
   "The Corsair Curse": {
     "experience": {},
     "questPoints": 2,
-    "items": [
-      "access to yusuf's bank in the corsair cove."
-    ]
+    "items": ["access to yusuf's bank in the corsair cove."]
   },
   "The Depths of Despair": {
     "experience": {
@@ -1813,29 +1655,21 @@
       "thieving": "500"
     },
     "questPoints": 2,
-    "items": [
-      "access to creature creation",
-      "builder's costume"
-    ]
+    "items": ["access to creature creation", "builder's costume"]
   },
   "Tree Gnome Village": {
     "experience": {
       "attack": "11,450"
     },
     "questPoints": 2,
-    "items": [
-      "use of spirit trees for transportation",
-      "the gnome amulet"
-    ]
+    "items": ["use of spirit trees for transportation", "the gnome amulet"]
   },
   "Tribal Totem": {
     "experience": {
       "thieving": "1,775"
     },
     "questPoints": 1,
-    "items": [
-      "5 swordfish"
-    ]
+    "items": ["5 swordfish"]
   },
   "Troll Romance": {
     "experience": {
@@ -1882,9 +1716,7 @@
       "slayer": "5,000"
     },
     "questPoints": 1,
-    "items": [
-      "access to the armoury of the white knights (white equipment)"
-    ]
+    "items": ["access to the armoury of the white knights (white equipment)"]
   },
   "Watchtower": {
     "experience": {
@@ -1903,11 +1735,7 @@
       "attack": "13,750"
     },
     "questPoints": 1,
-    "items": [
-      "2 diamonds",
-      "2 gold bars",
-      "40 mithril seeds"
-    ]
+    "items": ["2 diamonds", "2 gold bars", "40 mithril seeds"]
   },
   "What Lies Below": {
     "experience": {
