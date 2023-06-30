@@ -1,0 +1,16 @@
+version: '3.8'
+services:
+  run-it-back-frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - 80:80
+    depends_on:
+      - run-it-back-backend
+  run-it-back-backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - 8080:8080
