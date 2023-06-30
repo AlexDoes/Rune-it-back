@@ -1,0 +1,1414 @@
+{
+  "A Kingdom Divided": {
+    "experience": {},
+    "questPoints": 2,
+    "name": "a kingdom divided",
+    "id": "a_kingdom divided"
+  },
+  "A Night at the Theatre": {
+    "experience": {},
+    "questPoints": 2,
+    "name": "a night at the theatre",
+    "id": "a_night at the theatre"
+  },
+  "A Porcine of Interest": {
+    "experience": {
+      "slayerXp": 1000
+    },
+    "questPoints": 1,
+    "name": "a porcine of interest",
+    "id": "a_porcine of interest"
+  },
+  "A Soul's Bane": {
+    "experience": {
+      "defenceXp": 500,
+      "hitpointsXp": 500
+    },
+    "questPoints": 1,
+    "name": "a soul's bane",
+    "id": "a_soul's bane"
+  },
+  "A Tail of Two Cats": {
+    "experience": {},
+    "questPoints": 2,
+    "name": "a tail of two cats",
+    "id": "a_tail of two cats"
+  },
+  "A Taste of Hope": {
+    "experience": {},
+    "questPoints": 1,
+    "name": "a taste of hope",
+    "id": "a_taste of hope"
+  },
+  "Animal Magnetism": {
+    "experience": {
+      "craftingXp": 1000,
+      "fletchingXp": 1000,
+      "slayerXp": 1000,
+      "woodcuttingXp": 2500
+    },
+    "questPoints": 1,
+    "name": "animal magnetism",
+    "id": "animal_magnetism"
+  },
+  "Another Slice of H.A.M.": {
+    "experience": {
+      "miningXp": 3000,
+      "prayerXp": 3000
+    },
+    "questPoints": 1,
+    "name": "another slice of h.a.m.",
+    "id": "another_slice of h.a.m."
+  },
+  "Below Ice Mountain": {
+    "experience": {},
+    "questPoints": 1,
+    "name": "below ice mountain",
+    "id": "below_ice mountain"
+  },
+  "Beneath Cursed Sands": {
+    "experience": {
+      "agilityXp": 50000
+    },
+    "questPoints": 2,
+    "name": "beneath cursed sands",
+    "id": "beneath_cursed sands"
+  },
+  "Between a Rock...": {
+    "experience": {
+      "defenceXp": 5000,
+      "miningXp": 5000,
+      "smithingXp": 5000
+    },
+    "questPoints": 2,
+    "name": "between a rock...",
+    "id": "between_a rock..."
+  },
+  "Big Chompy Bird Hunting": {
+    "experience": {
+      "fletchingXp": 262,
+      "cookingXp": 1470,
+      "rangedXp": 735
+    },
+    "questPoints": 2,
+    "name": "big chompy bird hunting",
+    "id": "big_chompy bird hunting"
+  },
+  "Biohazard": {
+    "experience": {
+      "thievingXp": 1250
+    },
+    "questPoints": 3,
+    "name": "biohazard",
+    "id": "biohazard"
+  },
+  "Black Knights' Fortress": {
+    "experience": {},
+    "questPoints": 3,
+    "name": "black knights' fortress",
+    "id": "black_knights' fortress"
+  },
+  "Bone Voyage": {
+    "experience": {},
+    "questPoints": 1,
+    "name": "bone voyage",
+    "id": "bone_voyage"
+  },
+  "Cabin Fever": {
+    "experience": {
+      "craftingXp": 7000,
+      "smithingXp": 7000,
+      "agilityXp": 7000
+    },
+    "questPoints": 2,
+    "name": "cabin fever",
+    "id": "cabin_fever"
+  },
+  "Client of Kourend": {
+    "experience": {},
+    "questPoints": 1,
+    "name": "client of kourend",
+    "id": "client_of kourend"
+  },
+  "Clock Tower": {
+    "experience": {},
+    "questPoints": 1,
+    "name": "clock tower",
+    "id": "clock_tower"
+  },
+  "Cold War": {
+    "experience": {
+      "craftingXp": 2000,
+      "agilityXp": 5000,
+      "constructionXp": 1500
+    },
+    "questPoints": 1,
+    "name": "cold war",
+    "id": "cold_war"
+  },
+  "Contact!": {
+    "experience": {
+      "thievingXp": 7000
+    },
+    "questPoints": 1,
+    "name": "contact!",
+    "id": "contact!"
+  },
+  "Cook's Assistant": {
+    "experience": {
+      "cookingXp": 300
+    },
+    "questPoints": 1,
+    "name": "cook's assistant",
+    "id": "cook's_assistant"
+  },
+  "Creature of Fenkenstrain": {
+    "experience": {
+      "thievingXp": 1000
+    },
+    "questPoints": 2,
+    "name": "creature of fenkenstrain",
+    "id": "creature_of fenkenstrain"
+  },
+  "Darkness of Hallowvale": {
+    "experience": {
+      "agilityXp": 7000,
+      "thievingXp": 6000,
+      "constructionXp": 2000
+    },
+    "questPoints": 2,
+    "name": "darkness of hallowvale",
+    "id": "darkness_of hallowvale"
+  },
+  "Death Plateau": {
+    "experience": {
+      "attackXp": 3000
+    },
+    "questPoints": 1,
+    "name": "death plateau",
+    "id": "death_plateau"
+  },
+  "Death to the Dorgeshuun": {
+    "experience": {
+      "thievingXp": 2000,
+      "rangedXp": 2000
+    },
+    "questPoints": 1,
+    "name": "death to the dorgeshuun",
+    "id": "death_to the dorgeshuun"
+  },
+  "Demon Slayer": {
+    "experience": {},
+    "questPoints": 3,
+    "name": "demon slayer",
+    "id": "demon_slayer"
+  },
+  "Desert Treasure I": {
+    "experience": {
+      "magicXp": 20006
+    },
+    "questPoints": 3,
+    "name": "desert treasure i",
+    "id": "desert_treasure i"
+  },
+  "Devious Minds": {
+    "experience": {
+      "fletchingXp": 5000,
+      "runecraftXp": 5000,
+      "smithingXp": 6500
+    },
+    "questPoints": 1,
+    "name": "devious minds",
+    "id": "devious_minds"
+  },
+  "Doric's Quest": {
+    "experience": {
+      "miningXp": 1300
+    },
+    "questPoints": 1,
+    "name": "doric's quest",
+    "id": "doric's_quest"
+  },
+  "Dragon Slayer I": {
+    "experience": {
+      "strengthXp": 18650,
+      "defenceXp": 18650
+    },
+    "questPoints": 2,
+    "name": "dragon slayer i",
+    "id": "dragon_slayer i"
+  },
+  "Dragon Slayer II": {
+    "experience": {
+      "smithingXp": 80000,
+      "miningXp": 60000,
+      "agilityXp": 50000,
+      "thievingXp": 50000
+    },
+    "questPoints": 5,
+    "name": "dragon slayer ii",
+    "id": "dragon_slayer ii"
+  },
+  "Dream Mentor": {
+    "experience": {
+      "hitpointsXp": 15000,
+      "magicXp": 10000
+    },
+    "questPoints": 2,
+    "name": "dream mentor",
+    "id": "dream_mentor"
+  },
+  "Druidic Ritual": {
+    "experience": {
+      "herbloreXp": 250
+    },
+    "questPoints": 4,
+    "name": "druidic ritual",
+    "id": "druidic_ritual"
+  },
+  "Dwarf Cannon": {
+    "experience": {
+      "craftingXp": 750
+    },
+    "questPoints": 1,
+    "name": "dwarf cannon",
+    "id": "dwarf_cannon"
+  },
+  "Eadgar's Ruse": {
+    "experience": {
+      "herbloreXp": 11000
+    },
+    "questPoints": 1,
+    "name": "eadgar's ruse",
+    "id": "eadgar's_ruse"
+  },
+  "Eagles' Peak": {
+    "experience": {
+      "hunterXp": 2500
+    },
+    "questPoints": 2,
+    "name": "eagles' peak",
+    "id": "eagles'_peak"
+  },
+  "Elemental Workshop I": {
+    "experience": {
+      "craftingXp": 5000,
+      "smithingXp": 5000
+    },
+    "questPoints": 1,
+    "name": "elemental workshop i",
+    "id": "elemental_workshop i"
+  },
+  "Elemental Workshop II": {
+    "experience": {
+      "smithingXp": 7500,
+      "craftingXp": 7500
+    },
+    "questPoints": 1,
+    "name": "elemental workshop ii",
+    "id": "elemental_workshop ii"
+  },
+  "Enakhra's Lament": {
+    "experience": {
+      "craftingXp": 7000,
+      "miningXp": 7000,
+      "firemakingXp": 7000,
+      "magicXp": 7000
+    },
+    "questPoints": 2,
+    "name": "enakhra's lament",
+    "id": "enakhra's_lament"
+  },
+  "Enlightened Journey": {
+    "experience": {
+      "craftingXp": 2000,
+      "farmingXp": 3000,
+      "woodcuttingXp": 1500,
+      "firemakingXp": 4000
+    },
+    "questPoints": 1,
+    "name": "enlightened journey",
+    "id": "enlightened_journey"
+  },
+  "Ernest the Chicken": {
+    "experience": {},
+    "questPoints": 4,
+    "name": "ernest the chicken",
+    "id": "ernest_the chicken"
+  },
+  "Fairytale I - Growing Pains": {
+    "experience": {
+      "farmingXp": 3500,
+      "attackXp": 2000,
+      "magicXp": 1000
+    },
+    "questPoints": 2,
+    "name": "fairytale i - growing pains",
+    "id": "fairytale_i - growing pains"
+  },
+  "Fairytale II - Cure a Queen": {
+    "experience": {
+      "herbloreXp": 3500,
+      "thievingXp": 2500
+    },
+    "questPoints": 2,
+    "name": "fairytale ii - cure a queen",
+    "id": "fairytale_ii - cure a queen"
+  },
+  "Family Crest": {
+    "experience": {},
+    "questPoints": 1,
+    "name": "family crest",
+    "id": "family_crest"
+  },
+  "Fight Arena": {
+    "experience": {
+      "attackXp": 12175,
+      "thievingXp": 2175
+    },
+    "questPoints": 2,
+    "name": "fight arena",
+    "id": "fight_arena"
+  },
+  "Fishing Contest": {
+    "experience": {
+      "fishingXp": 2437
+    },
+    "questPoints": 1,
+    "name": "fishing contest",
+    "id": "fishing_contest"
+  },
+  "Forgettable Tale...": {
+    "experience": {
+      "cookingXp": 5000,
+      "farmingXp": 5000
+    },
+    "questPoints": 2,
+    "name": "forgettable tale...",
+    "id": "forgettable_tale..."
+  },
+  "Garden of Tranquillity": {
+    "experience": {
+      "farmingXp": 5000
+    },
+    "questPoints": 2,
+    "name": "garden of tranquillity",
+    "id": "garden_of tranquillity"
+  },
+  "Gertrude's Cat": {
+    "experience": {
+      "cookingXp": 1525
+    },
+    "questPoints": 1,
+    "name": "gertrude's cat",
+    "id": "gertrude's_cat"
+  },
+  "Getting Ahead": {
+    "experience": {
+      "craftingXp": 4000,
+      "constructionXp": 3200
+    },
+    "questPoints": 1,
+    "name": "getting ahead",
+    "id": "getting_ahead"
+  },
+  "Ghosts Ahoy": {
+    "experience": {
+      "prayerXp": 2400
+    },
+    "questPoints": 2,
+    "name": "ghosts ahoy",
+    "id": "ghosts_ahoy"
+  },
+  "Goblin Diplomacy": {
+    "experience": {
+      "craftingXp": 200
+    },
+    "questPoints": 5,
+    "name": "goblin diplomacy",
+    "id": "goblin_diplomacy"
+  },
+  "Grim Tales": {
+    "experience": {
+      "farmingXp": 10000,
+      "herbloreXp": 15000,
+      "hitpointsXp": 5000,
+      "woodcuttingXp": 60000,
+      "agilityXp": 25000,
+      "thievingXp": 25000
+    },
+    "questPoints": 1,
+    "name": "grim tales",
+    "id": "grim_tales"
+  },
+  "Haunted Mine": {
+    "experience": {
+      "strengthXp": 22000
+    },
+    "questPoints": 2,
+    "name": "haunted mine",
+    "id": "haunted_mine"
+  },
+  "Hazeel Cult": {
+    "experience": {
+      "thievingXp": 1500
+    },
+    "questPoints": 1,
+    "name": "hazeel cult",
+    "id": "hazeel_cult"
+  },
+  "Heroes' Quest": {
+    "experience": {
+      "attackXp": 3075,
+      "defenceXp": 3075,
+      "strengthXp": 3075,
+      "hitpointsXp": 3075,
+      "rangedXp": 2075,
+      "fishingXp": 2725,
+      "cookingXp": 2825,
+      "woodcuttingXp": 1575,
+      "firemakingXp": 1575,
+      "smithingXp": 2275,
+      "miningXp": 2575,
+      "herbloreXp": 1325
+    },
+    "questPoints": 1,
+    "name": "heroes' quest",
+    "id": "heroes'_quest"
+  },
+  "Holy Grail": {
+    "experience": {
+      "prayerXp": 11000,
+      "defenceXp": 15300
+    },
+    "questPoints": 2,
+    "name": "holy grail",
+    "id": "holy_grail"
+  },
+  "Horror from the Deep": {
+    "experience": {
+      "magicXp": 4662,
+      "strengthXp": 4662,
+      "rangedXp": 4662
+    },
+    "questPoints": 2,
+    "name": "horror from the deep",
+    "id": "horror_from the deep"
+  },
+  "Icthlarin's Little Helper": {
+    "experience": {
+      "thievingXp": 4500,
+      "agilityXp": 4000,
+      "woodcuttingXp": 4000
+    },
+    "questPoints": 2,
+    "name": "icthlarin's little helper",
+    "id": "icthlarin's_little helper"
+  },
+  "Imp Catcher": {
+    "experience": {
+      "magicXp": 875
+    },
+    "questPoints": 1,
+    "name": "imp catcher",
+    "id": "imp_catcher"
+  },
+  "In Aid of the Myreque": {
+    "experience": {
+      "attackXp": 2000,
+      "strengthXp": 2000,
+      "craftingXp": 2000,
+      "defenceXp": 2000
+    },
+    "questPoints": 2,
+    "name": "in aid of the myreque",
+    "id": "in_aid of the myreque"
+  },
+  "In Search of the Myreque": {
+    "experience": {
+      "attackXp": 600,
+      "defenceXp": 600,
+      "strengthXp": 600,
+      "hitpointsXp": 600,
+      "craftingXp": 600
+    },
+    "questPoints": 2,
+    "name": "in search of the myreque",
+    "id": "in_search of the myreque"
+  },
+  "Jungle Potion": {
+    "experience": {
+      "herbloreXp": 775
+    },
+    "questPoints": 1,
+    "name": "jungle potion",
+    "id": "jungle_potion"
+  },
+  "King's Ransom": {
+    "experience": {},
+    "questPoints": 1,
+    "name": "king's ransom",
+    "id": "king's_ransom"
+  },
+  "Land of the Goblins": {
+    "experience": {
+      "agilityXp": 8000,
+      "fishingXp": 8000,
+      "thievingXp": 8000,
+      "herbloreXp": 8000
+    },
+    "questPoints": 2,
+    "name": "land of the goblins",
+    "id": "land_of the goblins"
+  },
+  "Legends' Quest": {
+    "experience": {},
+    "questPoints": 4,
+    "name": "legends' quest",
+    "id": "legends'_quest"
+  },
+  "Lost City": {
+    "experience": {},
+    "questPoints": 3,
+    "name": "lost city",
+    "id": "lost_city"
+  },
+  "Lunar Diplomacy": {
+    "experience": {
+      "magicXp": 5000,
+      "runecraftXp": 5000
+    },
+    "questPoints": 2,
+    "name": "lunar diplomacy",
+    "id": "lunar_diplomacy"
+  },
+  "Making Friends with My Arm": {
+    "experience": {
+      "constructionXp": 10000,
+      "firemakingXp": 40000,
+      "miningXp": 50000,
+      "agilityXp": 50000
+    },
+    "questPoints": 2,
+    "name": "making friends with my arm",
+    "id": "making_friends with my arm"
+  },
+  "Making History": {
+    "experience": {
+      "craftingXp": 1000,
+      "prayerXp": 1000
+    },
+    "questPoints": 3,
+    "name": "making history",
+    "id": "making_history"
+  },
+  "Merlin's Crystal": {
+    "experience": {},
+    "questPoints": 6,
+    "name": "merlin's crystal",
+    "id": "merlin's_crystal"
+  },
+  "Misthalin Mystery": {
+    "experience": {
+      "craftingXp": 600
+    },
+    "questPoints": 1,
+    "name": "misthalin mystery",
+    "id": "misthalin_mystery"
+  },
+  "Monk's Friend": {
+    "experience": {
+      "woodcuttingXp": 2000
+    },
+    "questPoints": 1,
+    "name": "monk's friend",
+    "id": "monk's_friend"
+  },
+  "Monkey Madness I": {
+    "experience": {},
+    "questPoints": 3,
+    "name": "monkey madness i",
+    "id": "monkey_madness i"
+  },
+  "Monkey Madness II": {
+    "experience": {
+      "slayerXp": 80000,
+      "agilityXp": 60000,
+      "thievingXp": 50000,
+      "hunterXp": 50000
+    },
+    "questPoints": 4,
+    "name": "monkey madness ii",
+    "id": "monkey_madness ii"
+  },
+  "Mountain Daughter": {
+    "experience": {
+      "prayerXp": 2000,
+      "attackXp": 1000
+    },
+    "questPoints": 2,
+    "name": "mountain daughter",
+    "id": "mountain_daughter"
+  },
+  "Mourning's End Part I": {
+    "experience": {
+      "thievingXp": 40000,
+      "hitpointsXp": 25000
+    },
+    "questPoints": 2,
+    "name": "mourning's end part i",
+    "id": "mourning's_end part i"
+  },
+  "Mourning's End Part II": {
+    "experience": {
+      "agilityXp": 60000
+    },
+    "questPoints": 2,
+    "name": "mourning's end part ii",
+    "id": "mourning's_end part ii"
+  },
+  "Murder Mystery": {
+    "experience": {
+      "craftingXp": 1406
+    },
+    "questPoints": 3,
+    "name": "murder mystery",
+    "id": "murder_mystery"
+  },
+  "My Arm's Big Adventure": {
+    "experience": {
+      "herbloreXp": 10000,
+      "farmingXp": 5000
+    },
+    "questPoints": 1,
+    "name": "my arm's big adventure",
+    "id": "my_arm's big adventure"
+  },
+  "Nature Spirit": {
+    "experience": {
+      "craftingXp": 3000,
+      "defenceXp": 2000,
+      "hitpointsXp": 2000
+    },
+    "questPoints": 2,
+    "name": "nature spirit",
+    "id": "nature_spirit"
+  },
+  "Observatory Quest": {
+    "experience": {
+      "craftingXp": 2250
+    },
+    "questPoints": 2,
+    "name": "observatory quest",
+    "id": "observatory_quest"
+  },
+  "Olaf's Quest": {
+    "experience": {
+      "defenceXp": 12000
+    },
+    "questPoints": 1,
+    "name": "olaf's quest",
+    "id": "olaf's_quest"
+  },
+  "One Small Favour": {
+    "experience": {},
+    "questPoints": 2,
+    "name": "one small favour",
+    "id": "one_small favour"
+  },
+  "Pirate's Treasure": {
+    "experience": {},
+    "questPoints": 2,
+    "name": "pirate's treasure",
+    "id": "pirate's_treasure"
+  },
+  "Plague City": {
+    "experience": {
+      "miningXp": 2425
+    },
+    "questPoints": 1,
+    "name": "plague city",
+    "id": "plague_city"
+  },
+  "Priest in Peril": {
+    "experience": {
+      "prayerXp": 1406
+    },
+    "questPoints": 1,
+    "name": "priest in peril",
+    "id": "priest_in peril"
+  },
+  "Prince Ali Rescue": {
+    "experience": {},
+    "questPoints": 3,
+    "name": "prince ali rescue",
+    "id": "prince_ali rescue"
+  },
+  "Rag and Bone Man I": {
+    "experience": {
+      "cookingXp": 500,
+      "prayerXp": 500
+    },
+    "questPoints": 1,
+    "name": "rag and bone man i",
+    "id": "rag_and bone man i"
+  },
+  "Rag and Bone Man II": {
+    "experience": {
+      "prayerXp": 5000
+    },
+    "questPoints": 1,
+    "name": "rag and bone man ii",
+    "id": "rag_and bone man ii"
+  },
+  "Ratcatchers": {
+    "experience": {
+      "thievingXp": 4500
+    },
+    "questPoints": 2,
+    "name": "ratcatchers",
+    "id": "ratcatchers"
+  },
+  "Recipe for Disaster": {
+    "experience": {},
+    "questPoints": 10,
+    "name": "recipe for disaster",
+    "id": "recipe_for disaster"
+  },
+  "Recipe for Disaster/Another Cook's Quest": {
+    "experience": {},
+    "questPoints": 1,
+    "name": "recipe for disaster/another cook's quest",
+    "id": "recipe_for disaster/another cook's quest"
+  },
+  "Recipe for Disaster/Defeating the Culinaromancer": {
+    "experience": {},
+    "questPoints": 1,
+    "name": "recipe for disaster/defeating the culinaromancer",
+    "id": "recipe_for disaster/defeating the culinaromancer"
+  },
+  "Recipe for Disaster/Freeing Evil Dave": {
+    "experience": {
+      "cookingXp": 7000
+    },
+    "questPoints": 1,
+    "name": "recipe for disaster/freeing evil dave",
+    "id": "recipe_for disaster/freeing evil dave"
+  },
+  "Recipe for Disaster/Freeing King Awowogei": {
+    "experience": {
+      "cookingXp": 10000,
+      "agilityXp": 10000
+    },
+    "questPoints": 1,
+    "name": "recipe for disaster/freeing king awowogei",
+    "id": "recipe_for disaster/freeing king awowogei"
+  },
+  "Recipe for Disaster/Freeing Pirate Pete": {
+    "experience": {
+      "cookingXp": 1000,
+      "craftingXp": 1000,
+      "fishingXp": 1000,
+      "smithingXp": 1000
+    },
+    "questPoints": 1,
+    "name": "recipe for disaster/freeing pirate pete",
+    "id": "recipe_for disaster/freeing pirate pete"
+  },
+  "Recipe for Disaster/Freeing Sir Amik Varze": {
+    "experience": {
+      "cookingXp": 4000,
+      "hitpointsXp": 4000
+    },
+    "questPoints": 1,
+    "name": "recipe for disaster/freeing sir amik varze",
+    "id": "recipe_for disaster/freeing sir amik varze"
+  },
+  "Recipe for Disaster/Freeing Skrach Uglogwee": {
+    "experience": {
+      "woodcuttingXp": 1500,
+      "cookingXp": 1500,
+      "craftingXp": 1500,
+      "rangedXp": 1500
+    },
+    "questPoints": 1,
+    "name": "recipe for disaster/freeing skrach uglogwee",
+    "id": "recipe_for disaster/freeing skrach uglogwee"
+  },
+  "Recipe for Disaster/Freeing the Goblin generals": {
+    "experience": {
+      "cookingXp": 1000,
+      "farmingXp": 1000,
+      "craftingXp": 1000
+    },
+    "questPoints": 1,
+    "name": "recipe for disaster/freeing the goblin generals",
+    "id": "recipe_for disaster/freeing the goblin generals"
+  },
+  "Recipe for Disaster/Freeing the Lumbridge Guide": {
+    "experience": {
+      "cookingXp": 2500,
+      "magicXp": 2500
+    },
+    "questPoints": 1,
+    "name": "recipe for disaster/freeing the lumbridge guide",
+    "id": "recipe_for disaster/freeing the lumbridge guide"
+  },
+  "Recipe for Disaster/Freeing the Mountain Dwarf": {
+    "experience": {
+      "slayerXp": 1000,
+      "cookingXp": 1000
+    },
+    "questPoints": 1,
+    "name": "recipe for disaster/freeing the mountain dwarf",
+    "id": "recipe_for disaster/freeing the mountain dwarf"
+  },
+  "Recruitment Drive": {
+    "experience": {
+      "prayerXp": 1000,
+      "herbloreXp": 1000,
+      "agilityXp": 1000
+    },
+    "questPoints": 1,
+    "name": "recruitment drive",
+    "id": "recruitment_drive"
+  },
+  "Regicide": {
+    "experience": {
+      "agilityXp": 13750
+    },
+    "questPoints": 3,
+    "name": "regicide",
+    "id": "regicide"
+  },
+  "Romeo & Juliet": {
+    "experience": {},
+    "questPoints": 5,
+    "name": "romeo & juliet",
+    "id": "romeo_& juliet"
+  },
+  "Roving Elves": {
+    "experience": {
+      "strengthXp": 10000
+    },
+    "questPoints": 1,
+    "name": "roving elves",
+    "id": "roving_elves"
+  },
+  "Royal Trouble": {
+    "experience": {
+      "agilityXp": 5000,
+      "slayerXp": 5000,
+      "hitpointsXp": 5000
+    },
+    "questPoints": 1,
+    "name": "royal trouble",
+    "id": "royal_trouble"
+  },
+  "Rum Deal": {
+    "experience": {
+      "fishingXp": 7000,
+      "prayerXp": 7000,
+      "farmingXp": 7000
+    },
+    "questPoints": 2,
+    "name": "rum deal",
+    "id": "rum_deal"
+  },
+  "Rune Mysteries": {
+    "experience": {},
+    "questPoints": 1,
+    "name": "rune mysteries",
+    "id": "rune_mysteries"
+  },
+  "Scorpion Catcher": {
+    "experience": {
+      "strengthXp": 6625
+    },
+    "questPoints": 1,
+    "name": "scorpion catcher",
+    "id": "scorpion_catcher"
+  },
+  "Sea Slug": {
+    "experience": {
+      "fishingXp": 7175
+    },
+    "questPoints": 1,
+    "name": "sea slug",
+    "id": "sea_slug"
+  },
+  "Secrets of the North": {
+    "experience": {
+      "agilityXp": 60000,
+      "thievingXp": 50000,
+      "hunterXp": 40000
+    },
+    "questPoints": 2,
+    "name": "secrets of the north",
+    "id": "secrets_of the north"
+  },
+  "Shades of Mort'ton": {
+    "experience": {
+      "herbloreXp": 2000,
+      "craftingXp": 2000
+    },
+    "questPoints": 3,
+    "name": "shades of mort'ton",
+    "id": "shades_of mort'ton"
+  },
+  "Shadow of the Storm": {
+    "experience": {},
+    "questPoints": 1,
+    "name": "shadow of the storm",
+    "id": "shadow_of the storm"
+  },
+  "Sheep Herder": {
+    "experience": {},
+    "questPoints": 4,
+    "name": "sheep herder",
+    "id": "sheep_herder"
+  },
+  "Sheep Shearer": {
+    "experience": {
+      "craftingXp": 150
+    },
+    "questPoints": 1,
+    "name": "sheep shearer",
+    "id": "sheep_shearer"
+  },
+  "Shield of Arrav": {
+    "experience": {},
+    "questPoints": 1,
+    "name": "shield of arrav",
+    "id": "shield_of arrav"
+  },
+  "Shilo Village": {
+    "experience": {
+      "craftingXp": 3875
+    },
+    "questPoints": 2,
+    "name": "shilo village",
+    "id": "shilo_village"
+  },
+  "Sins of the Father": {
+    "experience": {},
+    "questPoints": 2,
+    "name": "sins of the father",
+    "id": "sins_of the father"
+  },
+  "Sleeping Giants": {
+    "experience": {
+      "smithingXp": 6000
+    },
+    "questPoints": 1,
+    "name": "sleeping giants",
+    "id": "sleeping_giants"
+  },
+  "Song of the Elves": {
+    "experience": {
+      "agilityXp": 40000,
+      "constructionXp": 40000,
+      "farmingXp": 40000,
+      "herbloreXp": 40000,
+      "hunterXp": 40000,
+      "miningXp": 40000,
+      "smithingXp": 40000,
+      "woodcuttingXp": 40000
+    },
+    "questPoints": 4,
+    "name": "song of the elves",
+    "id": "song_of the elves"
+  },
+  "Spirits of the Elid": {
+    "experience": {
+      "prayerXp": 8000,
+      "thievingXp": 1000,
+      "magicXp": 1000
+    },
+    "questPoints": 2,
+    "name": "spirits of the elid",
+    "id": "spirits_of the elid"
+  },
+  "Swan Song": {
+    "experience": {
+      "magicXp": 15000,
+      "prayerXp": 10000,
+      "fishingXp": 50000
+    },
+    "questPoints": 2,
+    "name": "swan song",
+    "id": "swan_song"
+  },
+  "Tai Bwo Wannai Trio": {
+    "experience": {
+      "cookingXp": 5000,
+      "fishingXp": 5000,
+      "attackXp": 2500
+    },
+    "questPoints": 2,
+    "name": "tai bwo wannai trio",
+    "id": "tai_bwo wannai trio"
+  },
+  "Tale of the Righteous": {
+    "experience": {},
+    "questPoints": 1,
+    "name": "tale of the righteous",
+    "id": "tale_of the righteous"
+  },
+  "Tears of Guthix": {
+    "experience": {
+      "craftingXp": 1000
+    },
+    "questPoints": 1,
+    "name": "tears of guthix",
+    "id": "tears_of guthix"
+  },
+  "Temple of Ikov": {
+    "experience": {
+      "rangedXp": 10500,
+      "fletchingXp": 8000
+    },
+    "questPoints": 1,
+    "name": "temple of ikov",
+    "id": "temple_of ikov"
+  },
+  "Temple of the Eye": {
+    "experience": {
+      "runecraftXp": 5000
+    },
+    "questPoints": 1,
+    "name": "temple of the eye",
+    "id": "temple_of the eye"
+  },
+  "The Ascent of Arceuus": {
+    "experience": {
+      "hunterXp": 1500,
+      "runecraftXp": 500
+    },
+    "questPoints": 1,
+    "name": "the ascent of arceuus",
+    "id": "the_ascent of arceuus"
+  },
+  "The Corsair Curse": {
+    "experience": {},
+    "questPoints": 2,
+    "name": "the corsair curse",
+    "id": "the_corsair curse"
+  },
+  "The Depths of Despair": {
+    "experience": {
+      "agilityXp": 1500
+    },
+    "questPoints": 1,
+    "name": "the depths of despair",
+    "id": "the_depths of despair"
+  },
+  "The Dig Site": {
+    "experience": {},
+    "questPoints": 2,
+    "name": "the dig site",
+    "id": "the_dig site"
+  },
+  "The Eyes of Glouphrie": {
+    "experience": {
+      "magicXp": 12000,
+      "woodcuttingXp": 2500,
+      "runecraftXp": 6000,
+      "constructionXp": 250
+    },
+    "questPoints": 2,
+    "name": "the eyes of glouphrie",
+    "id": "the_eyes of glouphrie"
+  },
+  "The Feud": {
+    "experience": {
+      "thievingXp": 15000
+    },
+    "questPoints": 1,
+    "name": "the feud",
+    "id": "the_feud"
+  },
+  "The Forsaken Tower": {
+    "experience": {
+      "miningXp": 500,
+      "smithingXp": 500
+    },
+    "questPoints": 1,
+    "name": "the forsaken tower",
+    "id": "the_forsaken tower"
+  },
+  "The Fremennik Exiles": {
+    "experience": {
+      "slayerXp": 50000,
+      "craftingXp": 50000,
+      "runecraftXp": 30000
+    },
+    "questPoints": 2,
+    "name": "the fremennik exiles",
+    "id": "the_fremennik exiles"
+  },
+  "The Fremennik Isles": {
+    "experience": {
+      "constructionXp": 5000,
+      "craftingXp": 5000,
+      "woodcuttingXp": 10000
+    },
+    "questPoints": 1,
+    "name": "the fremennik isles",
+    "id": "the_fremennik isles"
+  },
+  "The Fremennik Trials": {
+    "experience": {
+      "agilityXp": 2812,
+      "attackXp": 2812,
+      "craftingXp": 2812,
+      "defenceXp": 2812,
+      "fishingXp": 2812,
+      "fletchingXp": 2812,
+      "hitpointsXp": 2812,
+      "strengthXp": 2812,
+      "thievingXp": 2812,
+      "woodcuttingXp": 2812
+    },
+    "questPoints": 3,
+    "name": "the fremennik trials",
+    "id": "the_fremennik trials"
+  },
+  "The Garden of Death": {
+    "experience": {
+      "farmingXp": 10000
+    },
+    "questPoints": 1,
+    "name": "the garden of death",
+    "id": "the_garden of death"
+  },
+  "The Giant Dwarf": {
+    "experience": {
+      "miningXp": 2500,
+      "smithingXp": 2500,
+      "craftingXp": 2500,
+      "magicXp": 1500,
+      "thievingXp": 1500,
+      "firemakingXp": 1500
+    },
+    "questPoints": 2,
+    "name": "the giant dwarf",
+    "id": "the_giant dwarf"
+  },
+  "The Golem": {
+    "experience": {
+      "thievingXp": 1000,
+      "craftingXp": 1000
+    },
+    "questPoints": 1,
+    "name": "the golem",
+    "id": "the_golem"
+  },
+  "The Grand Tree": {
+    "experience": {
+      "attackXp": 18400,
+      "agilityXp": 7900,
+      "magicXp": 2150
+    },
+    "questPoints": 5,
+    "name": "the grand tree",
+    "id": "the_grand tree"
+  },
+  "The Great Brain Robbery": {
+    "experience": {
+      "prayerXp": 6000,
+      "craftingXp": 3000,
+      "constructionXp": 2000
+    },
+    "questPoints": 2,
+    "name": "the great brain robbery",
+    "id": "the_great brain robbery"
+  },
+  "The Hand in the Sand": {
+    "experience": {
+      "thievingXp": 1000,
+      "craftingXp": 9000
+    },
+    "questPoints": 1,
+    "name": "the hand in the sand",
+    "id": "the_hand in the sand"
+  },
+  "The Knight's Sword": {
+    "experience": {
+      "smithingXp": 12725
+    },
+    "questPoints": 1,
+    "name": "the knight's sword",
+    "id": "the_knight's sword"
+  },
+  "The Lost Tribe": {
+    "experience": {
+      "miningXp": 3000
+    },
+    "questPoints": 1,
+    "name": "the lost tribe",
+    "id": "the_lost tribe"
+  },
+  "The Queen of Thieves": {
+    "experience": {
+      "thievingXp": 2000
+    },
+    "questPoints": 1,
+    "name": "the queen of thieves",
+    "id": "the_queen of thieves"
+  },
+  "The Restless Ghost": {
+    "experience": {
+      "prayerXp": 1125
+    },
+    "questPoints": 1,
+    "name": "the restless ghost",
+    "id": "the_restless ghost"
+  },
+  "The Slug Menace": {
+    "experience": {
+      "craftingXp": 3500,
+      "runecraftXp": 3500,
+      "thievingXp": 3500
+    },
+    "questPoints": 1,
+    "name": "the slug menace",
+    "id": "the_slug menace"
+  },
+  "The Tourist Trap": {
+    "experience": {},
+    "questPoints": 2,
+    "name": "the tourist trap",
+    "id": "the_tourist trap"
+  },
+  "Throne of Miscellania": {
+    "experience": {},
+    "questPoints": 1,
+    "name": "throne of miscellania",
+    "id": "throne_of miscellania"
+  },
+  "Tower of Life": {
+    "experience": {
+      "constructionXp": 1000,
+      "craftingXp": 500,
+      "thievingXp": 500
+    },
+    "questPoints": 2,
+    "name": "tower of life",
+    "id": "tower_of life"
+  },
+  "Tree Gnome Village": {
+    "experience": {
+      "attackXp": 11450
+    },
+    "questPoints": 2,
+    "name": "tree gnome village",
+    "id": "tree_gnome village"
+  },
+  "Tribal Totem": {
+    "experience": {
+      "thievingXp": 1775
+    },
+    "questPoints": 1,
+    "name": "tribal totem",
+    "id": "tribal_totem"
+  },
+  "Troll Romance": {
+    "experience": {
+      "agilityXp": 8000,
+      "strengthXp": 4000
+    },
+    "questPoints": 2,
+    "name": "troll romance",
+    "id": "troll_romance"
+  },
+  "Troll Stronghold": {
+    "experience": {},
+    "questPoints": 1,
+    "name": "troll stronghold",
+    "id": "troll_stronghold"
+  },
+  "Underground Pass": {
+    "experience": {
+      "agilityXp": 3000,
+      "attackXp": 3000
+    },
+    "questPoints": 5,
+    "name": "underground pass",
+    "id": "underground_pass"
+  },
+  "Vampyre Slayer": {
+    "experience": {
+      "attackXp": 4825
+    },
+    "questPoints": 3,
+    "name": "vampyre slayer",
+    "id": "vampyre_slayer"
+  },
+  "Wanted!": {
+    "experience": {
+      "slayerXp": 5000
+    },
+    "questPoints": 1,
+    "name": "wanted!",
+    "id": "wanted!"
+  },
+  "Watchtower": {
+    "experience": {
+      "magicXp": 15250
+    },
+    "questPoints": 4,
+    "name": "watchtower",
+    "id": "watchtower"
+  },
+  "Waterfall Quest": {
+    "experience": {
+      "strengthXp": 13750,
+      "attackXp": 13750
+    },
+    "questPoints": 1,
+    "name": "waterfall quest",
+    "id": "waterfall_quest"
+  },
+  "What Lies Below": {
+    "experience": {
+      "runecraftXp": 8000,
+      "defenceXp": 2000
+    },
+    "questPoints": 1,
+    "name": "what lies below",
+    "id": "what_lies below"
+  },
+  "Witch's House": {
+    "experience": {
+      "hitpointsXp": 6325
+    },
+    "questPoints": 4,
+    "name": "witch's house",
+    "id": "witch's_house"
+  },
+  "Witch's Potion": {
+    "experience": {
+      "magicXp": 325
+    },
+    "questPoints": 1,
+    "name": "witch's potion",
+    "id": "witch's_potion"
+  },
+  "X Marks the Spot": {
+    "experience": {},
+    "questPoints": 1,
+    "name": "x marks the spot",
+    "id": "x_marks the spot"
+  },
+  "Zogre Flesh Eaters": {
+    "experience": {
+      "fletchingXp": 2000,
+      "rangedXp": 2000,
+      "herbloreXp": 2000
+    },
+    "questPoints": 1,
+    "name": "zogre flesh eaters",
+    "id": "zogre_flesh eaters"
+  }
+}

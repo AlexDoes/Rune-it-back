@@ -30,71 +30,77 @@ public class DBSeeder implements CommandLineRunner {
     public void run(String... args) {
       
         userRepository.deleteAll();
-        questRepository.deleteAll();
+        // questRepository.deleteAll();
 
        
          List<Quest> quests = new ArrayList<>();
          
-    String[][] arrays = {
-            {
-                "strengthXp",
-                "defenceXp",
-                "rangedXp",
-                "prayerXp",
-                "magicXp",
-                "runecraftXp",
-                "hitpointsXp",
-                "craftingXp"
-            },
-            {
-                "miningXp",
-                "smithingXp",
-                "fishingXp",
-                "cookingXp",
-                "firemakingXp",
-                "woodcuttingXp",
-                "agilityXp"
-            },
-            {
-                "herbloreXp",
-                "thievingXp",
-                "fletchingXp",
-                "slayerXp",
-                "farmingXp"
-            },
-            {
-                "constructionXp",
-                "hIntegerunterXp"
-            },
-            {
-                "strengthXp",
-                "defenceXp",
-                "hitpointsXp",
-                "miningXp",
-                "cookingXp",
-                "herbloreXp",
-                "fletchingXp",
-                "farmingXp",
-                "hIntegerunterXp"
-            }
-    };
+    // String[][] arrays = {
+    //         {
+    //             "strengthXp",
+    //             "defenceXp",
+    //             "rangedXp",
+    //             "prayerXp",
+    //             "magicXp",
+    //             "runecraftXp",
+    //             "hitpointsXp",
+    //             "craftingXp"
+    //         },
+    //         {
+    //             "miningXp",
+    //             "smithingXp",
+    //             "fishingXp",
+    //             "cookingXp",
+    //             "firemakingXp",
+    //             "woodcuttingXp",
+    //             "agilityXp"
+    //         },
+    //         {
+    //             "herbloreXp",
+    //             "thievingXp",
+    //             "fletchingXp",
+    //             "slayerXp",
+    //             "farmingXp"
+    //         },
+    //         {
+    //             "constructionXp",
+    //             "hIntegerunterXp"
+    //         },
+    //         {
+    //             "strengthXp",
+    //             "defenceXp",
+    //             "hitpointsXp",
+    //             "miningXp",
+    //             "cookingXp",
+    //             "herbloreXp",
+    //             "fletchingXp",
+    //             "farmingXp",
+    //             "hIntegerunterXp"
+    //         }
+    // };
     
-        for (int i = 0; i < 5; i++) {
-            Quest quest = new Quest();
-            quest.setName("Test Quest " + i);
-            quest.setDescription("This is a test quest number " + i + ".");
-            quest.setReward("Test Reward " + i);
-            quest.setQuestFields(generateRandomQuestFields(arrays[i])); // You probably want a new Map for each quest
+        // for (int i = 0; i < 5; i++) {
+        //     Quest quest = new Quest();
+        //     quest.setName("Test Quest " + i);
+        //     quest.setDescription("This is a test quest number " + i + ".");
+        //     quest.setReward("Test Reward " + i);
+        //     quest.setQuestFields(generateRandomQuestFields(arrays[i])); // You probably want a new Map for each quest
 
        
-            questRepository.save(quest);
+        //     questRepository.save(quest);
 
-            quests.add(quest);
-        }
+        //     quests.add(quest);
+        // }
 
+        // Quest quest2 = new Quest();
+        // quest2.setName("Test Quest " + 1);
+        // questRepository.save(quest2);
+        // quests.add(quest2);
      
         for (int i = 0; i < 5; i++) {
             User user = new User();
+            var number = i + "";
+            user.setId(number);
             user.setUsername("testUser" + i);
             user.setPassword("password" + i);
             user.setEmail("test" + i + "@test.com");
@@ -106,19 +112,19 @@ public class DBSeeder implements CommandLineRunner {
             userRepository.save(user);
         }
     }
+ 
 
 
+    // public Map<String, Integer> generateRandomQuestFields( String[] skills) {
+    //     Random rand = new Random();
 
-    public Map<String, Integer> generateRandomQuestFields( String[] skills) {
-        Random rand = new Random();
-
-        Map<String, Integer> questFields = new HashMap<>();
+    //     Map<String, Integer> questFields = new HashMap<>();
 
 
-        for (String skill : skills) {
-            questFields.put(skill, rand.nextInt(100));
-        }
+    //     for (String skill : skills) {
+    //         questFields.put(skill, rand.nextInt(100));
+    //     }
 
-        return questFields;
-    }
+    //     return questFields;
+    // }
 }

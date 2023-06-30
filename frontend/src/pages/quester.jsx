@@ -63,10 +63,10 @@ const SAMPLE_QUESTER_DATA2 = {
     Attack: 0,
     Construction: 0,
     Cooking: 0,
-    Crafting: 0,
+    Crafting: 1000,
     Defence: 0,
     Farming: 0,
-    Fletching: 0,
+    Fletching: 1000,
     Firemaking: 0,
     Fishing: 0,
     Herblore: 0,
@@ -77,15 +77,15 @@ const SAMPLE_QUESTER_DATA2 = {
     Prayer: 0,
     Ranged: 0,
     Runecraft: 0,
-    Slayer: 0,
+    Slayer: 1000,
     Smithing: 0,
     Strength: 0,
     Thieving: 0,
-    Woodcutting: 0,
+    Woodcutting: 2500,
   },
-  totalQuestPoints: 0,
-  totalXP: 0,
-  "Quests Completed": [],
+  totalQuestPoints: 1,
+  totalXP: 5500,
+  "Quests Completed": ["Animal Magnetism"],
 };
 
 const SKILLS = [
@@ -142,6 +142,11 @@ export default function Quester(UserData) {
       return acc;
     }, {})
   );
+  const [qpToGain, setQPToGain] = useState(
+    questsToAdd.reduce((acc, quest) => {
+      return acc + questList[quest].questPoints;
+    }, 0)
+  );
 
   const baseState = SKILLS.reduce((acc, skill) => {
     acc[skill] = 0;
@@ -167,10 +172,12 @@ export default function Quester(UserData) {
         if (SKILLS.includes(titleCase(skillXP[0]))) {
           xpToAdd[skillName] -= skillXp;
         }
+        setQPToGain(qpToGain - questList[quest].questPoints);
       });
     } else {
       setQuestsToAdd([...questsToAdd, quest]);
       addXpToGain(quest);
+      setQPToGain(qpToGain + questList[quest].questPoints);
     }
   };
 
@@ -261,15 +268,32 @@ export default function Quester(UserData) {
     setQuestsToAdd([]);
   };
 
+  const handleRemove = (quest) => {
+    setQuestsCompleted(questsCompleted.filter((item) => item !== quest));
+    Object.entries(questList[quest].experience).forEach((skillXP) => {
+      const skillName = titleCase(skillXP[0]);
+      const skillXp = Number(skillXP[1].replace(",", ""));
+      if (SKILLS.includes(titleCase(skillXP[0]))) {
+        xpToAdd[skillName] -= skillXp;
+      }
+    });
+  };
+
   const questsCompletedDisplay = () => {
     questsCompleted.sort();
     return questsCompleted.map((quest) => {
       return (
         <div
           key={quest}
-          className="w-full border-black flex flex-row gap-1 text-sm items-center justify-center"
+          className="w-full border-black flex flex-row gap-1 text-sm items-center justify-center group"
         >
           <label className="ml-2 w-full">{quest}</label>
+          <div
+            className="group-hover:block hidden hover:text-blue-300 cursor-pointer transition-all duration-500 ease-in-out"
+            onClick={() => handleRemove(quest)}
+          >
+            Remove
+          </div>
         </div>
       );
     });
@@ -283,9 +307,12 @@ export default function Quester(UserData) {
           <p className="w-1/3 text-end">
             {Math.trunc(skillXP[skill]).toLocaleString()}
           </p>
-          {xpAdded[skill] > 0 && (
-            <p className="text-green-200">
-              +({Math.trunc(xpAdded[skill]).toLocaleString()})
+          {xpAdded[skill] !== 0 && (
+            <p
+              className={xpAdded[skill] > 0 ? "text-green-200" : "text-red-300"}
+            >
+              {xpAdded[skill] > 0 ? "+" : ""}(
+              {Math.trunc(xpAdded[skill]).toLocaleString()})
             </p>
           )}
         </div>
@@ -320,9 +347,7 @@ export default function Quester(UserData) {
                   questsToAdd.length > 0 ? `text-blue-400` : `text-black`
                 }
               >
-                {questsToAdd.reduce((acc, quest) => {
-                  return acc + questList[quest].questPoints;
-                }, 0)}
+                {qpToGain}
               </p>
             </div>
             <div className="grid grid-cols-2 grid-rows-12 grid-flow-row-dense text-sm h-full divide-black">
@@ -333,7 +358,11 @@ export default function Quester(UserData) {
                     key={skill}
                   >
                     <p className="w-1/2">{skill}:</p>
-                    <p className={`${xp > 0 ? `text-blue-400` : `text-black`}`}>
+                    <p
+                      className={`${xp > 0 && `text-blue-400`} ${
+                        xp < 0 && `text-red-300`
+                      }`}
+                    >
                       {Math.trunc(xp).toLocaleString()}
                     </p>
                   </div>

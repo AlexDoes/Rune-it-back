@@ -35,6 +35,11 @@ public class TashiApplication {
         return "Hello World";
     }
 
+    // @GetMapping("/user/{id}")
+    // public String apiRoute2() {
+    //     return "user id";
+    // }
+
     // @Bean
     // public CommandLineRunner run() {
     //     return args -> {

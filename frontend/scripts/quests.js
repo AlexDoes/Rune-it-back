@@ -366,8 +366,31 @@ export const questMap = {
   "Zogre Flesh Eaters": "Zogre_Flesh%20Eaters",
 };
 
-// console.log(questMap["Watchtower"]);
-// console.log(questMap["Wanted!"]);
+const fields = [
+  "attackXp",
+  "defenceXp",
+  "strengthXp",
+  "hitpointsXp",
+  "rangedXp",
+  "prayerXp",
+  "magicXp",
+  "cookingXp",
+  "woodcuttingXp",
+  "fletchingXp",
+  "fishingXp",
+  "firemakingXp",
+  "craftingXp",
+  "smithingXp",
+  "miningXp",
+  "herbloreXp",
+  "agilityXp",
+  "thievingXp",
+  "slayerXp",
+  "farmingXp",
+  "runecraftXp",
+  "hunterXp",
+  "constructionXp",
+];
 
 const questResults = {};
 const keywords = ["qp", " xp", "experience", "quest point"];
@@ -375,7 +398,8 @@ async function scrapeUrl(quest) {
   questResults[quest] = {
     experience: {},
     questPoints: 0,
-    items: [],
+    name: quest.toLowerCase(),
+    id: quest.toLowerCase().replace(" ", "_"),
   };
   process.stdout.clearLine();
   process.stdout.cursorTo(0);
@@ -420,27 +444,31 @@ async function scrapeUrl(quest) {
           } else if (keyword === " xp " || keyword === "experience") {
             const rewardedExperience = textOfReward.split(" ");
             if (textOfReward.includes("lamp")) {
-              questResults[quest].experience["flex"] = textOfReward;
-              flag = true;
+              // questResults[quest].experience["flex"] = textOfReward;
+              // flag = true;
               break;
             } else if (textOfReward.includes("grant")) {
-              questResults[quest].experience["flex"] = textOfReward;
-              flag = true;
+              // questResults[quest].experience["flex"] = textOfReward;
+              // flag = true;
               break;
             } else {
-              const experience = rewardedExperience[0];
-              const skill = rewardedExperience[1];
-              questResults[quest].experience[skill] = experience;
+              const experience = parseInt(
+                rewardedExperience[0].replace(",", "")
+              );
+              const skill = rewardedExperience[1] + "Xp";
+              if (fields.includes(skill)) {
+                questResults[quest].experience[skill] = experience;
+              }
               flag = true;
               break;
             }
           }
         }
       }
-      if (!flag) {
-        questResults[quest].items.push(textOfReward);
-      }
-      flag = false;
+      // if (!flag) {
+      //   questResults[quest].items.push(textOfReward);
+      // }
+      // flag = false;
     });
     // questResults[quest] = rewards;
     process.stdout.clearLine();
@@ -459,8 +487,8 @@ async function scrapeQuests() {
   //   await scrapeUrl("the restless ghost");
   //   await scrapeUrl("recipe for disaster");
   const jsonContent = JSON.stringify(questResults, null, 2);
-  const locatation = "quest_results_sorted_xp.json";
-  fs.writeFileSync(locatation, jsonContent);
-  console.log("Scraping complete. Results written to " + locatation + ".");
+  const location = "quest_results_only_xp_and_qp.json";
+  fs.writeFileSync(location, jsonContent);
+  console.log("Scraping complete. Results written to " + location + ".");
 }
-// scrapeQuests();
+scrapeQuests();
