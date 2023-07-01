@@ -29,8 +29,8 @@ public class DBSeeder implements CommandLineRunner {
     @Override
     public void run(String... args) {
       
-        userRepository.deleteAll();
-        questRepository.deleteAll();
+        // userRepository.deleteAll();
+        // questRepository.deleteAll();
 
        
          List<Quest> quests = new ArrayList<>();
