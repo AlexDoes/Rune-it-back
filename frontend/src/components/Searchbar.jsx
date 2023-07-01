@@ -654,11 +654,15 @@ const questData = [
   },
 ];
 
-export default function SearchBar() {
+export default function SearchBar(props) {
+  console.log(props);
+  function SearchThis(value) {
+    props.onSearch(value);
+  }
   return (
     <div className="w-full bg-[#646363] text-[#f5b316]">
       <ReactSearchBox
-        placeholder="Scrape a quest for rewards"
+        placeholder="Scrape a quest for rewards..."
         data={questData}
         leftIcon={
           <img className="h-[20px] w-[20px]" src="/questicon.png"></img>
@@ -672,6 +676,8 @@ export default function SearchBar() {
         inputBorderRadius="10px"
         inputPadding="10px"
         inputHeight="50px"
+        // onChange={(value) => SearchThis(value)}
+        onSelect={(value) => SearchThis(value.item.value)}
       />
     </div>
   );
