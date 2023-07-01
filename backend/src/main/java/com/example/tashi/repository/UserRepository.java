@@ -8,4 +8,5 @@ import com.example.tashi.models.User;
 @Repository
 public interface UserRepository extends MongoRepository<User, String> {
     // additional custom methods can be declared here
+    User findByEmail(String email); 
 }

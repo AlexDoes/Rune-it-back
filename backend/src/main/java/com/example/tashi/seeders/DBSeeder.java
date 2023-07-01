@@ -29,7 +29,7 @@ public class DBSeeder implements CommandLineRunner {
     @Override
     public void run(String... args) {
       
-        userRepository.deleteAll();
+        // userRepository.deleteAll();
         // questRepository.deleteAll();
 
        
