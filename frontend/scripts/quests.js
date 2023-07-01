@@ -395,11 +395,16 @@ const fields = [
 const questResults = {};
 const keywords = ["qp", " xp", "experience", "quest point"];
 async function scrapeUrl(quest) {
-  questResults[quest] = {
+  const normalizedQuest = quest
+    .replace("'", "%27")
+    .split(" ")
+    .join("_")
+    .toLowerCase();
+  questResults[normalizedQuest] = {
     experience: {},
     questPoints: 0,
-    name: quest.toLowerCase(),
-    id: quest.toLowerCase().replace(" ", "_"),
+    name: normalizedQuest,
+    id: normalizedQuest,
   };
   process.stdout.clearLine();
   process.stdout.cursorTo(0);
@@ -436,7 +441,7 @@ async function scrapeUrl(quest) {
       for (let keyword of keywords) {
         if (textOfReward.includes(keyword)) {
           if (keyword === "quest point" || keyword === "qp") {
-            questResults[quest].questPoints = parseInt(
+            questResults[normalizedQuest].questPoints = parseInt(
               textOfReward.split(" ")[0]
             );
             flag = true;
@@ -457,7 +462,7 @@ async function scrapeUrl(quest) {
               );
               const skill = rewardedExperience[1] + "Xp";
               if (fields.includes(skill)) {
-                questResults[quest].experience[skill] = experience;
+                questResults[normalizedQuest].experience[skill] = experience;
               }
               flag = true;
               break;

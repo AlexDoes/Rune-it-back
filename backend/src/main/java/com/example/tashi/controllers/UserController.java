@@ -10,13 +10,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 
 @RestController
-@RequestMapping("/users")
+@RequestMapping("/api")
 public class UserController {
 
     @Autowired
     private UserRepository userRepository;
 
-    @GetMapping("/all")
+    @GetMapping("/users")
     public List<User> getUsers() {
         return userRepository.findAll();
     }

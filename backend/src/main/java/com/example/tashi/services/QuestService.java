@@ -28,7 +28,16 @@ public class QuestService {
     }
 
     public Quest getQuestByName(String name) {
-        return questRepository.findById(name).orElse(null);
+        System.out.println("getQuestByName:" + name );
+        return questRepository.findByName(name);
+    }
+
+    // public Quest getQuestById(String id) {
+    //     return questRepository.findById(id).orElse(null);
+    // }
+
+    public void addQuest(Quest quest) {
+        questRepository.save(quest);
     }
 
     public void updateQuest(Quest quest) {

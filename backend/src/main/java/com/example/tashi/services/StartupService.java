@@ -26,7 +26,6 @@ public class StartupService implements ApplicationRunner {
     public void run(ApplicationArguments args) throws Exception {
         ObjectMapper objectMapper = new ObjectMapper();
         File file = new File("backend/src/main/resources/questdata.json");
-        System.out.println("hello");
         TypeReference<Map<String, Quest>> typeReference = new TypeReference<>() {};
         Map<String, Quest> questData = objectMapper.readValue(file, typeReference);
         questService.saveQuestData(questData);

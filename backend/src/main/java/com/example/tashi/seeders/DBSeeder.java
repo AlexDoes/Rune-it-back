@@ -79,6 +79,12 @@ public class DBSeeder implements CommandLineRunner {
     //         }
     // };
     
+
+    Quest quest1 = new Quest();
+    quest1.setName("alex");
+    questRepository.save(quest1);
+    quests.add(quest1);
+
         // for (int i = 0; i < 5; i++) {
         //     Quest quest = new Quest();
         //     quest.setName("Test Quest " + i);

@@ -24,14 +24,19 @@ public class Quest {
     private Map<String, Integer> experience = new HashMap<>();
     private int questPoints;
 
-    public Quest(String name, Map<String, Integer> experience, int questPoints) {
+    public Quest(String name, Map<String, Integer> experience, int questPoints, String id) {
         this.name = name;
         this.experience = experience;
         this.questPoints = questPoints;
+        this.id = id;
     }
 
     public String getName() {
         return name;
+    }
+
+    public String getId() {
+        return id;
     }
 
     public void setName(String name) {
