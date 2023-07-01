@@ -496,4 +496,4 @@ async function scrapeQuests() {
   fs.writeFileSync(location, jsonContent);
   console.log("Scraping complete. Results written to " + location + ".");
 }
-scrapeQuests();
+// scrapeQuests();

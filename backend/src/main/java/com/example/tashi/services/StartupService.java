@@ -22,12 +22,12 @@ public class StartupService implements ApplicationRunner {
         this.questService = questService;
     }
 
-    @Override
+    // @Override
     public void run(ApplicationArguments args) throws Exception {
-        ObjectMapper objectMapper = new ObjectMapper();
-        File file = new File("backend/src/main/resources/questdata.json");
-        TypeReference<Map<String, Quest>> typeReference = new TypeReference<>() {};
-        Map<String, Quest> questData = objectMapper.readValue(file, typeReference);
-        questService.saveQuestData(questData);
+    //     ObjectMapper objectMapper = new ObjectMapper();
+    //     File file = new File("backend/src/main/resources/questdata.json");
+    //     TypeReference<Map<String, Quest>> typeReference = new TypeReference<>() {};
+    //     Map<String, Quest> questData = objectMapper.readValue(file, typeReference);
+    //     questService.saveQuestData(questData);
     }
 }

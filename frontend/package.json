@@ -18,10 +18,12 @@
     "react-dom": "^18.2.0",
     "react-hover": "^3.0.1",
     "react-loading": "^2.0.3",
+    "react-search-box": "^3.0.0",
     "react-table": "^7.8.0",
     "reactstrap": "^9.2.0"
   },
   "devDependencies": {
+    "@tailwindcss/typography": "^0.5.9",
     "@types/react": "^18.0.37",
     "@types/react-dom": "^18.0.11",
     "@vitejs/plugin-react-swc": "^3.0.0",

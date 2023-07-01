@@ -1,102 +1,21 @@
 import { useState, useEffect } from "react";
-import { Button, Form, FormGroup, Label, Input, FormText } from "reactstrap";
 import * as cheerio from "cheerio";
 import axios from "axios";
-import * as fs from "fs";
-import { questArray, questMap } from "../../scripts/quests";
-import { Table } from "reactstrap";
-import { Container, Row, Col } from "reactstrap";
-import {
-  Card,
-  CardImg,
-  CardText,
-  CardBody,
-  CardLink,
-  CardTitle,
-  CardSubtitle,
-} from "reactstrap";
-import { ListGroup, ListGroupItem } from "reactstrap";
-import { Alert } from "reactstrap";
-import { Badge } from "reactstrap";
-import { Spinner } from "reactstrap";
-import { Modal, ModalHeader, ModalBody, ModalFooter } from "reactstrap";
+import SearchBar from "../components/Searchbar";
 
-export default function Webscraper() {
+export default function RuneScraper() {
   const [rewards, setRewards] = useState([]);
-  // async function fetchPage(url) {
-  //   try {
-  //     const response = await axios.get(url);
-  //     return response.data;
-  //   } catch (error) {
-  //     console.error(`Error fetching page: ${error}`);
-  //     return null;
-  //   }
-  // }
-
-  // function scrapePage(html) {
-  //   const $ = cheerio.load(html);
-  //   const allRewards = $(
-  //     "h2:nth-of-type(3) span.mw-headline, .mw-parser-output > div div.floatnone, .mw-parser-output ul:nth-of-type(2) li"
-  //   )
-  //     .map((index, element) => $(element).text())
-  //     .get();
-  //   return {
-  //     allRewards,
-  //   };
-  // }
-
-  // async function scrape(url) {
-  //   const html = await fetchPage(url);
-  //   if (html) {
-  //     const rewards = scrapePage(html);
-  //     setRewards(rewards.allRewards);
-  //     return rewards.allRewards;
-  //   }
-  // }
-
-  // useEffect(() => {
-  //   const url = "https://oldschool.runescape.wiki/w/Animal_Magnetism";
-  //   scrape(url);
-  // }, []);
 
   return (
-    <div>
-      <h1>Web Scraper</h1>
-      <p>
-        Scrape the Old School Runescape Wiki for information on quests, items,
-        and more!
-      </p>
-      {/* {rewards.length > 0 && rewards.map((reward) => <p key={Math.random() * 1000}>{reward}</p>)} */}
-      {/* <Form>
-        <FormGroup>
-          <Label for="exampleEmail">URL</Label>
-          <Input
-            type="url"
-            name="url"
-            id="exampleEmail"
-            placeholder="https://oldschool.runescape.wiki/w/Animal_Magnetism"
-          />
-        </FormGroup>
-        <Button>Submit</Button>
-      </Form> */}
-      {/* <Table>
-        <thead>
-          <tr>
-            <th>Rewards</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>
-              <ul>
-                {data.allRewards.map((reward) => (
-                  <li>{reward}</li>
-                ))}
-              </ul>
-            </td>
-          </tr>
-        </tbody>
-      </Table> */}
+    <div className="w-full flex flex-col items-center justify-center pt-4 gap-3">
+      <div className="prose prose-zinc lg:prose-xl w-full border-black border rounded-xl p-4">
+        Search for a quest to see its rewards. This page uses Cheerio to scrape
+        the RuneScape Wiki for quest rewards. References an anchor tag and pulls
+        relevant text from the next sibling to display the rewards.
+      </div>
+      <div className="w-[60%]">
+        <SearchBar />
+      </div>
     </div>
   );
 }
