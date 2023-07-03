@@ -59,6 +59,9 @@ const QuestTable = ({ quests, onSort }) => {
                 {quest.experience.map((exp, index) => (
                   <div key={index}>{standardizeSentence(exp)}</div>
                 ))}
+                {quest.experience.length === 0 && (
+                  <div>No experience awarded</div>
+                )}
               </td>
               <td className=" text-center text-white items-center h-full justify-center border-black">
                 {quest.questPoints}

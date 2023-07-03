@@ -1,38 +1,55 @@
 export default function Home() {
   return (
-    <div className="m0-auto w-full h-[94vh] bg-gradient-to-r from-amber-100 to-zinc-600 relative">
-      <div>
+    <div className="m-auto w-full h-[97vh] bg-gradient-to-r from-amber-100 to-zinc-600 relative flex flex-row items-center scrollbar-thin">
+      <div className="w-1/4 flex items-center justify-center">
         <img
-          className="w-[10%] h-[10%] ml-32  mx-30 
+          className="w-[50%] h-[10%]  
         "
+          // src="/gnomechild.png"
           src="/gnome.png"
         ></img>
       </div>
-      <div>
-        <div className="flex flex-row items-center justify-center gap-2">
+      <div className="w-1/2 flex flex-col gap-4 justify-center items-center border border-slate-400 rounded-xl p-4">
+        <div className="flex flex-row items-center gap-2 w-full">
           <img className="w-[65px] h-[65px]" src="/questicon.png"></img>
           <h1 className="text-8xl text-yellow-200">Rune-it-Back</h1>
         </div>
-
-        <div className="text-2xl text-yellow-100 flex flex-col items-center justify-center w-1/2 m-auto z-20">
+        <div className="text-2xl text-yellow-100 flex flex-col m-auto z-20 w-full">
           <div className="prose-xl ">
             Welcome to Rune-it-Back! This is a collection of tools for the game
             OldSchool Runescape and it's related quests.
             <br />
             Check out the tools below!
             <br />
-            <a href="/webscraper">Webscraper</a>
+            <a
+              className="text-green-600 hover:text-white hover:underline"
+              href="/webscraper"
+            >
+              Webscraper
+            </a>
             <br />
-            <a href="/quester">Quester</a>
+            <a
+              className="text-purple-500 hover:text-white hover:underline"
+              href="/quester"
+            >
+              Quester
+            </a>
             <br />
-            <a href="/aqd">All Quest Data</a>
+            <a
+              className="text-cyan-600 hover:text-white hover:underline"
+              href="/aqd"
+            >
+              All Quest Data
+            </a>
           </div>
         </div>
       </div>
-      <img
-        className="absolute right-0 top-1/2 mr-20 w-[300px] h-[300px] z-10"
-        src="/oldman.png"
-      ></img>
+      <div className="w-1/ flex justify-center items-center">
+        <img
+          className="right-0 top-1/2 w-[50%] h-[40%] z-10"
+          src="/oldman.png"
+        ></img>
+      </div>
     </div>
   );
 }

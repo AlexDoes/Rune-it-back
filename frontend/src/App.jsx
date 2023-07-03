@@ -23,7 +23,7 @@ function App() {
   }, []);
 
   return (
-    <>
+    <div className="w-full h-[100vh] scrollbar-thin scrollbar-thumb-gray-900 scrollbar-track-gray-100">
       <NavBar />
       <BrowserRouter>
         <Routes>
@@ -34,7 +34,7 @@ function App() {
           <Route path="/quester" element={<Quester />} />
         </Routes>
       </BrowserRouter>
-    </>
+    </div>
   );
 }
 

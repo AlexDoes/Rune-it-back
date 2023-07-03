@@ -163,6 +163,7 @@ export default function Quester(UserData) {
   const [questList, setQuestList] = useState([]);
   const [questsToAdd, setQuestsToAdd] = useState([]);
   const [questOptions, setQuestOptions] = useState([]);
+  const [qpToGain, setQPToGain] = useState(0);
   const [xpToAdd, setXPToAdd] = useState(
     SKILLS.reduce((acc, skill) => {
       acc[skill] = 0;
@@ -174,11 +175,6 @@ export default function Quester(UserData) {
       acc[skill] = 0;
       return acc;
     }, {})
-  );
-  const [qpToGain, setQPToGain] = useState(
-    questsToAdd.reduce((acc, quest) => {
-      return acc + questList[quest].questPoints;
-    }, 0)
   );
 
   const baseState = SKILLS.reduce((acc, skill) => {
@@ -196,10 +192,11 @@ export default function Quester(UserData) {
     getQuests();
   }, []);
 
+  // useEffect(() => {}, [qpToGain]);
+
   const handleQuestToggle = (quest) => {
     if (questsToAdd === []) {
       setXPToAdd(baseState);
-      setQPToGain(0);
     }
     if (questsToAdd.includes(quest)) {
       setQuestsToAdd(questsToAdd.filter((item) => item !== quest));
@@ -219,7 +216,12 @@ export default function Quester(UserData) {
   };
 
   const addQpToGain = (quest) => {
-    setQPToGain(qpToGain + questList[quest].questPoints);
+    let newQp = qpToGain + Number(questList[quest].questPoints);
+    console.log(quest);
+    console.log(questList[quest].questPoints);
+    console.log(newQp);
+    setQPToGain(newQp);
+    console.log(qpToGain);
   };
 
   const addXpToGain = (quest) => {
@@ -423,11 +425,13 @@ export default function Quester(UserData) {
 
   const leftSideRight = () => {
     return (
-      <div className="w-1/3 h-full border-l border-black">
+      <div className="w-1/3 h-[96vh] border-l border-b border-black flex flex-col">
         <h2 className="text-2xl text-center border-b-2 border-black">
           Quests Completed
         </h2>
-        <div className="h-full overflow-auto">{questsCompletedDisplay()}</div>
+        <div className="flex flex-grow flex-col h-full overflow-auto">
+          {questsCompletedDisplay()}
+        </div>
       </div>
     );
   };
@@ -462,26 +466,31 @@ export default function Quester(UserData) {
   const handleDeselect = (e) => {
     e.preventDefault();
     setQuestsToAdd([]);
+    setQPToGain(0);
     setXPToAdd(baseState);
   };
+
   const handleSelect = (e) => {
     e.preventDefault();
     const questsAvailable = Object.keys(questList).filter((quest) => {
-      return !questsCompleted.includes(quest);
+      return !questsCompleted.includes(quest) && !questsToAdd.includes(quest);
     });
-    setQuestsToAdd(questsAvailable);
-    const xpToAdd = {};
+    const newQuests = [...questsToAdd, ...questsAvailable];
+    const qpToAdd = newQuests.reduce((acc, quest) => {
+      return acc + questList[quest].questPoints;
+    }, 0);
+    setQuestsToAdd(newQuests);
     questsAvailable.forEach((quest) => {
       addXpToGain(quest);
-      addQpToGain(quest);
     });
+    setQPToGain(qpToAdd);
   };
 
   return (
-    <div className=" min-h-[80vh] text-sm h-[90vh] max-h-[100vh] border-red-900 flex flex-row w-[96%] mx-auto flex-grow">
+    <div className=" min-h-[80vh] text-sm h-[94vh] max-h-[100vh] border-red-900 flex flex-row w-[100%] px-2 mx-auto flex-grow bg-gradient-to-r from-yellow-100 to-gray-500 overflow-hidden">
       <div
         id="leftSide"
-        className=" h-full max-h-[100vh] w-[70%] min-h-[80vh] border-green-500 relative flex-row flex pb-8"
+        className=" h-full max-h-[90vh] w-[70%] min-h-[80vh] border-green-500 relative flex-row flex pb-8"
       >
         <div className="h-full w-1/3">
           <div className="h-full border-r border-black w-full min-w-full">
@@ -536,7 +545,7 @@ export default function Quester(UserData) {
             </p>
           </div>
           <div className="px-2">XP Distribution:</div>
-          <div className="h-4/5 overflow-auto border rounded-xl border-black w-3/4 mx-auto bg-gray-400 text-yellow-200">
+          <div className="h-4/5 flex flex-col justify-evenly overflow-auto border rounded-xl border-black w-3/4 mx-auto bg-gray-400 text-yellow-200">
             {questXpDisplay()}
           </div>
           {/* <p>Quests Remaining:</p> */}

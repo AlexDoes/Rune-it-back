@@ -10,8 +10,6 @@ export default function RuneScraper() {
 
   const onSearch = (searchTerm) => {
     setScrapeTerm(searchTerm);
-    console.log("searching for: ", searchTerm);
-    console.log("scrapeTerm: ", scrapeTerm);
   };
 
   return (
@@ -25,8 +23,10 @@ export default function RuneScraper() {
         <SearchBar onSearch={onSearch} />
       </div>
       <div className="w-[60%]">
-        <ScrapedResults searchQuest={scrapeTerm ? scrapeTerm : ""} />
-        {scrapeTerm}
+        <ScrapedResults
+          searchQuest={scrapeTerm ? scrapeTerm : ""}
+          key={scrapeTerm}
+        />
       </div>
     </div>
   );

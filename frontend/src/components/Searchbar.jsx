@@ -655,7 +655,7 @@ const questData = [
 ];
 
 export default function SearchBar(props) {
-  console.log(props);
+  console.log(props.onSearch);
   function SearchThis(value) {
     props.onSearch(value);
   }

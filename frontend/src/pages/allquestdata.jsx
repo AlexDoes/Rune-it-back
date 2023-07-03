@@ -50,7 +50,7 @@ export default function AQD() {
     return <h1>Loading...</h1>;
   }
   return (
-    <div className="w-full mx-auto b-slate-500 px-10 bg-gradient-to-br from-slate-500 to-amber-100">
+    <div className="w-full mx-auto b-slate-500 px-10 bg-gradient-to-br from-slate-500 to-amber-100 scrollbar-thin scrollbar-track-slate-900">
       <h1 className="text-2xl text-white w-full text-center py-4">
         All Quest Data
       </h1>
