@@ -87,6 +87,38 @@ const SAMPLE_QUESTER_DATA2 = {
   totalXP: 5500,
   "Quests Completed": ["Animal Magnetism"],
 };
+const SAMPLE_QUESTER_DATA3 = {
+  Username: "Tashisama",
+  "Number of Quests Completed": 0,
+  skillXP: {
+    Agility: 0,
+    Attack: 0,
+    Construction: 0,
+    Cooking: 0,
+    Crafting: 0,
+    Defence: 0,
+    Farming: 0,
+    Fletching: 0,
+    Firemaking: 0,
+    Fishing: 0,
+    Herblore: 0,
+    Hitpoints: 0,
+    Hunter: 0,
+    Magic: 0,
+    Mining: 0,
+    Prayer: 0,
+    Ranged: 0,
+    Runecraft: 0,
+    Slayer: 0,
+    Smithing: 0,
+    Strength: 0,
+    Thieving: 0,
+    Woodcutting: 0,
+  },
+  totalQuestPoints: 0,
+  totalXP: 0,
+  "Quests Completed": [],
+};
 
 const SKILLS = [
   "Agility",
@@ -116,8 +148,9 @@ const SKILLS = [
 
 export default function Quester(UserData) {
   const [questerData, setQuesterData] = useState(
-    UserData.size ? UserData : SAMPLE_QUESTER_DATA2
+    UserData.size ? UserData : SAMPLE_QUESTER_DATA3
   );
+  const [added, setAdded] = useState(false);
   const [skillXP, setSkillXP] = useState(questerData.skillXP);
   const [totalXP, setTotalXP] = useState(questerData.totalXP);
   const [totalQuestPoints, setTotalQuestPoints] = useState(
@@ -164,6 +197,10 @@ export default function Quester(UserData) {
   }, []);
 
   const handleQuestToggle = (quest) => {
+    if (questsToAdd === []) {
+      setXPToAdd(baseState);
+      setQPToGain(0);
+    }
     if (questsToAdd.includes(quest)) {
       setQuestsToAdd(questsToAdd.filter((item) => item !== quest));
       Object.entries(questList[quest].experience).forEach((skillXP) => {
@@ -177,8 +214,12 @@ export default function Quester(UserData) {
     } else {
       setQuestsToAdd([...questsToAdd, quest]);
       addXpToGain(quest);
-      setQPToGain(qpToGain + questList[quest].questPoints);
+      addQpToGain(quest);
     }
+  };
+
+  const addQpToGain = (quest) => {
+    setQPToGain(qpToGain + questList[quest].questPoints);
   };
 
   const addXpToGain = (quest) => {
@@ -248,6 +289,9 @@ export default function Quester(UserData) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    if (questsToAdd.length === 0) {
+      return;
+    }
     const newQuestsCompleted = [...questsCompleted, ...questsToAdd];
     const newTotalXP = totalXP + Object.values(xpToAdd).reduce((a, b) => a + b);
     const newSkillXP = { ...skillXP };
@@ -265,7 +309,9 @@ export default function Quester(UserData) {
     setQuestsCompleted(newQuestsCompleted);
     setXPAdded(xpToAdd);
     setXPToAdd(baseState);
+    setQPToGain(0);
     setQuestsToAdd([]);
+    setAdded(true);
   };
 
   const handleRemove = (quest) => {
@@ -336,7 +382,7 @@ export default function Quester(UserData) {
           Quests to Add
         </h2>
         <div className="h-full flex flex-col flex-grow w-full ">
-          <div className="h-2/5 min-h-1/4 overflow-auto bg-gray-400 text-yellow-200 px-2">
+          <div className="h-2/5 min-h-1/4 overflow-auto bg-slate-400 text-yellow-200 px-2">
             {questsToAddDisplay()}
           </div>
           <div className="h-3/5 border-black overflow-auto text-lg flex border flex-col w-full">
@@ -388,22 +434,25 @@ export default function Quester(UserData) {
 
   const formButtons = () => {
     return (
-      <div className="w-full h-[25px] items-end gap-4 flex flex-row -bottom-[25px] absolute border-black border-b-2 ">
+      <div className="w-full h-[25px] items-end gap-4 flex flex-row -bottom-[25px] absolute border-black border-b-2 pb-1 ">
         <button
-          className="border border-black px-2 py-1"
+          className="border border-black px-2 py-1 hover:backdrop-opacity-90 hover:bg-gray-300 rounded-md"
           type=""
           onClick={handleSelect}
         >
           Select All
         </button>
         <button
-          className="border border-black px-2 py-1"
+          className="border border-black px-2 py-1 hover:backdrop-opacity-90 hover:bg-gray-300 rounded-md"
           type=""
           onClick={handleDeselect}
         >
           Deselect All
         </button>
-        <button className="border border-black px-2 py-1" type="submit">
+        <button
+          className="border border-black px-2 py-1 hover:bg-gray-300 rounded-md"
+          type="submit"
+        >
           Submit
         </button>
       </div>
@@ -424,11 +473,12 @@ export default function Quester(UserData) {
     const xpToAdd = {};
     questsAvailable.forEach((quest) => {
       addXpToGain(quest);
+      addQpToGain(quest);
     });
   };
 
   return (
-    <div className=" min-h-[80vh] text-sm h-[90vh] max-h-[100vh] border-red-900 flex flex-row w-full flex-grow">
+    <div className=" min-h-[80vh] text-sm h-[90vh] max-h-[100vh] border-red-900 flex flex-row w-[96%] mx-auto flex-grow">
       <div
         id="leftSide"
         className=" h-full max-h-[100vh] w-[70%] min-h-[80vh] border-green-500 relative flex-row flex pb-8"
@@ -456,18 +506,36 @@ export default function Quester(UserData) {
       </div>
       <div
         id="rightSide"
-        className=" h-full w-[30%] min-h-[80vh] border-black indent-3 border-l"
+        className=" h-full w-[30%] min-h-[80vh] border-black border-l"
       >
         <div className="flex flex-col w-full h-full">
           <h2 className="text-2xl w-full justify-center items-center text-center border-b-2 border-black">
             {" "}
             QUESTER STATS
           </h2>
-          <p>Username: {username}</p>
-          <p>Number of Quests Completed: {questsCompleted.length} </p>
-          <p>Total XP Rewarded: {Math.trunc(totalXP).toLocaleString()}</p>
-          <p>Quest Points Rewarded: {totalQuestPoints} </p>
-          <p>XP Distribution:</p>
+          <div className="flex px-2 gap-1">
+            Username:
+            <p className={``}>{username}</p>
+          </div>
+          <div className="flex px-2 gap-1">
+            Number of Quests Completed:
+            <p className={`${added ? "text-blue-300" : ""}`}>
+              {questsCompleted.length}
+            </p>
+          </div>
+          <div className="flex px-2 gap-1">
+            Total XP Rewarded:
+            <p className={`${added ? "text-blue-300" : ""}`}>
+              {Math.trunc(totalXP).toLocaleString()}
+            </p>
+          </div>
+          <div className="flex px-2 gap-1">
+            Quest Points Rewarded:
+            <p className={`${added ? "text-blue-300" : ""}`}>
+              {totalQuestPoints}
+            </p>
+          </div>
+          <div className="px-2">XP Distribution:</div>
           <div className="h-4/5 overflow-auto border rounded-xl border-black w-3/4 mx-auto bg-gray-400 text-yellow-200">
             {questXpDisplay()}
           </div>

@@ -34,11 +34,11 @@ export default function AQD() {
   if (!flag) {
     // return <div> Loading... </div>;
     return (
-      <div className="w-[90vw] h-[75vh] flex items-center justify-center flex-col overflow-hidden">
-        <p className="text-4xl">Loading all quest data...</p>
+      <div className="w-[full] h-[100vh] flex items-center justify-center flex-col overflow-hidden m-auto bg-slate-500">
+        <p className="text-6xl text-yellow-200">Loading all quest data...</p>
         <ReactLoading
           type={"balls"}
-          color={"Orange"}
+          color={"Lightgreen"}
           height={500}
           width={500}
         />
@@ -50,8 +50,10 @@ export default function AQD() {
     return <h1>Loading...</h1>;
   }
   return (
-    <div className="">
-      <h1 className="text-2xl pb-4">All Quest Data</h1>
+    <div className="w-full mx-auto b-slate-500 px-10 bg-gradient-to-br from-slate-500 to-amber-100">
+      <h1 className="text-2xl text-white w-full text-center py-4">
+        All Quest Data
+      </h1>
       <QuestTable quests={quests} onSort={handleSort} />
       {/* {quests.length > 0 && <QuestTable questsData={quests} />} */}
     </div>

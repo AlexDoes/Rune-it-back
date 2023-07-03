@@ -30,44 +30,48 @@ const QuestTable = ({ quests, onSort }) => {
 
   return (
     <Table striped bordered hover>
-      <thead>
-        <tr className=" cursor-pointer border-b-2 border-black border-l border-r border-t">
-          <th
-            //   onClick={sortTable}
-            className=" border-x border-black"
-          >
-            Quest Name
-          </th>
+      <thead className="text-blue-200">
+        <tr className="border-b-2 border-black border-l border-r border-t">
+          <th className=" border-x border-black">Quest Name</th>
           <th className="border-x border-black">Experience</th>
-          <th className="border-x border-black">Quest Points</th>
+          <th className="border-x border-black px-4">Quest Points</th>
           <th className="border-x border-black">Items</th>
         </tr>
       </thead>
-      <tbody>
+      <tbody className="h-full">
         {Object.keys(quests).map((questName) => {
           const quest = quests[questName];
           return (
-            <tr key={questName} className="border-b-2 border-black">
+            <tr
+              key={questName}
+              className="border-b-2 border-black text-yellow-200"
+            >
               <td className="border-r-2 border-black">
                 <a
                   href={`https://oldschool.runescape.wiki/w/${questName}`}
                   target="_blank"
+                  className="hover:text-blue-300 hover:underline text-center text-white"
                 >
                   {questName}
                 </a>
               </td>
-              <td className="border-r-2 border-black">
+              <td className="border-r-2 border-black px-3 py-2">
                 {quest.experience.map((exp, index) => (
                   <div key={index}>{standardizeSentence(exp)}</div>
                 ))}
               </td>
-              <td className="border-r-2 border-black">{quest.questPoints}</td>
-              <td className="pl-2 text-left">
+              <td className=" text-center text-white items-center h-full justify-center border-black">
+                {quest.questPoints}
+              </td>
+              <td className="p-3 text-left text-gray-700 border-black border-l-2">
                 {quest.items.map((item, index) => (
                   <div className="text-left" key={index}>
                     {standardizeSentence(item)}
                   </div>
                 ))}
+                {quest.items.length === 0 && (
+                  <div className="text-left">No items rewarded </div>
+                )}
               </td>
             </tr>
           );

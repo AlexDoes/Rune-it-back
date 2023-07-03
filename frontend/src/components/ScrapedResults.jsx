@@ -5,12 +5,15 @@ import { useState, useEffect } from "react";
 import DOMPurify from "dompurify";
 import parse from "html-react-parser";
 import { ReactMarkdown } from "react-markdown/lib/react-markdown";
-import SyntaxHighlighter from "react-syntax-highlighter";
+// import SyntaxHighlighter from "react-syntax-highlighter";
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 // import { duoToneForest } from "react-syntax-highlighter/dist/esm/styles/hljs";
 import {
   duotoneDark,
   duotoneForest,
 } from "react-syntax-highlighter/dist/esm/styles/prism";
+import { docco } from "react-syntax-highlighter/dist/esm/styles/hljs";
+import { darcula } from "react-syntax-highlighter/dist/cjs/styles/prism";
 
 export default function ScrapedResults(props) {
   console.log(props);
@@ -32,11 +35,12 @@ export default function ScrapedResults(props) {
     let sanitizedHtml = DOMPurify.sanitize(renderHtml[1]);
     let sanitizedImg = DOMPurify.sanitize(renderHtml[0]);
     console.log(sanitizedImg);
+    const codeString = "(num) => num + 1";
     return (
       <div className="flex flex-col">
         HTML for rewards image from OSRS Wiki:
         <SyntaxHighlighter
-          language="html"
+          language="javascript"
           style={duotoneForest}
           wrapLongLines
           wrapLines
@@ -44,7 +48,7 @@ export default function ScrapedResults(props) {
           {sanitizedImg}
         </SyntaxHighlighter>
         HTML for rewards from OSRS Wiki:
-        <SyntaxHighlighter language="html" style={duotoneDark} wrapLines>
+        <SyntaxHighlighter language="javascript" style={duotoneDark} wrapLines>
           {sanitizedHtml}
         </SyntaxHighlighter>
       </div>
