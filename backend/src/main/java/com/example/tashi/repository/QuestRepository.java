@@ -6,6 +6,8 @@ import org.springframework.stereotype.Repository;
 import org.springframework.data.repository.CrudRepository;
 import java.util.Optional;
 import com.example.tashi.models.Quest;
+import com.example.tashi.models.User;
+
 
 @Repository
 public interface QuestRepository extends MongoRepository<Quest, String> {

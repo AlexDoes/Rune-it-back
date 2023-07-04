@@ -16,6 +16,12 @@ function Navbar() {
         <li>
           <a href="/contact">Contact</a>
         </li>
+        <li>
+          <a href="http://localhost:8080/oauth2/authorization/google">Sign In</a>
+        </li>
+        <li>
+          <a href="http://localhost:8080/logout">Logout</a>
+        </li>
       </ul>
     </nav>
   );
