@@ -34,18 +34,10 @@ public class UserController {
         return userRepository.findAll();
     }
 
-    @RequestMapping("/userinfo")
-    public User userinfo(OAuth2AuthenticationToken auth) {
-            Map<String, Object> attributes = auth.getPrincipal().getAttributes();
-            String userEmail = (String) attributes.get("email");
-            return userRepository.findByEmail(userEmail);
-        }
-
-    @PutMapping("/api/upateuserinfo")
+    @PutMapping("/updateuserinfo")
     public ResponseEntity<User> updateUserInfo(@RequestBody User updatedUserInfo, OAuth2AuthenticationToken auth) {
         Map<String, Object> attributes = auth.getPrincipal().getAttributes();
         String userEmail = (String) attributes.get("email");
-
         try {
             User user = userService.updateUser(updatedUserInfo, userEmail);
             return ResponseEntity.ok(user);
@@ -54,4 +46,10 @@ public class UserController {
         }
     }
 
+    @RequestMapping("/userinfo")
+    public User userinfo(OAuth2AuthenticationToken auth) {
+            Map<String, Object> attributes = auth.getPrincipal().getAttributes();
+            String userEmail = (String) attributes.get("email");
+            return userRepository.findByEmail(userEmail);
+    }
 }

@@ -13,8 +13,8 @@ export default function RuneScraper() {
   };
 
   return (
-    <div className="w-full flex flex-col items-center justify-center pt-4 gap-3">
-      <div className="prose prose-zinc lg:prose-xl w-full border-black border rounded-xl p-4">
+    <div className="w-full flex flex-col items-center pt-4 gap-3 bg-gradient-to-r from-orange-50 to-slate-200 flex-grow h-inherit min-h-[94vh]">
+      <div className="prose prose-zinc lg:prose-lg w-full border-black border rounded-xl p-4">
         Search for a quest to see its rewards. This page uses Cheerio to scrape
         the RuneScape Wiki for quest rewards. References an anchor tag and pulls
         relevant text from the next sibling to display the rewards.

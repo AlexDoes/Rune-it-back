@@ -30,7 +30,7 @@ public class UserService {
         if (user == null) {
             throw new UserNotFoundException("User with email " + email + " not found");
         } else {
-            BeanUtils.copyProperties(updatedUserInfo, user, "email");
+            BeanUtils.copyProperties(updatedUserInfo, user, "email", "id");
             return userRepository.save(user);
         }
     }

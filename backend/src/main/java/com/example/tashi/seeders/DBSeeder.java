@@ -108,12 +108,11 @@ public class DBSeeder implements CommandLineRunner {
             var number = i + "";
             user.setId(number);
             user.setUsername("testUser" + i);
-            user.setPassword("password" + i);
             user.setEmail("test" + i + "@test.com");
 
-            for (Quest quest : quests) {
-                user.addNotStartedQuest(quest);
-            }
+            // for (Quest quest : quests) {
+            //     user.addNotStartedQuest(quest);
+            // }
 
             userRepository.save(user);
         }

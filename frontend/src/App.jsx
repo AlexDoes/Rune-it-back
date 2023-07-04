@@ -28,7 +28,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/webscraper" element={<Webscraper />} />
+          <Route path="/runescraper" element={<Webscraper />} />
           <Route path="/aqd" element={<AQD />} />
           <Route path="*" element={<Home />} />
           <Route path="/quester" element={<Quester />} />

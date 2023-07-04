@@ -23,8 +23,6 @@ export default function ScrapedResults(props) {
     }
   }, [quest]);
 
-  console.log(renderHtml[2]);
-
   const rewardsDisplay = () => {
     if (renderHtml === undefined || renderHtml.length === 0) {
       return <div></div>;

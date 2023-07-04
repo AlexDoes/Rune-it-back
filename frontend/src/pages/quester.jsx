@@ -1,92 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Form } from "react-router-dom";
+import { useUser } from "../utils/userContext";
 
-const SAMPLE_QUESTER_DATA = {
-  Username: "Tashisama",
-  "Number of Quests Completed": 20,
-  skillXP: {
-    Agility: 0,
-    Attack: 4825,
-    Construction: 0,
-    Cooking: 550,
-    Crafting: 775,
-    Defence: 1050,
-    Farming: 0,
-    Fletching: 0,
-    Firemaking: 0,
-    Fishing: 0,
-    Herblore: 325,
-    Hitpoints: 0,
-    Hunter: 0,
-    Magic: 1125,
-    Mining: 1300,
-    Prayer: 6625,
-    Ranged: 300,
-    Runecraft: 0,
-    Slayer: 18650,
-    Smithing: 1375,
-    Strength: 3075,
-    Thieving: 2750,
-    Woodcutting: 0,
-  },
-  totalQuestPoints: 65,
-  totalXP: 35352,
-  "Quests Completed": [
-    `Romeo & Juliet`,
-    `Cook's Assistant`,
-    `Witch's Potion`,
-    `Demon Slayer`,
-    `Shield of Arrav`,
-    `The Restless Ghost`,
-    `Ernest the Chicken`,
-    `Sheep Shearer`,
-    `Pirate's Treasure`,
-    `Prince Ali Rescue`,
-    `Doric's Quest`,
-    `Goblin Diplomacy`,
-    `Imp Catcher`,
-    `Black Knights' Fortress`,
-    `Druidic Ritual`,
-    `Witch's House`,
-    `Gertrude's Cat`,
-    `Rune Mysteries`,
-    `Lost City`,
-    `Elemental Workshop I`,
-  ],
-};
-
-const SAMPLE_QUESTER_DATA2 = {
-  Username: "Tashisama",
-  "Number of Quests Completed": 0,
-  skillXP: {
-    Agility: 0,
-    Attack: 0,
-    Construction: 0,
-    Cooking: 0,
-    Crafting: 1000,
-    Defence: 0,
-    Farming: 0,
-    Fletching: 1000,
-    Firemaking: 0,
-    Fishing: 0,
-    Herblore: 0,
-    Hitpoints: 0,
-    Hunter: 0,
-    Magic: 0,
-    Mining: 0,
-    Prayer: 0,
-    Ranged: 0,
-    Runecraft: 0,
-    Slayer: 1000,
-    Smithing: 0,
-    Strength: 0,
-    Thieving: 0,
-    Woodcutting: 2500,
-  },
-  totalQuestPoints: 1,
-  totalXP: 5500,
-  "Quests Completed": ["Animal Magnetism"],
-};
 const SAMPLE_QUESTER_DATA3 = {
   Username: "Tashisama",
   "Number of Quests Completed": 0,
@@ -120,6 +35,41 @@ const SAMPLE_QUESTER_DATA3 = {
   "Quests Completed": [],
 };
 
+const sampleDATA = {
+  id: "64a47bcd5e2e6e3a2b585be6",
+  username: "Null User",
+  email: "NULLER@gmail.com",
+  totalXP: 0,
+  totalQuestPoints: 0,
+  completedQuests: [],
+  inProgressQuests: [],
+  notStartedQuests: [],
+  skillXP: null,
+  defence: 0,
+  strength: 0,
+  fletching: 0,
+  slayer: 0,
+  farming: 0,
+  construction: 0,
+  mining: 0,
+  smithing: 0,
+  fishing: 0,
+  attack: 0,
+  woodcutting: 0,
+  agility: 0,
+  herblore: 0,
+  thieving: 0,
+  hunter: 0,
+  ranged: 0,
+  prayer: 0,
+  magic: 0,
+  runecraft: 0,
+  hitpoints: 0,
+  crafting: 0,
+  cooking: 0,
+  firemaking: 0,
+};
+
 const SKILLS = [
   "Agility",
   "Attack",
@@ -147,19 +97,42 @@ const SKILLS = [
 ];
 
 export default function Quester(UserData) {
-  const [questerData, setQuesterData] = useState(
-    UserData.size ? UserData : SAMPLE_QUESTER_DATA3
-  );
+  const [questerData, setQuesterData] = useState(sampleDATA);
+  const user = useUser();
   const [added, setAdded] = useState(false);
-  const [skillXP, setSkillXP] = useState(questerData.skillXP);
+  const [skillXP, setSkillXP] = useState({
+    Agility: questerData.agility, // 1
+    Attack: questerData.attack, // 2
+    Construction: questerData.construction, // 3
+    Cooking: questerData.cooking, // 4
+    Crafting: questerData.crafting, // 5
+    Defence: questerData.defence, // 6
+    Farming: questerData.farming, // 7
+    Fletching: questerData.fletching, // 8
+    Firemaking: questerData.firemaking, // 9
+    Fishing: questerData.fishing, // 10
+    Herblore: questerData.herblore, // 11
+    Hitpoints: questerData.hitpoints, // 12
+    Hunter: questerData.hunter, // 13
+    Magic: questerData.magic, // 14
+    Mining: questerData.mining, // 15
+    Prayer: questerData.prayer, // 16
+    Ranged: questerData.ranged, // 17
+    Runecraft: questerData.runecraft, // 18
+    Slayer: questerData.slayer, // 19
+    Smithing: questerData.smithing, // 20
+    Strength: questerData.strength, // 21
+    Thieving: questerData.thieving, // 22
+    Woodcutting: questerData.woodcutting, // 23
+  });
   const [totalXP, setTotalXP] = useState(questerData.totalXP);
   const [totalQuestPoints, setTotalQuestPoints] = useState(
     questerData.totalQuestPoints
   );
   const [questsCompleted, setQuestsCompleted] = useState(
-    questerData["Quests Completed"]
+    questerData["completedQuests"]
   );
-  const [username, setUsername] = useState(questerData.Username);
+  const [username, setUsername] = useState(questerData.email);
   const [questList, setQuestList] = useState([]);
   const [questsToAdd, setQuestsToAdd] = useState([]);
   const [questOptions, setQuestOptions] = useState([]);
@@ -192,7 +165,52 @@ export default function Quester(UserData) {
     getQuests();
   }, []);
 
-  // useEffect(() => {}, [qpToGain]);
+  useEffect(() => {
+    const getUserInfo = async () => {
+      try {
+        const response = await fetch("http://localhost:8080/api/userinfo", {
+          method: "GET",
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json",
+          },
+          credentials: "include",
+        });
+        const data = await response.json();
+        setQuesterData(data);
+        setUsername(data.email);
+        setTotalXP(data.totalXP);
+        setTotalQuestPoints(data.totalQuestPoints);
+        setQuestsCompleted(data.completedQuests);
+        setSkillXP({
+          Agility: data.agility, // 1
+          Attack: data.attack, // 2
+          Construction: data.construction, // 3
+          Cooking: data.cooking, // 4
+          Crafting: data.crafting, // 5
+          Defence: data.defence, // 6
+          Farming: data.farming, // 7
+          Fletching: data.fletching, // 8
+          Firemaking: data.firemaking, // 9
+          Fishing: data.fishing, // 10
+          Herblore: data.herblore, // 11
+          Hitpoints: data.hitpoints, // 12
+          Hunter: data.hunter, // 13
+          Magic: data.magic, // 14
+          Mining: data.mining, // 15
+          Prayer: data.prayer, // 16
+          Ranged: data.ranged, // 17
+          Runecraft: data.runecraft, // 18
+          Slayer: data.slayer, // 19
+          Smithing: data.smithing, // 20
+          Strength: data.strength, // 21
+          Thieving: data.thieving, // 22
+          Woodcutting: data.woodcutting, // 23
+        });
+      } catch (err) {}
+    };
+    getUserInfo();
+  }, []);
 
   const handleQuestToggle = (quest) => {
     if (questsToAdd === []) {
@@ -217,11 +235,7 @@ export default function Quester(UserData) {
 
   const addQpToGain = (quest) => {
     let newQp = qpToGain + Number(questList[quest].questPoints);
-    console.log(quest);
-    console.log(questList[quest].questPoints);
-    console.log(newQp);
     setQPToGain(newQp);
-    console.log(qpToGain);
   };
 
   const addXpToGain = (quest) => {
@@ -289,7 +303,7 @@ export default function Quester(UserData) {
       });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     if (questsToAdd.length === 0) {
       return;
@@ -310,6 +324,25 @@ export default function Quester(UserData) {
     setTotalQuestPoints(newTotalQuestPoints);
     setQuestsCompleted(newQuestsCompleted);
     setXPAdded(xpToAdd);
+
+    const newObject = {
+      completedQuests: newQuestsCompleted,
+      totalXP: newTotalXP,
+      totalQuestPoints: newTotalQuestPoints,
+    };
+    Object.entries(newSkillXP).forEach(([skillname, xp]) => {
+      newObject[skillname.toLowerCase()] = Math.trunc(xp);
+    });
+    try {
+      const res = await fetch("http://localhost:8080/api/updateuserinfo", {
+        method: "PUT",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(newObject),
+        credentials: "include",
+      });
+    } catch (err) {}
     setXPToAdd(baseState);
     setQPToGain(0);
     setQuestsToAdd([]);
@@ -336,12 +369,12 @@ export default function Quester(UserData) {
           className="w-full border-black flex flex-row gap-1 text-sm items-center justify-center group"
         >
           <label className="ml-2 w-full">{quest}</label>
-          <div
+          {/* <div
             className="group-hover:block hidden hover:text-blue-300 cursor-pointer transition-all duration-500 ease-in-out"
             onClick={() => handleRemove(quest)}
           >
             Remove
-          </div>
+          </div> */}
         </div>
       );
     });
@@ -370,6 +403,23 @@ export default function Quester(UserData) {
 
   const questsToAddDisplay = () => {
     questsToAdd.sort();
+    if (questsCompleted.length === 156 || questsCompleted.length === 166) {
+      return (
+        <div className="w-full text-xl text-center h-full items-center justify-center flex flex-col text-yellow-200 bg-gray-400">
+          <p>All quests completed!</p>
+        </div>
+      );
+    }
+    if (questsToAdd.length === 0) {
+      return (
+        <div className="w-full text-xl">
+          {!user && <p className="">Sign in to save your quest progress!</p>}
+          <p>No quests selected.</p>
+          <p>Select quests to add.</p>
+          <p>Below are stats you'll gain from questing.</p>
+        </div>
+      );
+    }
     return questsToAdd.map((quest) => {
       {
         return <p key={quest + "Adding"}>{quest}</p>;
@@ -459,6 +509,15 @@ export default function Quester(UserData) {
         >
           Submit
         </button>
+        {questsCompleted.length > 0 && (
+          <button
+            className="border border-black px-2 py-1 hover:bg-gray-300 rounded-md"
+            type="reset"
+            onClick={handleReset}
+          >
+            Reset
+          </button>
+        )}
       </div>
     );
   };
@@ -484,6 +543,75 @@ export default function Quester(UserData) {
       addXpToGain(quest);
     });
     setQPToGain(qpToAdd);
+  };
+
+  const handleReset = async (e) => {
+    e.preventDefault();
+    setQuestsToAdd([]);
+    setQPToGain(0);
+    setXPToAdd(baseState);
+    const newObject = {
+      completedQuests: [],
+      totalXP: 0,
+      totalQuestPoints: 0,
+    };
+    Object.entries(SKILLS).forEach(([skill, xp]) => {
+      newObject[skill.toLowerCase()] = 0;
+    });
+    try {
+      const res = await fetch("http://localhost:8080/api/updateuserinfo", {
+        method: "PUT",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(newObject),
+        credentials: "include",
+      }).then((res) => fetchAndSetUser());
+    } catch (err) {}
+  };
+
+  const fetchAndSetUser = async () => {
+    try {
+      const response = await fetch("http://localhost:8080/api/userinfo", {
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        credentials: "include",
+      });
+      const data = await response.json();
+      setQuesterData(data);
+      setUsername(data.email);
+      setTotalXP(data.totalXP);
+      setTotalQuestPoints(data.totalQuestPoints);
+      setQuestsCompleted(data.completedQuests);
+      setSkillXP({
+        Agility: data.agility, // 1
+        Attack: data.attack, // 2
+        Construction: data.construction, // 3
+        Cooking: data.cooking, // 4
+        Crafting: data.crafting, // 5
+        Defence: data.defence, // 6
+        Farming: data.farming, // 7
+        Fletching: data.fletching, // 8
+        Firemaking: data.firemaking, // 9
+        Fishing: data.fishing, // 10
+        Herblore: data.herblore, // 11
+        Hitpoints: data.hitpoints, // 12
+        Hunter: data.hunter, // 13
+        Magic: data.magic, // 14
+        Mining: data.mining, // 15
+        Prayer: data.prayer, // 16
+        Ranged: data.ranged, // 17
+        Runecraft: data.runecraft, // 18
+        Slayer: data.slayer, // 19
+        Smithing: data.smithing, // 20
+        Strength: data.strength, // 21
+        Thieving: data.thieving, // 22
+        Woodcutting: data.woodcutting, // 23
+      });
+    } catch (err) {}
   };
 
   return (
