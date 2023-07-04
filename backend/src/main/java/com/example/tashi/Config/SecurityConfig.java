@@ -9,6 +9,7 @@ import org.springframework.security.oauth2.client.oidc.userinfo.OidcUserService;
 import org.springframework.security.oauth2.client.userinfo.DefaultOAuth2UserService;
 import org.springframework.security.oauth2.client.userinfo.OAuth2UserRequest;
 import org.springframework.security.oauth2.client.userinfo.OAuth2UserService;
+import org.springframework.security.oauth2.core.OAuth2AuthenticationException;
 import org.springframework.security.oauth2.core.oidc.user.OidcUser;
 import org.springframework.security.oauth2.core.user.OAuth2User;
 import org.springframework.security.web.SecurityFilterChain;
@@ -16,6 +17,9 @@ import com.example.tashi.repository.UserRepository;
 import com.example.tashi.models.User;
 import com.example.tashi.services.CustomOAuth2UserService;
 import static org.springframework.security.config.Customizer.withDefaults;
+import com.example.tashi.repository.UserRepository;
+
+import javax.print.DocFlavor.STRING;
 
 import org.ietf.jgss.Oid;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,85 +30,83 @@ public class SecurityConfig {
 
     @Autowired
     private CustomOAuth2UserService customOAuth2UserService;
+
+    @Autowired
     private UserRepository userRepository;
 
     
 
     @Bean
-    SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
-        // return http
-        //     .authorizeHttpRequests(auth -> {
-        //         auth.requestMatchers("/").permitAll();
-        //         auth.requestMatchers("/favicon.ico").permitAll();
-        //         auth.anyRequest().authenticated();
-        //     })
-        //     .oauth2Login(oauth2 -> oauth2
-        //         .userInfoEndpoint(userInfo -> userInfo
-        //             .userService(this.oauthUserService()))) 
-        //     .build();
-        
-
-        // return http
-        //      .authorizeHttpRequests(auth -> {
-        //         auth.requestMatchers("/").permitAll();
-        //         auth.anyRequest().authenticated();
-        //     })
-        //     .oauth2Login(oauth2Login -> oauth2Login
-        //         .userInfoEndpoint(userInfo -> userInfo
-		// 	        .userService(this.oauth2UserService())
-		// 	    ).defaultSuccessUrl("/api/hello", true)
-        //     )
-        //     .logout(logout -> logout
-        //         .logoutUrl("/logout")
-        //         .logoutSuccessUrl("/")
-        //         .invalidateHttpSession(true)
-        //         .deleteCookies("JSESSIONID")
-                
-        //     )
-        //     .build();
-
-
-        http
-            .authorizeHttpRequests(authorizeHttpRequests ->
-                authorizeHttpRequests
-                    .requestMatchers("/").permitAll()
-                    .anyRequest().authenticated()
-            );
-   
-
+    public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
+        http.
+            cors(withDefaults());
         http.oauth2Login(
             oauth2Login ->
                 oauth2Login
                     .userInfoEndpoint(userInfoEndpoint ->
                         userInfoEndpoint
-                            .userService(this.oauth2UserService())
+                            .oidcUserService(oidcUserService())
                     )
-                    .defaultSuccessUrl("/api/hello", true)  
-        );
- 
-
-            // .oauth2Login(oauth2Login ->
-            //     oauth2Login
-            //         .userInfoEndpoint(userInfoEndpoint ->
-            //             userInfoEndpoint
-            //                 .userService(this.oauth2UserService())
-            //         )
-            //         .defaultSuccessUrl("/api/hello", true)  
-            // )
+                    .defaultSuccessUrl("http://localhost:5173/", true)  
+        );    
+        http
+            .csrf( csrf -> csrf.disable() )
+            .authorizeHttpRequests(authorizeHttpRequests ->
+                authorizeHttpRequests
+                    .requestMatchers("/").permitAll()
+                    .anyRequest().authenticated()
+            );
             http.logout(logout ->
                 logout
                     .logoutUrl("/logout")
-                    .logoutSuccessUrl("/")
+                    .logoutSuccessUrl("http://localhost:5173/")
                     .invalidateHttpSession(true)
                     .deleteCookies("JSESSIONID")
+                    
             );
             System.out.println("http.build(): ");
         return http.build();
         }
  
     public OAuth2UserService<OAuth2UserRequest, OAuth2User> oauth2UserService()  {
-        return this.customOAuth2UserService;
+        System.out.println("oauth2UserService");
+        return this.customOAuth2UserService;        
     }     
+
+    private OAuth2UserService<OidcUserRequest, OidcUser> oidcUserService() {            
+        System.out.println("oidcUserService");
+        final OidcUserService delegate = new OidcUserService();
+
+        return (userRequest) -> {
+            OidcUser oidcUser = delegate.loadUser(userRequest);
+            Object claims = oidcUser.getClaims();
+            Object attributes = oidcUser.getAttributes();
+
+            // System.out.println("CLAIMSASJDAKSLDJ SADASADASADSADADADSADsdasd,ans,dma,s.mmd,.masmd.,mas.dms.,md: " + claims);
+            
+            // System.out.println("attributes: " + attributes);
+
+            String email = oidcUser.getEmail();
+            String name = oidcUser.getFullName();
+            String id = oidcUser.getIdToken().getTokenValue();
+
+            User possibleUser = userRepository.findByEmail(email);
+            if (possibleUser == null) {
+                User newUser = new User();
+                newUser.setEmail(email);
+                newUser.setUsername(name);
+                // newUser.setGoogleId(id);
+                userRepository.save(newUser);
+            }
+            // System.out.println("email: " + email);
+            // System.out.println("name: " + name);
+
+
+            return oidcUser;
+        };
+
+    }
+  
         // private OAuth2UserService<OidcUserRequest, OidcUser> oidcUserService() {
         //     System.out.println("oidcUserService");
         //     final OidcUserService delegate = new OidcUserService();
