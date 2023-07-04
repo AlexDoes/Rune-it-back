@@ -213,7 +213,7 @@ export default function Quester(UserData) {
   }, []);
 
   const handleQuestToggle = (quest) => {
-    if (questsToAdd === []) {
+    if (questsToAdd == [] || questsToAdd.length == 0) {
       setXPToAdd(baseState);
     }
     if (questsToAdd.includes(quest)) {
