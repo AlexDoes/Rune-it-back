@@ -112,17 +112,16 @@ Visit the live site or clone the repo and run the java project in conjunction wt
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/your_username_/Project-Name.git
+   git clone https://github.com/AlexDoes/Rune-it-back.git
    ```
 2. Install NPM packages
    ```sh
    npm install
    ```
 3. Clean Install Maven
-
-```sh
-    maven clean install
-```
+   ```sh
+   maven clean install
+   ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -134,13 +133,13 @@ Utilize the various tools through the navbar. Sign in with your Google Account t
 
 ## Features
 
-- [Runescraper](source) to scrape from the official OSRS wiki for up to date quest data and the html associated.
+- [Runescraper](https://rune-it-back.onrender.com/runescraper) to scrape from the official OSRS wiki for up to date quest data and the html associated.
   [![runescraper][runescraper-screenshot]](https://rune-it-back.onrender.com/runescraper)
 
-- [Quester](source) to calculate/track quest rewards and how much you've/you'll gain from completing quests.
+- [Quester](https://rune-it-back.onrender.com/quester) to calculate/track quest rewards and how much you've/you'll gain from completing quests.
   [![quester][quester-screenshot]](https://rune-it-back.onrender.com/quester)
 
-- [AQD](source) to render a table of all up to date quest data.
+- [AQD](https://rune-it-back.onrender.com/aqd) to render a table of all up to date quest data.
   [![aqd][aqd-screenshot]](https://rune-it-back.onrender.com/aqd)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
