@@ -53,7 +53,7 @@ public class SecurityConfig {
             .csrf( csrf -> csrf.disable() )
             .authorizeHttpRequests(authorizeHttpRequests ->
                 authorizeHttpRequests
-                    .requestMatchers("/").permitAll()
+                    .requestMatchers("http://localhost:8080").permitAll()
                     .anyRequest().authenticated()
             );
             http.logout(logout ->
