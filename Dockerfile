@@ -1,6 +1,6 @@
 
 # FROM maven:3.8.3-openjdk-17-slim AS build
-FROM maven:3.8.1-openjdk-11-slim AS build
+FROM maven:3.8-openjdk-17 AS build
 
 WORKDIR /app
 
@@ -10,7 +10,7 @@ RUN mvn -f ./backend/pom.xml dependency:go-offline -B
 
 RUN mvn -f ./backend/pom.xml package
 
-FROM openjdk:11-jre-slim
+FROM ibm-semeru-runtimes:open-17-jre-centos7
 
 
 
