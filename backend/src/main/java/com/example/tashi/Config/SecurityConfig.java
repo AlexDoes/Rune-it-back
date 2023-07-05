@@ -36,7 +36,7 @@ public class SecurityConfig {
                         userInfoEndpoint
                             .oidcUserService(oidcUserService())
                     )
-                    .defaultSuccessUrl("http://localhost:5173/", true)  
+                    .defaultSuccessUrl("https://rune-it-back-l4p0.onrender.com", true)  
         );    
         http
             .csrf( csrf -> csrf.disable() )
@@ -48,7 +48,7 @@ public class SecurityConfig {
             http.logout(logout ->
                 logout
                     .logoutUrl("/logout")
-                    .logoutSuccessUrl("http://localhost:5173/")
+                    .logoutSuccessUrl("https://rune-it-back-l4p0.onrender.com")
                     .invalidateHttpSession(true)
                     .deleteCookies("JSESSIONID")
                     
