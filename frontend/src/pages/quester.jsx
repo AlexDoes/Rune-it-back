@@ -334,7 +334,7 @@ export default function Quester(UserData) {
       newObject[skillname.toLowerCase()] = Math.trunc(xp);
     });
     try {
-      const res = await fetch("http://localhost:8080/api/updateuserinfo", {
+      const res = await fetch("/api/updateuserinfo", {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
