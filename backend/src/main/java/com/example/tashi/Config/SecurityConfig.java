@@ -42,8 +42,7 @@ public class SecurityConfig {
             .csrf( csrf -> csrf.disable() )
             .authorizeHttpRequests(authorizeHttpRequests ->
                 authorizeHttpRequests
-                    .requestMatchers("https://rune-it-back-l4p0.onrender.com").permitAll()
-                    .anyRequest().authenticated()
+                    .anyRequest().permitAll()
             );
             http.logout(logout ->
                 logout

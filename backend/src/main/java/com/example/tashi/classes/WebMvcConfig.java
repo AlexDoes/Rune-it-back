@@ -10,9 +10,14 @@ public class WebMvcConfig implements WebMvcConfigurer {
 
     @Override
     public void addCorsMappings(CorsRegistry registry) {
+        // registry.addMapping("/**")
+        //         .allowedOrigins("http://localhost:5173","https://rune-it-back-l4p0.onrender.com")
+        //         .allowedMethods("*")
+        //         .allowCredentials(true);
         registry.addMapping("/**")
-                .allowedOrigins("http://localhost:5173","https://rune-it-back-l4p0.onrender.com")
+                .allowedOrigins("*")
                 .allowedMethods("*")
+                .allowedHeaders("*")
                 .allowCredentials(true);
     }
 }
