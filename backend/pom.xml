@@ -185,7 +185,7 @@
                         <outputDirectory>${project.basedir}/src/main/resources/static</outputDirectory>
                         <resources>
                             <resource>
-                                <directory>${project.basedir}/frontend/dist</directory>
+                                <directory>${project.basedir}/../frontend/dist</directory>
                             </resource>
                         </resources>
                     </configuration>
