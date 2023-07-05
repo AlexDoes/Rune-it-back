@@ -1,9 +1,3 @@
-# FROM openjdk:17-jdk-alpine
-# ARG JAR_FILE=target/*.jar
-# COPY ./target/tashi-0.0.1-SNAPSHOT.jar /app.jar
-# ENTRYPOINT ["java","-jar","/app.jar"]
-
-
 # The first stage of the build, based on a Maven image
 FROM maven:3.8.1-openjdk-11-slim AS build
 
