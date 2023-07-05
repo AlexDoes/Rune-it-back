@@ -174,7 +174,7 @@ export default function Quester(UserData) {
             "Content-Type": "application/json",
             Accept: "application/json",
           },
-          credentials: "include",
+          // credentials: "include",
         });
         const data = await response.json();
         setQuesterData(data);
