@@ -14,7 +14,7 @@
 	<name>tashi</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
-		<java.version>17</java.version>
+		<java.version>20</java.version>
 	</properties>
 	<dependencies>
 
@@ -100,14 +100,14 @@
 
 	<build>
 		<plugins>
-		<plugin>
+		<!-- <plugin>
       <groupId>org.apache.maven.plugins</groupId>
       <artifactId>maven-compiler-plugin</artifactId>
       <version>3.11.0</version>
       <configuration>
         <release>17</release>
       </configuration>
-    </plugin>
+    </plugin> -->
 			<plugin>
 				<groupId>org.asciidoctor</groupId>
 				<artifactId>asciidoctor-maven-plugin</artifactId>
