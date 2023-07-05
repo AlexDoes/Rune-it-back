@@ -103,10 +103,9 @@ Visit the live site or clone the repo and run the java project in conjunction wt
   npm install npm@latest -g
   ```
 - java
-
-```sh
-    download from oracle
-```
+  ```sh
+  download from oracle
+  ```
 
 ### Installation
 
