@@ -1,5 +1,7 @@
 # The first stage of the build, based on a Maven image
-FROM maven:3.8.1-openjdk-11-slim AS build
+# FROM maven:3.9.3-openjdk-17-slim AS build
+
+FROM maven:3.9.3-openjdk-17-slim AS build
 
 # Set the current working directory in this stage of the Docker image
 WORKDIR /app
