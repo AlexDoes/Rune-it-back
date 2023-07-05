@@ -8,7 +8,7 @@ export const UserProvider = ({ children }) => {
   useEffect(() => {
     const getUserInfo = async () => {
       try {
-        const response = await fetch("http://localhost:8080/api/userinfo", {
+        const response = await fetch("/api/userinfo", {
           method: "GET",
           headers: {
             "Content-Type": "application/json",
