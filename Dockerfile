@@ -10,7 +10,9 @@ RUN mvn -f ./backend/pom.xml dependency:go-offline -B
 
 RUN mvn -f ./backend/pom.xml package
 
-FROM openjdk:17-jdk-alpine
+FROM openjdk:11-jre-slim
+
+
 
 COPY --from=build /app/backend/target/tashi-0.0.1-SNAPSHOT.jar /app.jar
 RUN --mount=type=secret,id=keys ,dst=/etc/secrets/keys cat /etc/secrets/keys
