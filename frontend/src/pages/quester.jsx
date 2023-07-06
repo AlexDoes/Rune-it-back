@@ -548,8 +548,13 @@ export default function Quester(UserData) {
   const handleReset = async (e) => {
     e.preventDefault();
     setQuestsToAdd([]);
+    setQuestsCompleted([]);
     setQPToGain(0);
     setXPToAdd(baseState);
+    setTotalXP(0);
+    setSkillXP(baseState);
+    setTotalQuestPoints(0);
+    setXPAdded(baseState);
     const newObject = {
       completedQuests: [],
       totalXP: 0,
