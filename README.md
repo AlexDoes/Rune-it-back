@@ -29,7 +29,7 @@
   <h3 align="center">Rune-it-Back</h3>
 
   <p align="center">
-    An assortment of Old School Runescape web tools including a quest data and a web scraper of the official OSRS wikipedia.
+    An assortment of Old School Runescape web tools including a quest database and a web scraper of the official OSRS wikipedia.
     <br />
     <a href="https://rune-it-back.onrender.com">View Demo</a>
 
@@ -70,7 +70,7 @@
 
 Rune-it-Back
 
-A simple collection of Old School Runescape web tools created using Java, SpringBoot, and React, to view and iteract with Old School Runescape quest data sourced from the official Old School Runescape Wikipedia.
+A simple collection of Old School Runescape web tools created using Java, SpringBoot, and React, to view and interact with Old School Runescape quest data sourced from the official Old School Runescape Wikipedia.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
