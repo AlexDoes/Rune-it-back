@@ -6,30 +6,19 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.oauth2.client.oidc.userinfo.OidcUserRequest;
 import org.springframework.security.oauth2.client.oidc.userinfo.OidcUserService;
-import org.springframework.security.oauth2.client.userinfo.DefaultOAuth2UserService;
-import org.springframework.security.oauth2.client.userinfo.OAuth2UserRequest;
 import org.springframework.security.oauth2.client.userinfo.OAuth2UserService;
-import org.springframework.security.oauth2.core.OAuth2AuthenticationException;
 import org.springframework.security.oauth2.core.oidc.user.OidcUser;
-import org.springframework.security.oauth2.core.user.OAuth2User;
 import org.springframework.security.web.SecurityFilterChain;
 import com.example.tashi.repository.UserRepository;
 import com.example.tashi.models.User;
-import com.example.tashi.services.CustomOAuth2UserService;
 import static org.springframework.security.config.Customizer.withDefaults;
-import com.example.tashi.repository.UserRepository;
 
-import javax.print.DocFlavor.STRING;
-
-import org.ietf.jgss.Oid;
 import org.springframework.beans.factory.annotation.Autowired;
 
 @Configuration
 @EnableWebSecurity
 public class SecurityConfig {
 
-    @Autowired
-    private CustomOAuth2UserService customOAuth2UserService;
 
     @Autowired
     private UserRepository userRepository;
@@ -47,19 +36,18 @@ public class SecurityConfig {
                         userInfoEndpoint
                             .oidcUserService(oidcUserService())
                     )
-                    .defaultSuccessUrl("http://localhost:5173/", true)  
+                    .defaultSuccessUrl("https://rune-it-back-l4p0.onrender.com", true)  
         );    
         http
             .csrf( csrf -> csrf.disable() )
             .authorizeHttpRequests(authorizeHttpRequests ->
                 authorizeHttpRequests
-                    .requestMatchers("/").permitAll()
-                    .anyRequest().authenticated()
+                    .anyRequest().permitAll()
             );
             http.logout(logout ->
                 logout
                     .logoutUrl("/logout")
-                    .logoutSuccessUrl("http://localhost:5173/")
+                    .logoutSuccessUrl("https://rune-it-back-l4p0.onrender.com")
                     .invalidateHttpSession(true)
                     .deleteCookies("JSESSIONID")
                     
@@ -68,10 +56,10 @@ public class SecurityConfig {
         return http.build();
         }
  
-    public OAuth2UserService<OAuth2UserRequest, OAuth2User> oauth2UserService()  {
-        System.out.println("oauth2UserService");
-        return this.customOAuth2UserService;        
-    }     
+    // public OAuth2UserService<OAuth2UserRequest, OAuth2User> oauth2UserService()  {
+    //     System.out.println("oauth2UserService");
+    //     return this.customOAuth2UserService;        
+    // }     
 
     private OAuth2UserService<OidcUserRequest, OidcUser> oidcUserService() {            
         System.out.println("oidcUserService");

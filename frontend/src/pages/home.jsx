@@ -6,13 +6,13 @@ export default function Home() {
   useEffect(() => {
     const getUserInfo = async () => {
       try {
-        const response = await fetch("http://localhost:8080/api/userinfo", {
+        const response = await fetch("/api/userinfo", {
           method: "GET",
           headers: {
             "Content-Type": "application/json",
             Accept: "application/json",
           },
-          credentials: "include",
+          // credentials: "include",
         });
         const data = await response.json();
         setUser(data);

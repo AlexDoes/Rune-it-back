@@ -168,13 +168,13 @@ export default function Quester(UserData) {
   useEffect(() => {
     const getUserInfo = async () => {
       try {
-        const response = await fetch("http://localhost:8080/api/userinfo", {
+        const response = await fetch("/api/userinfo", {
           method: "GET",
           headers: {
             "Content-Type": "application/json",
             Accept: "application/json",
           },
-          credentials: "include",
+          // credentials: "include",
         });
         const data = await response.json();
         setQuesterData(data);
@@ -334,7 +334,7 @@ export default function Quester(UserData) {
       newObject[skillname.toLowerCase()] = Math.trunc(xp);
     });
     try {
-      const res = await fetch("http://localhost:8080/api/updateuserinfo", {
+      const res = await fetch("/api/updateuserinfo", {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
