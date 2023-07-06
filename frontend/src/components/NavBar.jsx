@@ -23,13 +23,13 @@ function Navbar() {
         </li>
         {!user ? (
           <li>
-            <a href="https://rune-it-back-l4p0.onrender.com/oauth2/authorization/google">
+            <a href="https://rune-it-back.onrender.com/oauth2/authorization/google">
                Sign In
             </a>
           </li>
         ) : (
           <li>
-           <a href="https://rune-it-back-l4p0.onrender.com/logout">
+           <a href="https://rune-it-back.onrender.com/logout">
              Logout
           </a>
           </li>
