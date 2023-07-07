@@ -1,8 +1,15 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useUser } from "../utils/userContext";
 
 function Navbar() {
   const user = useUser();
+  const [loggedIn, setLoggedIn] = useState(false);
+  useEffect(() => {
+    if (user) {
+      setLoggedIn(true);
+    }
+  }, [user]);
+
   return (
     <nav className="w-[100%] h-[4vh] min-h-[34px] max-h-[40px] bg-gray-600 text-yellow-200 items-center justify-center flex">
       <ul className="flex flex-row w-full items-center justify-between text-[2vh] px-4 text-bold py-1">
@@ -24,14 +31,12 @@ function Navbar() {
         {!user ? (
           <li>
             <a href="https://rune-it-back.onrender.com/oauth2/authorization/google">
-               Sign In
+              Sign In
             </a>
           </li>
         ) : (
           <li>
-           <a href="https://rune-it-back.onrender.com/logout">
-             Logout
-          </a>
+            <a href="https://rune-it-back.onrender.com/logout">Logout</a>
           </li>
         )}
       </ul>
