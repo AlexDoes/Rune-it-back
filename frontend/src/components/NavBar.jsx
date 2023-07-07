@@ -28,7 +28,7 @@ function Navbar() {
         <li>
           <a href="/aqd">All Quest Data</a>
         </li>
-        {!user ? (
+        {!loggedIn ? (
           <li>
             <a href="https://rune-it-back.onrender.com/oauth2/authorization/google">
               Sign In
